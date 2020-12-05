@@ -27,9 +27,9 @@ if ($_GET['darkmode'] == 'true') {
 function LightMode() {
 	if (document.getElementById('body').className == 'light-scheme') {
 		document.getElementById('body').className = 'dark-scheme';
-		text.innerHTML = 'Mode nuit';
+		text.innerHTML = 'Mode jour';
 	} else {
 		document.getElementById('body').className = 'light-scheme';
-		text.innerHTML = 'Mode jour';
+		text.innerHTML = 'Mode nuit';
 	}
 }
