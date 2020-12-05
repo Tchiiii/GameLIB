@@ -2,15 +2,14 @@
 	--background-color:#ecf0f1;
 	--overlay-color:#bdc3c7;
 	--text-color:#2c3e50;
-	transition-duration: 0.25s;
+	transition-duration: 0.5s;
 }
-
 
 .dark-scheme {
 	--background-color:#2c3e50;
 	--overlay-color:#34495e;
 	--text-color:#ecf0f1;
-	transition-duration: 0.25s;
+	transition-duration: 0.5s;
 }
 
 
