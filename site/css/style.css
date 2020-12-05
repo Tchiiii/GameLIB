@@ -1,3 +1,59 @@
-.container {
-	
+.light-scheme {
+	--background-color:#ecf0f1;
+	--overlay-color:#bdc3c7;
+	--text-color:#2c3e50;
+	transition-duration: 0.25s;
+}
+
+
+.dark-scheme {
+	--background-color:#2c3e50;
+	--overlay-color:#34495e;
+	--text-color:#ecf0f1;
+	transition-duration: 0.25s;
+}
+
+
+body {
+	color: var(--text-color);
+	background-color: var(--background-color);
+
+	padding: 0;
+	margin: 0;
+	width: 100%
+}
+
+/* Partie navigation */
+
+nav {
+	padding: 5px 0px 5px 0px;
+	box-shadow: 8px 0px 12px #0c1e30; 
+}
+
+nav div {
+	display: inline-block;
+}
+
+/* 1. Partie centrale */
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 1.0em;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+/* 2. Partie droite (Light Mode) */
+
+nav .right {
+	align-content: right;
 }

@@ -5,28 +5,32 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-
-	<!-- Bandeau d'entête -->
-	<header>
-		
-	</header>
+<body onload="ShowGameAll()" class="light-scheme" id="body">
 
 	<!-- Menu -->
 	<nav>
-		
+		<div>
+			<ul>
+				<li><a href="">Accueil</a></li>
+				<li><a href="">Jeux</a></li>
+				<li><a href="">Abonnement</a></li>
+				<li><a href="">Communauté</a></li>
+				<li><a href="">A propos</a></li>
+			</ul>
+		</div>
+
+		<div class="right">
+			<span onclick="LightMode()" id="light-mode">Mode jour</span>
+		</div>
 	</nav>
 
-	<!-- Contenu -->
-	<div class="container">
-		
+	<!-- Corps de page -->
+	<div>
+		<p id="game-list"></p>
 	</div>
 
-	<!-- Pied de page -->
-	<footer>
-		
-	</footer>
-
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/lightmode.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
 </body>
 </html>
