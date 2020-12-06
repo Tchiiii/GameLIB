@@ -14,7 +14,6 @@
 				<li><a href="">Accueil</a></li>
 				<li><a href="">Jeux</a></li>
 				<li><a href="">Abonnement</a></li>
-				<li><a href="">Communauté</a></li>
 				<li><a href="">A propos</a></li>
 			</ul>
 		</div>
@@ -26,10 +25,12 @@
 
 	<!-- Corps de page -->
 	<div class="container">
-		<p id="game-list"></p>
+		<table style="border-collapse: collapse;">
+			<tbody id="game-list"></tbody>
+		</table>
 
 		<!-- Test de Carte -->
-		<div class="card">
+		<!-- <div class="card">
 			<img class="game-picture" src="img/games/test.jpg">	
 			<div class="text">
 				<h3 class="game-name">Game Name</h3>
@@ -38,7 +39,28 @@
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat.</p>
 			</div>
-		</div>
+		</div> -->
+
+		<table style="margin: 15px; border-collapse: collapse;">
+			<tr>
+				<td colspan="2">
+					<img style="border-radius: 10px; overflow: hidden" src="img/games/card-1/test.jpg">
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+			<tr style="background-color: var(--overlay-color); border-radius: 15px; padding:10px; overflow: hidden;">
+				<td>
+					<h3 style="margin: 0;">Pokémon</h3>
+					<h4 style="margin: 0 0 5px 0; color: grey"> - Nintendo</h4>
+					<span style="background-color: blue; border-radius: 10%; padding: 5px; font-size: 16px">-10%</span><span style="margin: 5px; font-size: 20px"><strike style="color: grey">50€</strike> 40€</span>	
+				</td>
+				<td>
+					<span style="text-align: right;">Switch</span>
+				</td>
+			</tr>
+		</table>
 	</div>
 
 	<script type="text/javascript" src="js/script.js"></script>

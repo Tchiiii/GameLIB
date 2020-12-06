@@ -75,6 +75,13 @@ nav .right {
 	height: 400px;
 	overflow: hidden;
 	border-radius: 10px;
+	box-shadow: 0 0 10px 0 black;
+	transition: 0.5s;
+}
+
+.card:hover {
+	box-shadow: 0 0 25px 0 var(--overlay-color);
+	transition: 0.5s;
 }
 
 .card img {

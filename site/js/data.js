@@ -12,41 +12,172 @@ let game = [
 					"name": "Zelda",
 					"price": 50
 				},
+
+				{
+					"id": "g003",
+					"name": "Zelda 2",
+					"price": 50.99
+				},
+
+				{
+					"id": "g004",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g005",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g006",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g007",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g008",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g009",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g010",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g011",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g012",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g013",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g014",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g015",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g016",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g017",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g018",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g019",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g020",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g021",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g022",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g023",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g024",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g025",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g026",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g027",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g028",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g029",
+					"name": "Name",
+					"price": 0
+				},
+
+				{
+					"id": "g030",
+					"name": "Name",
+					"price": 0
+				},
 			];
-
-// Functions to show theses data
-
-function ShowGameAll() {
-	document.getElementById('game-list').innerHTML += "id : name : price <br>";
-	for (let i = 0; i < game.length; i++) {
-		document.getElementById('game-list').innerHTML += game[i].id + " : " + game[i].name + " : " + game[i].price + "<br>";
-	}
-}
-
-function ShowGameId() {
-	for (let i = 0; i < game.length; i++) {
-		document.getElementById('game-list').innerHTML += game[i].id + " ";
-	}
-}
-
-function ShowGameName() {
-	for (let i = 0; i < game.length; i++) {
-		document.getElementById('game-list').innerHTML += game[i].name + " ";
-	}
-}
-
-
-// Récupère la variable dans l'url
-var $_GET = {};
-if(document.location.toString().indexOf('?') !== -1) {
-	var query = document.location
-						.toString()
-						.replace(/^.*?\?/, '')
-						.replace(/#.*$/, '')
-						.split('&');
-
-	for(var i=0, l=query.length; i<l; i++) {
-		var aux = decodeURIComponent(query[i]).split('=');
-		$_GET[aux[0]] = aux[1];
-	}
-} 
