@@ -14,6 +14,7 @@
 
 
 body {
+	font-family: Cabin, Arial, Consolas;
 	color: var(--text-color);
 	background-color: var(--background-color);
 
