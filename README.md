@@ -3,7 +3,8 @@
 Simulation d'une __plateforme de vente de jeux vidéos dématérialisé__.  
 (Comme "Epic Games" et "Steam")  
 Il s'agit d'une **simulation** car aucun achat ne peut aboutir.  
-Toutes les données sont **stocké localement** sur le navigateur. (car le principe de ce projet est l'aboutissement de l'étude des langages **HTML**, **CSS** et **JS**)  
+Toutes les données sont **stocké localement** sur le navigateur.  
+(Car le principe de ce projet est l'aboutissement de l'étude des langages **HTML**, **CSS** et **JS**)  
 
 ## Les pages du site
 + Page d'accueil (**index.html**)
