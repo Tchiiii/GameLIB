@@ -15,7 +15,7 @@ function SetNightMode() {
 
 // Demarrage de la page
 function LightModeOnLoad() {
-	if (localStorage.getItem('nightMode') == "true") {
+	if (localStorage.getItem('nightMode') == 'true') {
 		SetNightMode();
 	} else {
 		SetLightMode();
@@ -26,9 +26,9 @@ function LightModeOnLoad() {
 function LightModeButton() {
 	if (document.getElementById('body').className == 'dark-scheme') {
 		SetLightMode();
-		localStorage.setItem('nightMode', "false");
+		localStorage.setItem('nightMode', 'false');
 	} else {
 		SetNightMode();
-		localStorage.setItem('nightMode', "true");
+		localStorage.setItem('nightMode', 'true');
 	}
 }
