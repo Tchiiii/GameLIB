@@ -1,0 +1,48 @@
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #2c3e50;
+	color: #ecf0f1;	
+}
+
+#cookie {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#clicker {
+	background-image: url(icon.webp);
+	width: 150px;
+	height: 150px;
+	transition: 0.025s;
+}
+
+#clicker:active{
+	transform: scale(1.5);
+	transform: rotate();
+	transition: 0.025s all;
+}
+
+#score, #persecond {
+	text-align: center;
+}
+
+#upgrades {
+	margin: 10px;
+	border-collapse: collapse;
+}
+
+#upgrades tr td {
+	border: 1px solid black;
+}
+
+#upgrades tr:nth-child(2n+1) {
+	background-color: #34495e;
+}
