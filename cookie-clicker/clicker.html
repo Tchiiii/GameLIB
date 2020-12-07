@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Hidden | Cookie Clicker</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="clicker.css">
+	<link rel="icon" type="image/png" href="icon.webp" />
+</head>
+<body onload="Initialisation()">
+
+	<table id="cookie">
+		<tr>
+			<td>
+				<div id="clicker" onclick="OneCookie(1)">
+					
+				</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<h1 id="score">0</h1>
+				<h2 id="persecond"></h2>
+			</td>
+		</tr>
+	</table>
+
+	<table id="upgrades" style="text-align: center; border: 1px solid black;">
+		<tr>
+			<td></td>
+			<td>Nom</td>
+			<td>Prix</td>
+			<td>Niveau</td>
+		</tr>
+		<tr>
+			<td id="icon-1"><img src="icon.webp" width="25px" height="25px" onclick="Buy(15,1)"></td>
+			<td>Auto-click</td>
+			<td id="price-1">15</td>
+			<td id="level-1">0</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript" src="clicker.js"></script>
+</body>
+</html>
