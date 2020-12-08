@@ -10,16 +10,35 @@
 	display: inline-block;
 }
 
-.card-picture img {
+.card-picture-vertical img {
 	border-radius: 10px;
 	overflow: hidden;
 	filter: grayscale(1);
 	box-shadow: 0 0 5px black;
+	height:300px;
+	width:240px;
 
 	transition: 0.5s;
 }
 
-.card:hover > tbody .card-picture a img {
+.card-picture-horizontal img {
+	border-radius: 10px;
+	overflow: hidden;
+	filter: grayscale(1);
+	box-shadow: 0 0 5px black;
+	width:300px;
+	height:169px;
+
+	transition: 0.5s;
+}
+
+.card:hover > tbody .card-picture-horizontal a img {
+	filter: grayscale(0);
+	
+	transition: 0.5s;
+}
+
+.card:hover > tbody .card-picture-vertical a img {
 	filter: grayscale(0);
 	
 	transition: 0.5s;
