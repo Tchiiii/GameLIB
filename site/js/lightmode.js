@@ -1,3 +1,8 @@
+/*
+ * lightmode.js, 
+ *
+ */
+
 // Récupère le boutton 'Night mode'
 let text = document.getElementById('light-mode');
 
