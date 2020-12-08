@@ -1,19 +1,20 @@
-// Data
+/*
+ * data.js
+ * VABRE Lucas
+ */
 
 let game = [
 				{
 					'id': 'g001',
-					'name': 'Name',
+					'name': 'World of Tanks',
 					'price': 0,
 					'isInPromo': false,
-					'promo': 50,
+					'promo': 0,
 					'info': 'lorem ipsum dolor sit amet...',
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
-					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'editor': 'Wargaming',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -26,9 +27,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -41,9 +40,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -56,9 +53,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -71,9 +66,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -86,9 +79,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -101,9 +92,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -116,9 +105,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -131,9 +118,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -146,9 +131,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -161,9 +144,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -176,9 +157,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -191,9 +170,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -206,9 +183,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -221,9 +196,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -236,9 +209,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -251,9 +222,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -266,9 +235,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -281,9 +248,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -296,9 +261,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -311,9 +274,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -326,9 +287,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -341,9 +300,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -356,9 +313,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -371,9 +326,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -386,9 +339,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -401,9 +352,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -416,9 +365,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -431,9 +378,7 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 
 				{
@@ -446,8 +391,6 @@ let game = [
 					'developper': 'developper-name',
 					'classification': 'pegi ##',
 					'editor': 'editor-name',
-					'img1': '../img/games/card-1/',
-					'img2': '../img/games/card-2/',
-					'img3': '../img/games/illustration/',
+					'img': '../img/games/card/'
 				},
 			];
