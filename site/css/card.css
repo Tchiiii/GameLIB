@@ -10,67 +10,60 @@
 	display: inline-block;
 }
 
-.card-picture-vertical img {
+/* image verticale */
+.card-picture-vertical img {	 
 	border-radius: 10px;
 	overflow: hidden;
-	filter: grayscale(25%);
 	box-shadow: 0 0 5px black;
-	height:300px;
-	width:240px;
-
-	transition: 0.5s;
+	height:325px;	/* longueur */
+	width:240px;	/* largeur */
+	transition: 0.5s;	/* pour faire transition fluide et pas brute */
 }
 
+/* image horizontale */
 .card-picture-horizontal img {
 	border-radius: 10px;
 	overflow: hidden;
-	filter: grayscale(25%);
 	box-shadow: 0 0 5px black;
-	width:300px;
-	height:169px;
-
-	transition: 0.5s;
+	width:300px;	/* largeur */
+	height:169px;	/* longueur */
+	transition: 0.5s;	/* pour faire transition fluide et pas brute */
 }
 
-.card:hover > tbody .card-picture-horizontal a img {
-	filter: grayscale(0);
-	
-	transition: 0.5s;
-}
-
-.card:hover > tbody .card-picture-vertical a img {
-	filter: grayscale(0);
-	
-	transition: 0.5s;
-}
 
 .card img:hover {
-	transform: scale(1.04);
+	transform: scale(1.04);		/* augmente la taille de l'image quand on survole */
 	box-shadow: 0 0 0;
-}
+	 filter: opacity(115%);		/* augmente la luminosité de l'image quand on survole */
+	
 
+/* style de la cellule du tableau */
 .card-info td {
 	background-color: var(--overlay-color);
 	border-radius: 15px;
 	padding:10px;
 }
 
+/* lien sur le nom du jeu */
 .card-info a {
 	text-decoration: none;
 }
 
+/* nom du jeu */
 .card-title {
 	text-align: left;
 	margin: 0;
 	color: var(--text-color);
 }
 
+/* editeur du jeu */
 .card-editor {
 	text-align: left;
 	margin: 0 0 5px 0;
 	color: grey;
 }
 
+/* réduction */
 .tag {
 	background-color: blue;
 	border-radius: 10%;
@@ -78,15 +71,14 @@
 	font-size: 16px;
 }
 
+/* prix des jeux */
 .card-price {
 	margin: 5px;
 	font-size: 20px;
+	text-align: left;
 }
 
-.card-price {
-	text-align: left;
-} 
-
+/* prix barré si réduction */
 .card-info strike {
 	color: grey;
 }
