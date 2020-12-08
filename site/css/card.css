@@ -34,8 +34,9 @@
 .card img:hover {
 	transform: scale(1.04);		/* augmente la taille de l'image quand on survole */
 	box-shadow: 0 0 0;
-	 filter: opacity(115%);		/* augmente la luminosité de l'image quand on survole */
+	filter: opacity(115%);		/* augmente la luminosité de l'image quand on survole */
 	
+}
 
 /* style de la cellule du tableau */
 .card-info td {
