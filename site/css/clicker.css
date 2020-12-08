@@ -18,7 +18,7 @@ body {
 }
 
 #clicker {
-	background-image: url(icon.webp);
+	background-image: url(../img/icons/cookie.webp);
 	width: 150px;
 	height: 150px;
 	transition: 0.025s;

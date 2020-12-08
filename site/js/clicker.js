@@ -34,7 +34,7 @@ function Buy(price) {
 		}
 
 		Autoclick(upgrades[0].number);
-		document.getElementById("icon-1").innerHTML = '<img src="icon.webp" width="25px" height="25px" onclick="Buy('
+		document.getElementById("icon-1").innerHTML = '<img src="../img/icons/cookie.webp" width="25px" height="25px" onclick="Buy('
 													  + upgrades[0].price
 													  + ',' + upgrades[0].number
 													  + ')">';
