@@ -35,7 +35,6 @@
 	transform: scale(1.04);		/* augmente la taille de l'image quand on survole */
 	box-shadow: 0 0 0;
     opacity: .5;	/* change l'opacité de l'image quand on survole */
-    
 }
 
 /* style de la cellule du tableau */
