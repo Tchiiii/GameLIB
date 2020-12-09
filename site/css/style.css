@@ -63,6 +63,10 @@ nav a {
 	cursor: pointer; /* Au survol déchange le curseur pour montrer que c'est un boutton clicable */
 }
 
+.li-night-mode {
+	position: absolute;
+	right: 0px;
+}
 
 
 /* ### Contenu de la page ### */
