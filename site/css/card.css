@@ -43,6 +43,14 @@
 .horizontal img {/* image horizontale */
 	width:300px;	/* largeur */
 	height:169px;	/* longueur */
+	transition: 0.5s;	/* pour faire transition fluide et pas brute */
+}
+
+
+.card img:hover {
+	transform: scale(1.04);		/* augmente la taille de l'image quand on survole */
+	box-shadow: 0 0 0;
+    opacity: .5;	/* change l'opacité de l'image quand on survole */
 }
 
 /* ### Cellule "Texte" du tableau ### */
