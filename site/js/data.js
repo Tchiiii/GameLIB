@@ -1,6 +1,6 @@
 /*
  * data.js
- * VABRE Lucas
+ * @author Vabre Lucas
  */
 
 let game = [

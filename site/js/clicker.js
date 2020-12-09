@@ -1,3 +1,8 @@
+/*
+ * cliker.js
+ * @author Vabre Lucas
+ */
+
 let score = 0;
 let upgrades = [
 					{
