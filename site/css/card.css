@@ -1,84 +1,87 @@
-/* Card Collection */
+/*
+ * card.css
+ * @author Seryeis Lucas, Vabre Lucas
+ */
+
+/* ### Variables principales utilisés ### */
+:root {
+	--border-card-radius: 5px;
+}
+
+/* ### Collection de Cartes (en ligne) ### */
 .card-collection {
 	text-align: center;
 }
 
-/* Card */
+/* ### Card ### */
 .card {
 	margin: 15px;
 	border-collapse: collapse;
 	display: inline-block;
 }
 
-/* image verticale */
-.card-picture-vertical img {	 
-	border-radius: 10px;
+.card-picture img {
+	border-radius: var(--border-card-radius);
 	overflow: hidden;
 	box-shadow: 0 0 5px black;
-	height:325px;	/* longueur */
-	width:240px;	/* largeur */
-	transition: 0.5s;	/* pour faire transition fluide et pas brute */
+	transition: 0.25s;	/* pour faire transition fluide */
 }
 
-/* image horizontale */
-.card-picture-horizontal img {
-	border-radius: 10px;
-	overflow: hidden;
-	box-shadow: 0 0 5px black;
+.card-picture img:hover { /* Modification de l'image au survol */
+	transform: scale(1.04);		/* augmente la taille de l'image */
+	box-shadow: 0 0 10px var(--overlay-color);
+    opacity: 65%;	/* change l'opacité de l'image */
+    transition: 0.25s;	/* pour faire transition fluide */
+}
+
+.vertical img {/* image verticale */
+	height:325px;	/* longueur */
+	width:240px;	/* largeur */
+}
+
+
+.horizontal img {/* image horizontale */
 	width:300px;	/* largeur */
 	height:169px;	/* longueur */
 	transition: 0.5s;	/* pour faire transition fluide et pas brute */
 }
 
-
-.card img:hover {
-	transform: scale(1.04);		/* augmente la taille de l'image quand on survole */
-	box-shadow: 0 0 0;
-    opacity: .5;	/* change l'opacité de l'image quand on survole */
-}
-
-/* style de la cellule du tableau */
+/* ### Cellule "Texte" du tableau ### */
 .card-info td {
 	background-color: var(--overlay-color);
 	border-radius: 15px;
 	padding:10px;
 }
 
-/* lien sur le nom du jeu */
-.card-info a {
+.card-info a {/* lien sur le nom du jeu */
 	text-decoration: none;
 }
 
-/* nom du jeu */
-.card-title {
+.card-title {/* nom du jeu */
 	text-align: left;
 	margin: 0;
 	color: var(--text-color);
 }
 
-/* editeur du jeu */
-.card-editor {
+.card-editor {/* editeur du jeu */
 	text-align: left;
 	margin: 0 0 5px 0;
 	color: grey;
 }
 
-/* réduction */
-.tag {
-	background-color: rgb(91, 198, 248);
-	border-radius: 10%;
+.tag {/* réduction */
+	background-color: var(--main-color-blue); /* Couleur définie dans style.css */
+	border-radius: var(--border-card-radius);
 	padding: 5px;
 	font-size: 16px;
 }
 
-/* prix des jeux */
-.card-price {
+.card-price {/* prix des jeux */
 	margin: 5px;
 	font-size: 20px;
-	text-align: left;
+	text-align: right;
 }
 
-/* prix barré si réduction */
-.card-info strike {
+.card-info strike {/* prix barré si réduction */
 	color: grey;
 }

@@ -1,3 +1,8 @@
+/* 
+ * script.js
+ * @author Vabre Lucas
+ */
+
 // Récupère la variable dans l'url
 var $_GET = {};
 if(document.location.toString().indexOf('?') !== -1) {
