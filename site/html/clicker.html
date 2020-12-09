@@ -9,9 +9,21 @@
 	<title>Cookie Clicker</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/clicker.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 	<link rel="icon" type="image/png" href="../img/icons/cookie.webp"/>
 </head>
-<body onload="Initialisation()">
+<body onload="LightModeOnLoad(); Initialisation()" class="" id="body">
+
+	<!-- Menu de Navigation entre les pages -->
+	<nav>
+		<ul>
+			<li><a href="">Accueil</a></li>
+			<li><a href="">Jeux</a></li>
+			<li><a href="">Abonnement</a></li>
+			<li><a href="">A propos</a></li>
+			<li class="li-night-mode"><span onclick="LightModeButton()" id="light-mode">Mode jour/nuit</span></li>
+		</ul>
+	</nav>
 
 	<table id="cookie">
 		<tr>
@@ -46,5 +58,6 @@
 	</table>
 
 	<script type="text/javascript" src="../js/clicker.js"></script>
+	<script type="text/javascript" src="../js/lightmode.js"></script>
 </body>
 </html>
