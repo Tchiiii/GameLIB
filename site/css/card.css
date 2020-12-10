@@ -30,7 +30,7 @@
 .card-picture img:hover { /* Modification de l'image au survol */
 	transform: scale(1.04);		/* augmente la taille de l'image */
 	box-shadow: 0 0 10px var(--overlay-color);
-    opacity: 65%;	/* change l'opacité de l'image */
+    opacity: 75%;	/* change l'opacité de l'image */
     transition: 0.25s;	/* pour faire transition fluide */
 }
 
@@ -43,7 +43,6 @@
 .horizontal img {/* image horizontale */
 	width:300px;	/* largeur */
 	height:169px;	/* longueur */
-	transition: 0.5s;	/* pour faire transition fluide et pas brute */
 }
 
 /* ### Cellule "Texte" du tableau ### */
