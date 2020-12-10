@@ -3,37 +3,49 @@
  * @author Vabre Lucas
  */
 
-// Récupère le boutton 'Night mode'
-let text = document.getElementById('light-mode');
+// 
+let lightModeImg = document.getElementById('light-mode');	//Récupère le boutton 'Night mode'
+let pathSun = "img/icons/sun.svg";	//Récupère le chemin de l'iconne de soleil
+let pathMoon = "img/icons/moon.svg";	//Récupère le chemin de l'iconne de lune
 
 //Met la page en mode Clair
-function SetLightMode() {
+function SetLightMode(index) { //Index permet de savoir si la page actuelle est index.html ou pas
 	document.getElementById('body').className = 'light-theme';
-	text.innerHTML = 'Mode jour';
+	if (index) {
+		lightModeImg.setAttribute("src", pathSun);
+	} else {
+		lightModeImg.setAttribute("src", "../" + pathSun);
+	}
+	
 }
 
 //Met la page en mode Sombre
-function SetNightMode() {
+function SetNightMode(index) {
 		document.getElementById('body').className = 'dark-theme';
-		text.innerHTML = 'Mode nuit';
+		if (index) {
+			lightModeImg.setAttribute("src", pathMoon);
+		} else {
+			lightModeImg.setAttribute("src", "../" + pathMoon);
+		}
+		
 }
 
 // Demarrage de la page
-function LightModeOnLoad() {
+function LightModeOnLoad(index) {
 	if (localStorage.getItem('nightMode') == 'true') {
-		SetNightMode();
+		SetNightMode(index);
 	} else {
-		SetLightMode();
+		SetLightMode(index);
 	}
 }
 
 // Boutton
-function LightModeButton() {
+function LightModeButton(index) {
 	if (document.getElementById('body').className == 'dark-theme') {
-		SetLightMode();
+		SetLightMode(index);
 		localStorage.setItem('nightMode', 'false');
 	} else {
-		SetNightMode();
+		SetNightMode(index);
 		localStorage.setItem('nightMode', 'true');
 	}
 }
