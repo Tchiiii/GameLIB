@@ -18,6 +18,12 @@ if(document.location.toString().indexOf('?') !== -1) {
 	}
 }
 
+// Utilisé pour l'affichage de jeu.html
+function PageJeu () {
+	let dataElement = game[parseInt($_GET["id"])];
+}
+
+// Utilisé dans le dev.html pour voir le contenu de data.js
 function ShowGameAll() {
 	document.getElementById('game-list').innerHTML += '<tr style=\'background-color: var(--overlay-color);\'>'
 													  + '<td>id</td>'
@@ -59,17 +65,5 @@ function ShowGameAll() {
 														  + '</td><td>'
 														  + game[i].img3
 														  + '</td> </tr>';
-	}
-}
-
-function ShowGameId() {
-	for (let i = 0; i < game.length; i++) {
-		document.getElementById('game-list').innerHTML += game[i].id + ' ';
-	}
-}
-
-function ShowGameName() {
-	for (let i = 0; i < game.length; i++) {
-		document.getElementById('game-list').innerHTML += game[i].name + ' ';
 	}
 }

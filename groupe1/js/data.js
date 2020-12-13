@@ -5,7 +5,7 @@
 
 let game = [
 				{
-					'id': 'g001',
+					'id': 0,
 					'name': 'World of Tanks',
 					'price': 0,
 					'isInPromo': false,
@@ -18,7 +18,7 @@ let game = [
 				},
 
 				{
-					'id': 'g002',
+					'id': 1,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -31,7 +31,7 @@ let game = [
 				},
 
 				{
-					'id': 'g003',
+					'id': 2,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -44,7 +44,7 @@ let game = [
 				},
 
 				{
-					'id': 'g004',
+					'id': 3,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -57,7 +57,7 @@ let game = [
 				},
 
 				{
-					'id': 'g005',
+					'id': 4,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -70,7 +70,7 @@ let game = [
 				},
 
 				{
-					'id': 'g006',
+					'id': 5,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -83,7 +83,7 @@ let game = [
 				},
 
 				{
-					'id': 'g007',
+					'id': 6,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -96,7 +96,7 @@ let game = [
 				},
 
 				{
-					'id': 'g008',
+					'id': 7,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -109,7 +109,7 @@ let game = [
 				},
 
 				{
-					'id': 'g009',
+					'id': 8,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -122,7 +122,7 @@ let game = [
 				},
 
 				{
-					'id': 'g010',
+					'id': 9,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -135,7 +135,7 @@ let game = [
 				},
 
 				{
-					'id': 'g011',
+					'id': 10,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -148,7 +148,7 @@ let game = [
 				},
 
 				{
-					'id': 'g012',
+					'id': 11,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -161,7 +161,7 @@ let game = [
 				},
 
 				{
-					'id': 'g013',
+					'id': 12,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -174,7 +174,7 @@ let game = [
 				},
 
 				{
-					'id': 'g014',
+					'id': 13,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -187,7 +187,7 @@ let game = [
 				},
 
 				{
-					'id': 'g015',
+					'id': 14,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -200,7 +200,7 @@ let game = [
 				},
 
 				{
-					'id': 'g016',
+					'id': 15,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -213,7 +213,7 @@ let game = [
 				},
 
 				{
-					'id': 'g017',
+					'id': 16,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -226,7 +226,7 @@ let game = [
 				},
 
 				{
-					'id': 'g018',
+					'id': 17,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -239,7 +239,7 @@ let game = [
 				},
 
 				{
-					'id': 'g019',
+					'id': 18,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -252,7 +252,7 @@ let game = [
 				},
 
 				{
-					'id': 'g020',
+					'id': 19,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -265,7 +265,7 @@ let game = [
 				},
 
 				{
-					'id': 'g021',
+					'id': 20,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -278,7 +278,7 @@ let game = [
 				},
 
 				{
-					'id': 'g022',
+					'id': 21,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -291,7 +291,7 @@ let game = [
 				},
 
 				{
-					'id': 'g023',
+					'id': 22,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -304,7 +304,7 @@ let game = [
 				},
 
 				{
-					'id': 'g024',
+					'id': 23,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -317,7 +317,7 @@ let game = [
 				},
 
 				{
-					'id': 'g025',
+					'id': 24,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -330,7 +330,7 @@ let game = [
 				},
 
 				{
-					'id': 'g026',
+					'id': 25,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -343,7 +343,7 @@ let game = [
 				},
 
 				{
-					'id': 'g027',
+					'id': 26,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -356,7 +356,7 @@ let game = [
 				},
 
 				{
-					'id': 'g028',
+					'id': 27,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -369,7 +369,7 @@ let game = [
 				},
 
 				{
-					'id': 'g029',
+					'id': 28,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
@@ -382,7 +382,7 @@ let game = [
 				},
 
 				{
-					'id': 'g030',
+					'id': 29,
 					'name': 'Name',
 					'price': 0,
 					'isInPromo': false,
