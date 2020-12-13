@@ -24,6 +24,14 @@
 
 /* ### Style Général ### */
 
+header {
+	text-align: center;
+}
+
+header img {
+	margin: 25px 0 25px 0;
+}
+
 body {
 	font-family: Cabin, Arial, Consolas; /* Définis les polices d'écritures à utiliser dans le site */
 	color: var(--text-color); /* Défini la couleur générale du texte */
@@ -35,23 +43,21 @@ body {
 }
 
 /* ### Menu ### */
-
-nav {
-	padding: 5px 0px 5px 0px; /* Défini un espacement en haut et en bas du Menu de 5px */
-	box-shadow: 8px 0px 12px #0c1e30; /* Ombre qui fait la séparation entre le menu et le contenu de la page */
-}
-
 nav ul {
-	margin: 0; /* Enlève les marges de chaques elements de liste */
-	padding: 0; /* Enlève les marges internes de chaques elements de liste */
+	text-align: center;
+	background-color: var(--overlay-color);
+	border-radius: 15px;
+	margin: auto 25% auto 25%;
+	padding: 0; 
 }
 
 nav li {
 	display: inline-block; /* Affiche tout les éléments du menu en ligne */
 	text-decoration: none; /* Enlève les puce de la liste */
-	padding: 20px;
+	padding: 10px;
 	margin: 5px;
-	font-size: 1.0em;
+	font-size: 1.1em;
+	vertical-align: middle;
 }
 
 nav a {
@@ -64,11 +70,10 @@ nav a {
 }
 
 .li-night-mode {
-	position: fixed;
-	right: 0px;
-	bottom: 0px;
 	padding: 0;
+	margin: 0;
 }
+
 
 .li-night-mode img {
 	width: 40px;

@@ -46,7 +46,7 @@
 }
 
 /* ### Cellule "Texte" du tableau ### */
-.card-info td {
+.card-info {
 	background-color: var(--overlay-color);
 	border-radius: 15px;
 	padding:10px;
@@ -68,17 +68,17 @@
 	color: grey;
 }
 
+.card-price {/* prix des jeux */
+	margin: 5px;
+	font-size: 20px;
+	text-align: right;
+}
+
 .tag {/* réduction */
 	background-color: var(--main-color-blue); /* Couleur définie dans style.css */
 	border-radius: var(--border-card-radius);
 	padding: 5px;
 	font-size: 16px;
-}
-
-.card-price {/* prix des jeux */
-	margin: 5px;
-	font-size: 20px;
-	text-align: right;
 }
 
 .card-info strike {/* prix barré si réduction */

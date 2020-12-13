@@ -13,6 +13,10 @@
 </head>
 <body onload="LightModeOnLoad(true);" class="" id="body">
 
+	<header>
+		<img src="img/icons/logo-night.svg" width="300px" id="logo">
+	</header>
+
 	<!-- Menu de Navigation entre les pages -->
 	<nav>
 		<ul>
@@ -27,228 +31,121 @@
 	<!-- Corps de page -->
 	<div class="container">
 		<div class="card-collection">	<!-- images horizontales en ligne -->
-			<table class="card">
-				<tr class="card-picture horizontal">
-					<td>
-						<a href="">
-							<img src="img/games/card/wot.jpg">
-						</a>
-					</td>
-				</tr>
+			
+			<div class="card">
+				<div class="card-picture horizontal">
+					<img src="img/games/card/wot.jpg">
+				</div>
+				<div class="card-info">
+					<a href=""><h3 class="card-title">World of Tanks</h3></a>
+					<h4 class="card-editor">Wargaming</h4>
+					<p class="card-price">0€</p>
+				</div>
+			</div>
 
-				<tr class="card-info">
-					<td>
-						<a href="">
-							<h3 class="card-title">World of Tanks</h3>
-						</a>
+			<div class="card">
+				<div class="card-picture horizontal">
+					<img src="img/games/card/amongus.jpg">
+				</div>
+				<div class="card-info">
+					<a href=""><h3 class="card-title">Among Us</h3></a>
+					<h4 class="card-editor">InnerSloth</h4>
+					<p class="card-price">3,99€</p>
+				</div>
+			</div>
 
-						<h4 class="card-editor">Wargaming</h4>
+			<div class="card">
+				<div class="card-picture horizontal">
+					<img src="img/games/card/dragonica.jpg">
+				</div>
+				<div class="card-info">
+					<a href=""><h3 class="card-title">Dragonica</h3></a>
+					<h4 class="card-editor">Gravity Interactive</h4>
+					<p class="card-price">0€</p>
+				</div>
+			</div>
 
-						<p class="card-price">
-							<span>0€</span>
-						</p>
-					</td>
-				</tr>
-			</table>
-
-			<table class="card">
-				<tr class="card-picture horizontal">
-					<td>
-						<a href="">
-							<img src="img/games/card/amongus.jpg">
-						</a>
-					</td>
-				</tr>
-				
-				<tr class="card-info">
-					<td>
-						<a href="">
-							<h3 class="card-title">Among Us</h3>
-						</a>
-
-						<h4 class="card-editor">InnerSloth</h4>
-
-						<p class="card-price">
-							<span>3,99€</span>
-						</p>
-					</td>
-				</tr>
-			</table>
-
-			<table class="card">
-				<tr class="card-picture horizontal">
-					<td>
-						<a href="">
-							<img src="img/games/card/dragonica.jpg">
-						</a>
-					</td>
-				</tr>
-				
-				<tr class="card-info">
-					<td>
-						<a href="">
-							<h3 class="card-title">Dragonica</h3>
-						</a>
-
-						<h4 class="card-editor">Gravity Interactive</h4>
-
-						<p class="card-price">
-							<span>0€</span>
-						</p>
-					</td>
-				</tr>
-			</table>
-
-			<table class="card">
-				<tr class="card-picture horizontal">
-					<td>
-						<a href="">
-							<img src="img/games/card/zbotw.jpg">
-						</a>
-					</td>
-				</tr>
-				
-				<tr class="card-info">
-					<td>
-						<a href="">
-							<h3 class="card-title">Zelda : Breath of the Wild</h3>
-						</a>
-
-						<h4 class="card-editor">Nintendo</h4>
-
-						<p class="card-price">
-							<span class="tag">-10%</span>
-							<span><strike> 50€</strike> 45€</span>	<!-- permet de rayé -->
-						</p>
-					</td>
-				</tr>
-			</table>
-
-				
+			<div class="card">
+				<div class="card-picture horizontal">
+					<img src="img/games/card/zbotw.jpg">
+				</div>
+				<div class="card-info">
+					<a href=""><h3 class="card-title">Zelda : Breath of the Wild</h3></a>
+					<h4 class="card-editor">Nintendo</h4>
+					<p class="card-price">
+						<span class="tag">-10%</span>
+						<strike> 50€</strike>
+						45€
+					</p>
+				</div>
+			</div>
 		</div>
 
 		<div class="card-collection">	<!-- images verticales en ligne -->
-			<table class="card">
-				<tr class="card-picture vertical">
-					<td>
-						<a href="">
-							<img src="img/games/card/codmw.jpg">
-						</a>
-					</td>
-				</tr>
 
-				<tr class="card-info">
-					<td>
-						<a href="">
-							<h3 class="card-title">CoD : Modern Warfare</h3>
-						</a>
+			<div class="card">
+				<div class="card-picture vertical">
+					<img src="img/games/card/codmw.jpg">
+				</div>
+				<div class="card-info">
+					<a href=""><h3 class="card-title">CoD : Modern Warfare</h3></a>
+					<h4 class="card-editor">Infinity Ward</h4>
+					<p class="card-price">59,99€</p>
+				</div>
+			</div>
 
-						<h4 class="card-editor">Infinity Ward</h4>
+			<div class="card">
+				<div class="card-picture vertical">
+					<img src="img/games/card/minecraft.jpg">
+				</div>
+				<div class="card-info">
+					<a href=""><h3 class="card-title">Minecraft</h3></a>
+					<h4 class="card-editor">Mojang</h4>
+					<p class="card-price">
+						<span class="tag">-19%</span>
+						<strike> 24€</strike>
+						19,49€
+					</p>
+				</div>
+			</div>
 
-						<p class="card-price">
-							<span>59,99€</span>
-						</p>
-					</td>
-				</tr>
-			</table>
+			<div class="card">
+				<div class="card-picture vertical">
+					<img src="img/games/card/meatboy.jpg">
+				</div>
+				<div class="card-info">
+					<a href=""><h3 class="card-title">Super Meat Boy</h3></a>
+					<h4 class="card-editor">Team Meat</h4>
+					<p class="card-price">22,99€</p>
+				</div>
+			</div>
 
-			<table class="card">
-				<tr class="card-picture vertical">
-					<td>
-						<a href="">
-							<img src="img/games/card/minecraft.jpg">
-						</a>
-					</td>
-				</tr>
-				
-				<tr class="card-info">
-					<td>
-						<a href="">
-							<h3 class="card-title">Minecraft</h3>
-						</a>
+			<div class="card">
+				<div class="card-picture vertical">
+					<img src="img/games/card/fortress2.jpg">
+				</div>
+				<div class="card-info">
+					<a href=""><h3 class="card-title">Team Fortress 2</h3></a>
+					<h4 class="card-editor">Valve</h4>
+					<p class="card-price">0€</p>
+				</div>
+			</div>
 
-						<h4 class="card-editor">Mojang</h4>
+			<div class="card">
+				<div class="card-picture vertical">
+					<img src="img/games/card/animalcrossing.jpg">
+				</div>
+				<div class="card-info">
+					<a href=""><h3 class="card-title">Animal Crossing : NH</h3></a>
+					<h4 class="card-editor">Nintendo</h4>
+					<p class="card-price">
+						<span class="tag">-17%</span>
+						<strike> 59,99€</strike>
+						49,99€
+					</p>
+				</div>
+			</div>
 
-						<p class="card-price">
-							<span class="tag">-19%</span>
-							<span><strike> 24€</strike> 19,49€</span>	<!-- permet de rayé -->
-						</p>
-					</td>
-				</tr>
-			</table>
-
-			<table class="card">
-				<tr class="card-picture vertical">
-					<td>
-						<a href="">
-							<img src="img/games/card/meatboy.jpg">
-						</a>
-					</td>
-				</tr>
-				
-				<tr class="card-info">
-					<td>
-						<a href="">
-							<h3 class="card-title">Super Meat Boy</h3>
-						</a>
-
-						<h4 class="card-editor">Team Meat</h4>
-
-						<p class="card-price">
-							<span>22,99€</span>
-						</p>
-					</td>
-				</tr>
-			</table>
-
-			<table class="card">
-				<tr class="card-picture vertical">
-					<td>
-						<a href="">
-							<img src="img/games/card/fortress2.jpg">
-						</a>
-					</td>
-				</tr>
-				
-				<tr class="card-info">
-					<td>
-						<a href="">
-							<h3 class="card-title">Team Fortress 2</h3>
-						</a>
-
-						<h4 class="card-editor">Valve</h4>
-
-						<p class="card-price">
-							<span>0€</span>
-						</p>
-					</td>
-				</tr>
-			</table>
-
-			<table class="card">
-				<tr class="card-picture vertical">
-					<td>
-						<a href="">
-							<img src="img/games/card/animalcrossing.jpg">
-						</a>
-					</td>
-				</tr>
-				
-				<tr class="card-info">
-					<td>
-						<a href="">
-							<h3 class="card-title">Animal Crossing : NH</h3>
-						</a>
-
-						<h4 class="card-editor">Nintendo</h4>
-
-						<p class="card-price">
-							<span class="tag">-17%</span>
-							<span><strike> 59,99€</strike> 49,99€</span>	<!-- permet de rayé -->
-						</p>
-					</td>
-				</tr>
-			</table>	
 		</div>
 	</div>
 
