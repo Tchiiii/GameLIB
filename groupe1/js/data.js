@@ -14,7 +14,7 @@ let game = [
 					'developper': 'Wargaming Minsk',
 					'classification': 'pegi 7',
 					'editor': 'Wargaming.net',
-					'img': '../img/games/card/wot.png'
+					'img': 'img/games/card/wot.png'
 				},
 
 				{
@@ -27,7 +27,7 @@ let game = [
 					'developper': 'InnerSloth',
 					'classification': 'pegi 16',
 					'editor': 'InnerSloth',
-					'img': '../img/games/card/amongus.jpg'
+					'img': 'img/games/card/amongus.jpg'
 				},
 
 				{
@@ -40,7 +40,7 @@ let game = [
 					'developper': 'Gravity Interactive',
 					'classification': 'pegi 12',
 					'editor': 'Gravity Interactive',
-					'img': '../img/games/card/dragonica.jpg'
+					'img': 'img/games/card/dragonica.jpg'
 				},
 
 				{
@@ -53,7 +53,7 @@ let game = [
 					'developper': 'Nintendo EPD',
 					'classification': 'pegi 12',
 					'editor': 'Nintendo',
-					'img': '../img/games/card/zbotw.jpg'
+					'img': 'img/games/card/zbotw.jpg'
 				},
 
 				{
@@ -66,7 +66,7 @@ let game = [
 					'developper': 'Infinity Ward',
 					'classification': 'pegi 18',
 					'editor': 'Activision',
-					'img': '../img/games/card/codmw.jpg'
+					'img': 'img/games/card/codmw.jpg'
 				},
 
 				{
@@ -79,7 +79,7 @@ let game = [
 					'developper': 'Mojang Studios',
 					'classification': 'pegi 7',
 					'editor': 'Mojang Studios',
-					'img': '../img/games/card/minecraft.jpg'
+					'img': 'img/games/card/minecraft.jpg'
 				},
 
 				{
@@ -92,7 +92,7 @@ let game = [
 					'developper': 'Team Meat',
 					'classification': 'pegi 12',
 					'editor': 'Team Meat',
-					'img': '../img/games/card/meatboy.jpg'
+					'img': 'img/games/card/meatboy.jpg'
 				},
 
 				{
@@ -105,7 +105,7 @@ let game = [
 					'developper': 'Valve Corporation',
 					'classification': 'pegi 16',
 					'editor': 'Valve Corporation',
-					'img': '../img/games/card/fortress2.jpg'
+					'img': 'img/games/card/fortress2.jpg'
 				},
 
 				{
@@ -118,7 +118,7 @@ let game = [
 					'developper': 'Nintendo EPD',
 					'classification': 'pegi 3',
 					'editor': 'Nintendo',
-					'img': '../img/games/card/animalcrossing.jpg'
+					'img': 'img/games/card/animalcrossing.jpg'
 				},
 
 				{

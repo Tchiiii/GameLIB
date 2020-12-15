@@ -42,6 +42,11 @@ body {
 	width: 100%; /* Fait prendre la taille du site, l'intégralité de l'écran */
 }
 
+a {
+	text-decoration: none; /* Enlève le souligné des liens clicables */
+	color: var(--text-color); /* Met en couleur le texte du menu */
+}
+
 /* ### Menu ### */
 nav ul {
 	text-align: center;
@@ -58,11 +63,6 @@ nav li {
 	margin: 5px;
 	font-size: 1.1em;
 	vertical-align: middle;
-}
-
-nav a {
-	text-decoration: none; /* Enlève le souligné des liens clicables */
-	color: var(--text-color); /* Met en couleur le texte du menu */
 }
 
 #light-mode { /* Boutton jour-nuit */
@@ -82,6 +82,6 @@ nav a {
 
 /* ### Contenu de la page ### */
 .container {
-	margin: auto; /* Centre le block */
+	margin: auto; /* Centre le bloc */
 	padding: 20px 0px 0px 0px; /* Marcges internes de 20px vers le haut */
 }
