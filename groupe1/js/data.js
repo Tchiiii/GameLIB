@@ -123,54 +123,54 @@ let game = [
 
 				{
 					'id': 9,
-					'name': 'Name',
-					'price': 0,
+					'name': 'Undertale',
+					'price': 9.99,
 					'isInPromo': false,
-					'promo': 50,
-					'info': 'lorem ipsum dolor sit amet...',
-					'developper': 'developper-name',
-					'classification': 'pegi ##',
-					'editor': 'editor-name',
-					'img': '../img/games/card/'
+					'promo': 0,
+					'info': 'Descendez en enfer et explorez un monde hilarant et sympathique, plein de dangereux monstres. Sortez avec un squelette, dansez avec un robot, faites la cuisine avec une femme-poisson... ou détruisez sur place tous ceux que vous rencontrez. C\'est à vous de décider de ce qui arrivera !',
+					'developper': 'Toby Fox',
+					'classification': 'pegi 12',
+					'editor': 'Toby Fox',
+					'img': '../img/games/card/undertale.jpg'
 				},
 
 				{
 					'id': 10,
-					'name': 'Name',
-					'price': 0,
-					'isInPromo': false,
-					'promo': 50,
-					'info': 'lorem ipsum dolor sit amet...',
-					'developper': 'developper-name',
-					'classification': 'pegi ##',
-					'editor': 'editor-name',
-					'img': '../img/games/card/'
+					'name': 'Life Is Strange',
+					'price': 20,
+					'isInPromo': true,
+					'promo': 76,
+					'info': 'Retracez l’histoire de Max Caulfield, une étudiante en photographie, qui découvre, en sauvant la vie de sa meilleure amie, Chloe Price, qu’elle peut remonter dans le temps. Les deux jeunes filles se retrouvent très vite à enquêter sur la mystérieuse disparition d’une autre étudiante, Rachel Amber, révélant le côté sordide d’Arcadia Bay. Pendant ce temps, Max va devoir apprendre que modifier le passé peut avoir des conséquences désastreuses sur l’avenir.',
+					'developper': 'Dontnod Entertainment',
+					'classification': 'pegi 18',
+					'editor': 'Square Enix',
+					'img': '../img/games/card/lifeisstrange.jpg'
 				},
 
 				{
 					'id': 11,
-					'name': 'Name',
-					'price': 0,
+					'name': 'Blood and Gold: Caribbean!',
+					'price': 19.99,
 					'isInPromo': false,
-					'promo': 50,
-					'info': 'lorem ipsum dolor sit amet...',
-					'developper': 'developper-name',
-					'classification': 'pegi ##',
-					'editor': 'editor-name',
-					'img': '../img/games/card/'
+					'promo': 0,
+					'info': 'Décidez de votre propre rôle et créez votre propre aventure dans Blood & Gold! Vous pourriez commencer comme mercenaire, accepter une mission d\'assassinat, récupérer votre récompense, entrer dans une taverne et tout dépenser dans une partie de blackjack. Réduisez-vous en esclavage et envoyez-vous travailler dans une mine, échappez-vous avec vos codétenus, battez tous les gardes, puis volez des convois avec une armée d\'anciens esclaves. Économisez de l\'or, achetez votre première plantation et devenez riche en échangeant du sucre.',
+					'developper': 'Snowbird Games',
+					'classification': 'pegi 12',
+					'editor': 'Snowbird Games',
+					'img': '../img/games/card/caribbean.jpg'
 				},
 
 				{
 					'id': 12,
-					'name': 'Name',
-					'price': 0,
+					'name': 'Katana ZERO',
+					'price': 12.49,
 					'isInPromo': false,
-					'promo': 50,
-					'info': 'lorem ipsum dolor sit amet...',
-					'developper': 'developper-name',
-					'classification': 'pegi ##',
-					'editor': 'editor-name',
-					'img': '../img/games/card/'
+					'promo': 0,
+					'info': 'Katana ZERO est un jeu de plate-formes à l\'ambiance très noire, bourré d\'action et de combats mortels. Faites parler votre lame et manipulez le temps pour découvrir votre passé dans un éblouissant ballet acrobatique et brutal.	Des combats exceptionnels : Terrassez vos adversaires quelle que soit la situation. Renvoyez les balles vers vos ennemis, esquivez leurs attaques et manipulez vos adversaires et votre environnement avec des pièges et des explosifs. Ne laissez aucun survivant.',
+					'developper': 'Askiisoft',
+					'classification': 'pegi 16',
+					'editor': 'Devolver Digital',
+					'img': '../img/games/card/katanazero.jpg'
 				},
 
 				{
