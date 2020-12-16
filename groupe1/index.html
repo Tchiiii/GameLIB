@@ -1,6 +1,6 @@
 <!--
    > index.html
-   > @author Vabre Lucas, Serieys Lucas, Strub Lilian
+   > @author Vabre Lucas, Serieys Lucas, Strub Lilian, Villeneuve Noé
    -->
 
 <!DOCTYPE html>
@@ -47,20 +47,22 @@
 			<div class="card" id="card-7"></div>
 			<div class="card" id="card-8"></div>
 		</div>
-
-		<!-- Message des cookies -->
-		<div id="cookieConsent">
-			<div id="closeCookieConsent">x</div>
-			This website is using cookies. <a href="#" target="_blank">More info</a>. <a class="cookieConsentOK">That's Fine</a>
-		</div>
 	</div>
 
-	<script src="js/jquery-3.5.1.min.js"></script>
+	<!-- Message des cookies -->
+	<div id="cookieConsent">
+		<div class="textCookieConsent">Malgré que ce site soit en local, il y a un cookie caché quelque part. 
+			A vous de le trouver !
+			<a onclick="indiceEasterEgg()" id="konamicode">Plus d'info</a>
+		</div>
+		<div class="closeCookieConsent" onclick="disparitionCookieConsent()">X</div>
+		<div id="cookieConsentOK" onclick=disparitionCookieConsent()>C'est noté !</div>
+	</div>
+
 	<script type="text/javascript" src="js/lightmode.js"></script>
 	<script type="text/javascript" src="js/data.js"></script>
 	<script type="text/javascript" src="js/jeu.js"></script>
 	<script type="text/javascript" src="js/konamicode.js"></script>
-	<script type="text/javascript" src="js/cookieConsent.js"></script>
 
 	<!-- Fonctions exécutés au chargement de la page -->
 	<script type="text/javascript">

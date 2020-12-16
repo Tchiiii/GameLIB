@@ -1,6 +1,6 @@
 /*
  * konamicode.js
- * @author VILLENEUVE Noé
+ * @author Villeneuve Noé
  */
 const pressed = [];
     	const secretCode = 'cookie';
@@ -14,4 +14,15 @@ const pressed = [];
 				window.open('html\\clicker.html')
 			}
 			/*console.log(pressed);*/
-        });
+		});
+		
+function indiceEasterEgg() {
+	alert("Le Konami Code est un code de triche s'activant lorsque"
+		  + " une suite de touches est pressée dans le bon ordre."
+		  + " Quelle suite pourrait bien faire apparaître ce cookie ?...");
+}
+
+function disparitionCookieConsent() {
+	var x = document.getElementById("cookieConsent");
+	x.style.display = "none";
+}
