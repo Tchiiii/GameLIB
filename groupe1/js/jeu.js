@@ -97,7 +97,7 @@ function ShowGameAll() {
  * Fonction qui permet d'automatiser la création de "cartes"
  * sur la page index.html.
  * 
- * @param element : l'élement cible qui a la classe "card"
+ * @param card : l'élement cible qui a la classe "card"
  * @param disposition : deux valeurs possibles "vertical" ou "horizontal"
  *                      permet de produire une carte verticale ou horizontale
  * @param id : Valeur de l'id du jeu (voir dans data.js)
