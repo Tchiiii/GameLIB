@@ -33,7 +33,7 @@ function PageJeu () {
 	/* test */
 	let gameElement = game[parseInt($_GET["id"])];
 
-	document.getElementById("game-title-0").innerHTML = gameElement.name ;
+	document.getElementById("game-title-0").innerHTML += gameElement.name ;
 	document.getElementById("game-title-1").innerHTML = gameElement.name ;
 	document.getElementById("game-title-2").innerHTML = gameElement.name ;
 	document.getElementById("game-description").innerHTML = gameElement.info ;
