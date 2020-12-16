@@ -1,11 +1,27 @@
 /* 
- * script.js
+ * jeu.js
  *
  * Script qui manipule les données des jeux
  * contenues dans data.js
  *  
  * @author Vabre Lucas
  */
+
+
+/* Fonction qui récupère les variables/valeurs dans l'URL */
+let $_GET = {};
+if(document.location.toString().indexOf('?') != -1) {
+	var query = document.location
+						.toString()
+						.replace(/^.*?\?/, '')
+						.replace(/#.*$/, '')
+						.split('&');
+
+	for(var i=0, l=query.length; i<l; i++) {
+		var aux = decodeURIComponent(query[i]).split('=');
+		$_GET[aux[0]] = aux[1];
+	}
+}
 
 /**
  * Fonction qui permet le bon affichage de jeu.html
@@ -14,23 +30,16 @@
  * element de la page
  */
 function PageJeu () {
-	/* Fonction qui récupère les variables/valeurs dans l'URL */
-	var $_GET = {};
-	if(document.location.toString().indexOf('?') !== -1) {
-		var query = document.location
-							.toString()
-							.replace(/^.*?\?/, '')
-							.replace(/#.*$/, '')
-							.split('&');
-
-		for(var i=0, l=query.length; i<l; i++) {
-			var aux = decodeURIComponent(query[i]).split('=');
-			$_GET[aux[0]] = aux[1];
-		}
-	}
-
 	/* test */
-	let dataElement = game[parseInt($_GET["id"])];
+	let gameElement = game[parseInt($_GET["id"])];
+
+	document.getElementById("game-title-0").innerHTML = gameElement.name ;
+	document.getElementById("game-title-1").innerHTML = gameElement.name ;
+	document.getElementById("game-title-2").innerHTML = gameElement.name ;
+	document.getElementById("game-description").innerHTML = gameElement.info ;
+	document.getElementById("price").innerHTML = gameElement.price + '€';
+	document.getElementById("picture-cover").style.backgroundImage = "url('../" + gameElement.img + "')";
+	document.getElementById("logo-title").style.backgroundImage = "url('../" + gameElement.img + "')";
 }
 
 /**

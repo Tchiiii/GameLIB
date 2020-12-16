@@ -6,38 +6,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jeu | Game Title</title>
+	<title id="game-title-0">Jeu | </title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/jeu.css">
 </head>
-<body onload="LightModeOnLoad(false); PageJeu()" id="body">
+<body class="" id="body">
 
-	<div style="margin-left: 5%; margin-right:5%;">
-		<div style="background-color: var(--overlay-color); border-radius: 5px;">
+	<div class="jeu-container">
+		<div class="jeu-nav">
 		<!-- Navigation -->
-			<p style="padding: 20px"><a href="../index.html">< Accueil</a> | <span>Game Title</span></p>
+			<p><a href="../index.html">< Accueil</a> | <span id="game-title-1">Game Title</span></p>
 		</div>
 
 		<!-- Corps de page -->
-		<div style="display: flex; width: 100%; height: 500px;">
-			<div style="background-image: url('../img/games/card/zbotw.jpg'); background-repeat: no-repeat; width: 70%; height: 500px; border-radius: 5px; background-size: cover; overflow: hidden;"></div>
-			<div style="margin-left: 16px; width: 30%;">
-				<div style="background-color: var(--overlay-color); border-radius: 5px; padding: 10px; height: 30%">
-					<div style="background-image: url('https://cdn.steamgriddb.com/logo_thumb/7cf64379eb6f29a4d25c4b6a2df713e4.png'); background-position: center center; background-size: contain; background-repeat: no-repeat; height: 100%"></div>
+		<div class="jeu-part">
+			<div id="picture-cover"></div>
+			<div class="side-part">
+				<div class="background-logo-title">
+					<div id="logo-title" style="background-image: url('https://cdn.steamgriddb.com/logo_thumb/7cf64379eb6f29a4d25c4b6a2df713e4.png');"></div>
 				</div>
-				<div style="background-color: var(--overlay-color); border-radius: 5px; padding: 5px; margin-top: 16px;">
-					<h2 style="margin-top: 5px; margin-bottom: 0">Game Title</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<div class="text-part">
+					<h2 id="game-title-2">Game Title</h2>
+					<p id="game-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<div style="text-align: right; margin: 0 10px 10px 0; display: block">
+					<div class="price-part">
 						<p>
-							<span style="margin-bottom: 16px; font-size: 1.1em">Gratuit</span>
+							<span id="price">Gratuit</span>
 						</p>
-						<div style="background-color: var(--main-color-blue); border-radius: 5px; padding: 14px; display: inline;">
+						<div class="pay-button">
 							<span>Acheter</span>
 						</div>
 					</div>
@@ -46,9 +47,9 @@
 		</div>
 		
 		<!-- Plus d'infos -->
-		<div style="margin-top: 16px; background-color: var(--overlay-color); border-radius: 5px; padding: 15px">
+		<div class="plus-info">
 			<h3>Plus d'informations</h3>
-			<table style="text-align: center; width: 100%">
+			<table>
 				<tr>
 					<th>Développeurs</th>
 					<th>Editeurs</th>
@@ -67,5 +68,13 @@
 	<script type="text/javascript" src="../js/data.js"></script>
 	<script type="text/javascript" src="../js/jeu.js"></script>
 	<script type="text/javascript" src="../js/lightmode.js"></script>
+
+	<!-- Fonctions exécutés au chargement de la page -->
+	<script type="text/javascript">
+		window.onload = function() {
+			PageJeu();
+			LightModeOnLoad(false);
+		}	
+	</script>
 </body>
 </html>
