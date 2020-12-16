@@ -1,6 +1,6 @@
 /*
  * konamicode.js
- * VILLENEUVE Noé
+ * @author VILLENEUVE Noé
  */
 const pressed = [];
     	const secretCode = 'cookie';
@@ -11,11 +11,7 @@ const pressed = [];
 			pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
 			if (pressed.join('').includes(secretCode)) {
 				/*console.log('DING DING !');*/
-				KonamiCode();
+				window.open('html\\clicker.html')
 			}
 			/*console.log(pressed);*/
         });
-
-function KonamiCode() {
-    window.open('html\\clicker.html');
-}

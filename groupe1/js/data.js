@@ -1,5 +1,10 @@
 /*
  * data.js
+ * Script qui a pour unique but de sauvegarder les
+ * données des jeux.
+ * Ses données seront par la suites manipulées
+ * par d'autres scripts pour les afficher.
+ *
  * @author Vabre Lucas, Serieys Lucas
  */
 
@@ -14,7 +19,7 @@ let game = [
 					'developper': 'Wargaming Minsk',
 					'classification': 'pegi 7',
 					'editor': 'Wargaming.net',
-					'img': 'img/games/card/wot.png'
+					'img': 'img/games/card/wot.jpg'
 				},
 
 				{
