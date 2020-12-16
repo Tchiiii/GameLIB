@@ -1,35 +1,47 @@
 /*
  * lightmode.js
+ *
+ * Script qui gère le module d'affichage sombre / clair
+ * 
  * @author Vabre Lucas
  */
 
-// Recupère les 
-let lightModeImg = document.getElementById('light-mode');	//Récupère le boutton 'Night mode'
-let logoImg = document.getElementById('logo');				//Récupère la balise img du logo
 
-// Recupère les images
-let sun = "img/icons/sun.svg";					//Récupère le chemin de l'iconne de soleil
-let moon = "img/icons/moon.svg";				//Récupère le chemin de l'iconne de lune
-let logoLight = "img/icons/logo-light.svg";		//Récupère le chamin du logo en mode jour
-let logoNight = "img/icons/logo-night.svg";		//Récupère le chamin du logo en mode nuit
+/* Initialisation des variables */
+let lightModeImg = document.getElementById('light-mode');	// boutton 'Night mode'
+let logoImg = document.getElementById('logo');				// balise img du logo
 
-//Met la page en mode Clair
-function SetLightMode(index) { //Index permet de savoir si la page actuelle est index.html ou pas
-	document.getElementById('body').className = 'light-theme';
-	if (index) {
+let sun = "img/icons/sun.svg";					// iconne de soleil
+let moon = "img/icons/moon.svg";				// iconne de lune
+let logoLight = "img/icons/logo-light.svg";		// logo en mode jour
+let logoNight = "img/icons/logo-night.svg";		// logo en mode nuit
+
+/**
+ * Fonction qui permet de mettre la page
+ * en mode clair.
+ * @param isIndex : boolean si cette fonction
+ *					est executé dans index.html => true
+ */
+function SetLightMode(isIndex) {
+	document.body.className = 'light-theme';
+	if (isIndex) {
 		lightModeImg.setAttribute("src", sun);
 		logoImg.setAttribute("src", logoLight);
 	} else {
 		lightModeImg.setAttribute("src", "../" + sun);
 		logoImg.setAttribute("src", "../" + logoLight);
 	}
-	
 }
 
-//Met la page en mode Sombre
-function SetNightMode(index) {
-		document.getElementById('body').className = 'dark-theme';
-		if (index) {
+/**
+ * Fonction qui permet de mettre la page
+ * en mode sombre.
+ * @param isIndex : boolean si cette fonction
+ *					est executé dans index.html => true
+ */
+function SetNightMode(isIndex) {
+		document.body.className = 'dark-theme';
+		if (isIndex) {
 			lightModeImg.setAttribute("src", moon);
 			logoImg.setAttribute("src", logoNight);
 		} else {
@@ -39,22 +51,33 @@ function SetNightMode(index) {
 		
 }
 
-// Demarrage de la page
-function LightModeOnLoad(index) {
+/**
+ * Fonction qui verifie la valeur stockée localement
+ * et met la page en mode sombre ou claire suivant la valeur
+ * @param isIndex : boolean si cette fonction
+ *					est executé dans index.html => true
+ */
+function LightModeOnLoad(isIndex) {
 	if (localStorage.getItem('nightMode') == 'true') {
-		SetNightMode(index);
+		SetNightMode(isIndex);
 	} else {
-		SetLightMode(index);
+		SetLightMode(isIndex);
 	}
 }
 
 // Boutton
-function LightModeButton(index) {
-	if (document.getElementById('body').className == 'dark-theme') {
-		SetLightMode(index);
+/**
+ * Fonction executé lors que le boutton
+ * jour/nuit (soleil/lune) est pressé
+ * @param isIndex : boolean si cette fonction
+ *                  est executé dans index.html => true
+ */
+function LightModeButton(isIndex) {
+	if (document.body.className == 'dark-theme') {
+		SetLightMode(isIndex);
 		localStorage.setItem('nightMode', 'false');
 	} else {
-		SetNightMode(index);
+		SetNightMode(isIndex);
 		localStorage.setItem('nightMode', 'true');
 	}
 }

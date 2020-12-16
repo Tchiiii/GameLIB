@@ -10,8 +10,10 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/card.css">
+	<link rel="stylesheet" type="text/css" href="css/cookieConsent.css">
 </head>
-<body onload="LightModeOnLoad(true);" class="" id="body">
+
+<body class="" id="body">
 
 	<header>
 		<img src="img/icons/logo-night.svg" width="300px" id="logo">
@@ -20,8 +22,13 @@
 	<!-- Menu de Navigation entre les pages -->
 	<nav>
 		<ul>
+<<<<<<< HEAD
 			<li><a href="../index.html">Accueil</a></li>
 			<li><a href="html/listeJeux.html">Jeux</a></li>
+=======
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="html/listeJeu.html">Jeux</a></li>
+>>>>>>> 970995d409989c95b13d74f50792ee0f94593f2d
 			<li><a href="html/abonnement.html">Abonnement</a></li>
 			<li><a href="html/contact.html">Contact</a></li>
 			<li><a href="html/aPropos.html">A propos</a></li>
@@ -32,126 +39,49 @@
 	<!-- Corps de page -->
 	<div class="container">
 		<div class="card-collection">	<!-- images horizontales en ligne -->
-			
-			<div class="card">
-				<a href="" class="card-picture horizontal">
-					<img draggable="false" src="img/games/card/wot.jpg">
-				</a>
-				<div class="card-info">
-					<a href=""><h3 class="card-title">World of Tanks</h3></a>
-					<h4 class="card-editor">Wargaming</h4>
-					<p class="card-price">0€</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<a href="" class="card-picture horizontal">
-					<img draggable="false" src="img/games/card/amongus.jpg">
-				</a>
-				<div class="card-info">
-					<a href=""><h3 class="card-title">Among Us</h3></a>
-					<h4 class="card-editor">InnerSloth</h4>
-					<p class="card-price">3,99€</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<a href="" class="card-picture horizontal">
-					<img draggable="false" src="img/games/card/dragonica.jpg">
-				</a>
-				<div class="card-info">
-					<a href=""><h3 class="card-title">Dragonica</h3></a>
-					<h4 class="card-editor">Gravity Interactive</h4>
-					<p class="card-price">0€</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<a href="" class="card-picture horizontal">
-					<img draggable="false" src="img/games/card/zbotw.jpg">
-				</a>
-				<div class="card-info">
-					<a href=""><h3 class="card-title">Zelda : Breath of the Wild</h3></a>
-					<h4 class="card-editor">Nintendo</h4>
-					<p class="card-price">
-						<span class="tag">-10%</span>
-						<strike> 50€</strike>
-						45€
-					</p>
-				</div>
-			</div>
+			<div class="card" id="card-0"></div>
+			<div class="card" id="card-1"></div>
+			<div class="card" id="card-2"></div>
+			<div class="card" id="card-3"></div>
 		</div>
 
 		<div class="card-collection">	<!-- images verticales en ligne -->
+			<div class="card" id="card-4"></div>
+			<div class="card" id="card-5"></div>
+			<div class="card" id="card-6"></div>
+			<div class="card" id="card-7"></div>
+			<div class="card" id="card-8"></div>
+		</div>
 
-			<div class="card">
-				<a href="" class="card-picture vertical">
-					<img draggable="false" src="img/games/card/codmw.jpg">
-				</a>
-				<div class="card-info">
-					<a href=""><h3 class="card-title">CoD : Modern Warfare</h3></a>
-					<h4 class="card-editor">Infinity Ward</h4>
-					<p class="card-price">59,99€</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<a href="" class="card-picture vertical">
-					<img draggable="false" src="img/games/card/minecraft.jpg">
-				</a>
-				<div class="card-info">
-					<a href=""><h3 class="card-title">Minecraft</h3></a>
-					<h4 class="card-editor">Mojang</h4>
-					<p class="card-price">
-						<span class="tag">-19%</span>
-						<strike> 24€</strike>
-						19,49€
-					</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<a href="" class="card-picture vertical">
-					<img draggable="false" src="img/games/card/meatboy.jpg">
-				</a>
-				<div class="card-info">
-					<a href=""><h3 class="card-title">Super Meat Boy</h3></a>
-					<h4 class="card-editor">Team Meat</h4>
-					<p class="card-price">22,99€</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<a href="" class="card-picture vertical">
-					<img draggable="false" src="img/games/card/fortress2.jpg">
-				</a>
-				<div class="card-info">
-					<a href=""><h3 class="card-title">Team Fortress 2</h3></a>
-					<h4 class="card-editor">Valve</h4>
-					<p class="card-price">0€</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<a href="" class="card-picture vertical">
-					<img draggable="false" src="img/games/card/animalcrossing.jpg">
-				</a>
-				<div class="card-info">
-					<a href=""><h3 class="card-title">Animal Crossing : NH</h3></a>
-					<h4 class="card-editor">Nintendo</h4>
-					<p class="card-price">
-						<span class="tag">-17%</span>
-						<strike> 59,99€</strike>
-						49,99€
-					</p>
-				</div>
-			</div>
-
+		<!-- Message des cookies -->
+		<div id="cookieConsent">
+			<div id="closeCookieConsent">x</div>
+			This website is using cookies. <a href="#" target="_blank">More info</a>. <a class="cookieConsentOK">That's Fine</a>
 		</div>
 	</div>
 
+	<script src="js/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="js/lightmode.js"></script>
 	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/jeu.js"></script>
 	<script type="text/javascript" src="js/konamicode.js"></script>
+	<script type="text/javascript" src="js/cookieConsent.js"></script>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			LightModeOnLoad(true);
+			CreateCard(document.getElementById('card-0'), "horizontal", 0, true);
+			CreateCard(document.getElementById('card-1'), "horizontal", 1, true);
+			CreateCard(document.getElementById('card-2'), "horizontal", 2, true);
+			CreateCard(document.getElementById('card-3'), "horizontal", 3, true);
+
+			CreateCard(document.getElementById('card-4'), "vertical", 4, true);
+			CreateCard(document.getElementById('card-5'), "vertical", 5, true);
+			CreateCard(document.getElementById('card-6'), "vertical", 6, true);
+			CreateCard(document.getElementById('card-7'), "vertical", 7, true);
+			CreateCard(document.getElementById('card-8'), "vertical", 8, true);
+		}	
+	</script>
+	
 </body>
 </html>
