@@ -136,7 +136,7 @@ let game = [
 					'developper': 'Toby Fox',
 					'classification': 'pegi 12',
 					'editor': 'Toby Fox',
-					'img': '../img/games/card/undertale.jpg'
+					'img': 'img/games/card/undertale.jpg'
 				},
 
 				{
@@ -149,7 +149,7 @@ let game = [
 					'developper': 'Dontnod Entertainment',
 					'classification': 'pegi 18',
 					'editor': 'Square Enix',
-					'img': '../img/games/card/lifeisstrange.jpg'
+					'img': 'img/games/card/lifeisstrange.jpg'
 				},
 
 				{
@@ -162,7 +162,7 @@ let game = [
 					'developper': 'Snowbird Games',
 					'classification': 'pegi 12',
 					'editor': 'Snowbird Games',
-					'img': '../img/games/card/caribbean.jpg'
+					'img': 'img/games/card/caribbean.jpg'
 				},
 
 				{
@@ -175,7 +175,7 @@ let game = [
 					'developper': 'Askiisoft',
 					'classification': 'pegi 16',
 					'editor': 'Devolver Digital',
-					'img': '../img/games/card/katanazero.jpg'
+					'img': 'img/games/card/katanazero.jpg'
 				},
 
 				{
@@ -188,7 +188,7 @@ let game = [
 					'developper': 'Dominique Grieshofer',
 					'classification': 'pegi 3',
 					'editor': 'Dominique Grieshofer',
-					'img': '../img/games/card/refunct.jpg'
+					'img': 'img/games/card/refunct.jpg'
 				},
 
 				{
@@ -201,7 +201,7 @@ let game = [
 					'developper': 'Kinetic Games',
 					'classification': 'pegi 16',
 					'editor': 'Kinetic Games',
-					'img': '../img/games/card/phasmophobia.jpg'
+					'img': 'img/games/card/phasmophobia.jpg'
 				},
 
 				{
@@ -214,7 +214,7 @@ let game = [
 					'developper': 'Moon Studios',
 					'classification': 'pegi 7',
 					'editor': 'Microsoft Studios',
-					'img': '../img/games/card/oatbf.jpg'
+					'img': 'img/games/card/oatbf.jpg'
 				},
 
 				{
@@ -227,7 +227,7 @@ let game = [
 					'developper': 'Nicalis, Inc.',
 					'classification': 'pegi 16',
 					'editor': 'Nicalis, Inc.',
-					'img': '../img/games/card/isaac.jpg'
+					'img': 'img/games/card/isaac.jpg'
 				},
 
 				{
@@ -240,7 +240,7 @@ let game = [
 					'developper': 'Valve',
 					'classification': 'pegi 12',
 					'editor': 'Valve',
-					'img': '../img/games/card/portal2.jpg'
+					'img': 'img/games/card/portal2.jpg'
 				},
 
 				{
@@ -253,7 +253,7 @@ let game = [
 					'developper': 'FJRD Interactive',
 					'classification': 'pegi 3',
 					'editor': 'FJRD Interactive',
-					'img': '../img/games/card/amongtrees.jpg'
+					'img': 'img/games/card/amongtrees.jpg'
 				},
 
 				{
@@ -266,7 +266,7 @@ let game = [
 					'developper': 'Polytron Corporation',
 					'classification': 'pegi 3',
 					'editor': 'Trapdoor',
-					'img': '../img/games/card/fez.jpg'
+					'img': 'img/games/card/fez.jpg'
 				},
 
 				{
@@ -279,7 +279,7 @@ let game = [
 					'developper': 'Matt Makes Games Inc.',
 					'classification': 'pegi 7',
 					'editor': 'Matt Makes Games Inc.',
-					'img': '../img/games/card/celeste.jpg'
+					'img': 'img/games/card/celeste.jpg'
 				},
 
 				{
@@ -292,7 +292,7 @@ let game = [
 					'developper': 'CD PROJEKT RED',
 					'classification': 'pegi 18',
 					'editor': 'CD PROJEKT RED',
-					'img': '../img/games/card/thewitcherwh.jpg'
+					'img': 'img/games/card/thewitcherwh.jpg'
 				},
 
 				{
@@ -302,10 +302,10 @@ let game = [
 					'isInPromo': false,
 					'promo': 0,
 					'info': 'Randonnez, escaladez, et planez dans le Parc provincial de Hawk Peak, et découvrez ses paysages paisibles. Suivez les sentiers balisés pour atteindre le sommet, ou explorez le parc comme vous le voulez. En chemin, vous ferez la connaissance d\'autres randonneurs, découvrirez des trésors cachés, et profiterez de la nature environnante. Explorez l\'île comme vous le sentez. Suivez votre intuition, et voyez où ça vous mène. Qui sait ce que vous découvrirez !',
-					'developper': 'adamgryu',
+					'developper': 'Adamgryu',
 					'classification': 'pegi 3',
-					'editor': 'adamgryu',
-					'img': '../img/games/card/ashorthike.jpg'
+					'editor': 'Adamgryu',
+					'img': 'img/games/card/ashorthike.jpg'
 				},
 
 				{
@@ -318,7 +318,7 @@ let game = [
 					'developper': 'Tripwire Interactive',
 					'classification': 'pegi 18',
 					'editor': 'Tripwire Interactive',
-					'img': '../img/games/card/killingfloor2.jpg'
+					'img': 'img/games/card/killingfloor2.jpg'
 				},
 
 				{
@@ -331,7 +331,7 @@ let game = [
 					'developper': 'JW',
 					'classification': 'pegi 3',
 					'editor': 'Devolver Digital',
-					'img': '../img/games/card/minit.jpg'
+					'img': 'img/games/card/minit.jpg'
 				},
 
 				{
@@ -344,7 +344,7 @@ let game = [
 					'developper': 'Team Alto',
 					'classification': 'pegi 3',
 					'editor': 'Snowman',
-					'img': '../img/games/card/alto.jpg'
+					'img': 'img/games/card/alto.jpg'
 				},
 
 				{
@@ -357,7 +357,7 @@ let game = [
 					'developper': 'Square Enix',
 					'classification': 'pegi 18',
 					'editor': 'Square Enix',
-					'img': '../img/games/card/nierautomata.jpg'
+					'img': 'img/games/card/nierautomata.jpg'
 				},
 
 				{
@@ -370,7 +370,7 @@ let game = [
 					'developper': 'Grey Havens, LLC',
 					'classification': 'pegi 7',
 					'editor': 'Grey Havens, LLC',
-					'img': '../img/games/card/spiralknights.jpg'
+					'img': 'img/games/card/spiralknights.jpg'
 				},
 
 				{
@@ -383,7 +383,7 @@ let game = [
 					'developper': 'X-Legend',
 					'classification': 'pegi 12',
 					'editor': 'Aeria Games',
-					'img': '../img/games/card/aurakingdom.jpg'
+					'img': 'img/games/card/aurakingdom.jpg'
 				},
 
 				{
@@ -396,7 +396,7 @@ let game = [
 					'developper': 'Arkuda Inc.',
 					'classification': 'pegi 7',
 					'editor': 'Games Operators',
-					'img': '../img/games/card/paws&soul.jpg'
+					'img': 'img/games/card/paws&soul.jpg'
 				},
 
 				{
@@ -409,6 +409,6 @@ let game = [
 					'developper': 'CAPCOM Co., Ltd.',
 					'classification': 'pegi 18',
 					'editor': 'CAPCOM Co., Ltd.',
-					'img': '../img/games/card/devilmaycry5.jpg'
+					'img': 'img/games/card/devilmaycry5.jpg'
 				},
 			];
