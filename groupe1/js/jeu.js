@@ -121,9 +121,9 @@ function CreateCard(card, disposition, id, isIndex) {
 	link = indexConvertor[0] + "jeu.html?id=" + id;
 
 	/* Calcul de l'éventuelle promotion */
-	gamePricePromo = 0;
+	gamePricePromo = 0.00;
 	if(game[id].isInPromo) {
-		gamePricePromo = Math.round(((1 - game[id].promo / 100) * game[id].price ) * 100) /100;
+		gamePricePromo = ((((1 - game[id].promo / 100) * game[id].price ) * 100) / 100).toFixed(2); // arrondir à 2 chiffres après la virgule
 	}
 
 	/* Stockage de la partie "prix" */

@@ -108,7 +108,7 @@ let game = [
 				{
 					'id': 6,
 					'name': 'Super Meat Boy',
-					'price': 22.90,
+					'price': 22.99,
 					'isInPromo': false,
 					'promo': 0,
 					'info': 'Super Meat Boy est un jeu de plateforme où vous incarnez un cube de viande animé qui tente de sauver sa petite-amie (constituée de pansements) d\'un fœtus maléfique dans un bocal. Notre héros de viande sautera depuis des murs, par dessus des océans de scies vrombissantes, à travers des grottes qui s\'effondrent et des piscines remplies de vielles seringues. Sacrifiant son bien-être pour sauver sa demoiselle en détresse.',
