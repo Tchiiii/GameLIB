@@ -4,7 +4,7 @@
  * Script qui manipule les données des jeux
  * contenues dans data.js
  *  
- * @author Vabre Lucas
+ * @author Vabre Lucas, Serieys Lucas
  */
 
 
@@ -40,6 +40,7 @@ function PageJeu () {
 	document.getElementById("price").innerHTML = gameElement.price + '€';
 	document.getElementById("picture-cover").style.backgroundImage = "url('../" + gameElement.ingame + "')";
 	document.getElementById("logo-title").style.backgroundImage = "url('../" + gameElement.cover + "')";
+	document.getElementById("logo-picture").style.backgroundImage = "url('../" + gameElement.logo + "')";
 }
 
 /**

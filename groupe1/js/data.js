@@ -21,7 +21,8 @@ let game = [
 					'editor': 'Wargaming.net',
 					'img': 'img/games/horizontal/wot.jpg',
 					'ingame': 'img/games/horizontal/wot1.jpg',
-					'cover': 'img/games/vertical/wot.jpg'
+					'cover': 'img/games/vertical/wot.jpg',
+					'logo': 'img/games/logo/wot.png'
 				},
 
 				{
@@ -36,7 +37,8 @@ let game = [
 					'editor': 'InnerSloth',
 					'img': 'img/games/horizontal/amongus.jpg',
 					'ingame': 'img/games/horizontal/amongus1.jpg',
-					'cover': 'img/games/vertical/amongus.jpg'
+					'cover': 'img/games/vertical/amongus.jpg',
+					'logo': 'img/games/logo/amongus.png'
 				},
 
 				{
@@ -51,7 +53,8 @@ let game = [
 					'editor': 'Gravity Interactive',
 					'img': 'img/games/horizontal/dragonica.jpg',
 					'ingame': 'img/games/horizontal/dragonica1.jpg',
-					'cover': 'img/games/vertical/dragonica.jpg'
+					'cover': 'img/games/vertical/dragonica.jpg',
+					'logo': 'img/games/logo/dragonica.png'
 				},
 
 				{
@@ -66,7 +69,8 @@ let game = [
 					'editor': 'Nintendo',
 					'img': 'img/games/horizontal/zbotw.jpg',
 					'ingame': 'img/games/horizontal/zbotw1.jpg',
-					'cover': 'img/games/vertical/zbotw.jpg'
+					'cover': 'img/games/vertical/zbotw.jpg',
+					'logo': 'img/games/logo/zbotw.png'
 				},
 
 				{
@@ -81,7 +85,8 @@ let game = [
 					'editor': 'Activision',
 					'img': 'img/games/vertical/codmw.jpg',
 					'ingame': 'img/games/horizontal/codmw.jpg',
-					'cover': 'img/games/vertical/codmw.jpg'
+					'cover': 'img/games/vertical/codmw.jpg',
+					'logo': 'img/games/logo/codmw.png'
 				},
 
 				{
@@ -96,7 +101,8 @@ let game = [
 					'editor': 'Mojang Studios',
 					'img': 'img/games/vertical/minecraft.jpg',
 					'ingame': 'img/games/horizontal/minecraft.jpg',
-					'cover': 'img/games/vertical/minecraft.jpg'
+					'cover': 'img/games/vertical/minecraft.jpg',
+					'logo': 'img/games/logo/minecraft.png'
 				},
 
 				{
@@ -111,7 +117,8 @@ let game = [
 					'editor': 'Team Meat',
 					'img': 'img/games/vertical/meatboy.jpg',
 					'ingame': 'img/games/horizontal/meatboy.jpg',
-					'cover': 'img/games/vertical/meatboy.jpg'
+					'cover': 'img/games/vertical/meatboy.jpg',
+					'logo': 'img/games/logo/meatboy.png'
 				},
 
 				{
@@ -126,7 +133,8 @@ let game = [
 					'editor': 'Valve Corporation',
 					'img': 'img/games/vertical/fortress2.jpg',
 					'ingame': 'img/games/horizontal/fortress2.jpg',
-					'cover': 'img/games/vertical/fortress2.jpg'
+					'cover': 'img/games/vertical/fortress2.jpg',
+					'logo': 'img/games/logo/fortress2.png'
 				},
 
 				{
@@ -141,7 +149,8 @@ let game = [
 					'editor': 'Nintendo',
 					'img': 'img/games/vertical/animalcrossing.jpg',
 					'ingame': 'img/games/horizontal/animalcrossing.jpg',
-					'cover': 'img/games/vertical/animalcrossing.jpg'
+					'cover': 'img/games/vertical/animalcrossing.jpg',
+					'logo': 'img/games/logo/animalcrossing.png'
 				},
 
 				{
@@ -156,7 +165,8 @@ let game = [
 					'editor': 'Toby Fox',
 					'img': 'img/games/horizontal/undertale.jpg',
 					'ingame': 'img/games/horizontal/undertale1.jpg',
-					'cover': 'img/games/vertical/undertale.jpg'
+					'cover': 'img/games/vertical/undertale.jpg',
+					'logo': 'img/games/logo/undertale.png'
 				},
 
 				{
@@ -171,7 +181,8 @@ let game = [
 					'editor': 'Square Enix',
 					'img': 'img/games/horizontal/lifeisstrange.jpg',
 					'ingame': 'img/games/horizontal/lifeisstrange1.jpg',
-					'cover': 'img/games/vertical/lifeisstrange.jpg'
+					'cover': 'img/games/vertical/lifeisstrange.jpg',
+					'logo': 'img/games/logo/lifeisstrange.png'
 				},
 
 				{
@@ -186,7 +197,8 @@ let game = [
 					'editor': 'Snowbird Games',
 					'img': 'img/games/horizontal/caribbean.jpg',
 					'ingame': 'img/games/horizontal/caribbean1.jpg',
-					'cover': 'img/games/vertical/caribbean.jpg'
+					'cover': 'img/games/vertical/caribbean.jpg',
+					'logo': 'img/games/logo/caribbean.png'
 				},
 
 				{
@@ -201,7 +213,8 @@ let game = [
 					'editor': 'Devolver Digital',
 					'img': 'img/games/horizontal/katanazero.jpg',
 					'ingame': 'img/games/horizontal/katanazero1.jpg',
-					'cover': 'img/games/vertical/katanazero.jpg'
+					'cover': 'img/games/vertical/katanazero.jpg',
+					'logo': 'img/games/logo/katanazero.png'
 				},
 
 				{
@@ -216,7 +229,8 @@ let game = [
 					'editor': 'Dominique Grieshofer',
 					'img': 'img/games/vertical/refunct.jpg',
 					'ingame': 'img/games/horizontal/refunct.jpg',
-					'cover': 'img/games/vertical/refunct.jpg'
+					'cover': 'img/games/vertical/refunct.jpg',
+					'logo': 'img/games/logo/refunct.png'
 				},
 
 				{
@@ -231,7 +245,8 @@ let game = [
 					'editor': 'Kinetic Games',
 					'img': 'img/games/vertical/phasmophobia.jpg',
 					'ingame': 'img/games/horizontal/phasmophobia.jpg',
-					'cover': 'img/games/vertical/phasmophobia.jpg'
+					'cover': 'img/games/vertical/phasmophobia.jpg',
+					'logo': 'img/games/logo/phasmophobia.png'
 				},
 
 				{
@@ -246,7 +261,8 @@ let game = [
 					'editor': 'Microsoft Studios',
 					'img': 'img/games/vertical/oatbf.jpg',
 					'ingame': 'img/games/horizontal/oatbf.jpg',
-					'cover': 'img/games/vertical/oatbf.jpg'
+					'cover': 'img/games/vertical/oatbf.jpg',
+					'logo': 'img/games/logo/oatbf.png'
 				},
 
 				{
@@ -261,7 +277,8 @@ let game = [
 					'editor': 'Nicalis, Inc.',
 					'img': 'img/games/vertical/isaac.jpg',
 					'ingame': 'img/games/horizontal/isaac.jpg',
-					'cover': 'img/games/vertical/isaac.jpg'
+					'cover': 'img/games/vertical/isaac.jpg',
+					'logo': 'img/games/logo/isaac.png'
 				},
 
 				{
@@ -276,7 +293,8 @@ let game = [
 					'editor': 'Valve',
 					'img': 'img/games/vertical/portal2.jpg',
 					'ingame': 'img/games/horizontal/portal2.jpg',
-					'cover': 'img/games/vertical/portal2.jpg'
+					'cover': 'img/games/vertical/portal2.jpg',
+					'logo': 'img/games/logo/portal2.png'
 				},
 
 				{
@@ -291,7 +309,8 @@ let game = [
 					'editor': 'FJRD Interactive',
 					'img': 'img/games/horizontal/amongtrees.jpg',
 					'ingame': 'img/games/horizontal/amongtrees1.jpg',
-					'cover': 'img/games/vertical/amongtrees.jpg'
+					'cover': 'img/games/vertical/amongtrees.jpg',
+					'logo': 'img/games/logo/amongtrees.png'
 				},
 
 				{
@@ -306,7 +325,8 @@ let game = [
 					'editor': 'Trapdoor',
 					'img': 'img/games/horizontal/fez.jpg',
 					'ingame': 'img/games/horizontal/fez1.jpg',
-					'cover': 'img/games/vertical/fez.jpg'
+					'cover': 'img/games/vertical/fez.jpg',
+					'logo': 'img/games/logo/fez.png'
 				},
 
 				{
@@ -321,7 +341,8 @@ let game = [
 					'editor': 'Matt Makes Games Inc.',
 					'img': 'img/games/horizontal/celeste.jpg',
 					'ingame': 'img/games/horizontal/celeste1.jpg',
-					'cover': 'img/games/vertical/celeste.jpg'
+					'cover': 'img/games/vertical/celeste.jpg',
+					'logo': 'img/games/logo/celeste.png'
 				},
 
 				{
@@ -336,7 +357,8 @@ let game = [
 					'editor': 'CD PROJEKT RED',
 					'img': 'img/games/horizontal/thewitcherwh.jpg',
 					'ingame': 'img/games/horizontal/thewitcherwh1.jpg',
-					'cover': 'img/games/vertical/thewitcherwh.jpg'
+					'cover': 'img/games/vertical/thewitcherwh.jpg',
+					'logo': 'img/games/logo/thewitcherwh.png'
 				},
 
 				{
@@ -351,7 +373,8 @@ let game = [
 					'editor': 'Adamgryu',
 					'img': 'img/games/vertical/ashorthike.jpg',
 					'ingame': 'img/games/horizontal/ashorthike.jpg',
-					'cover': 'img/games/vertical/ashorthike.jpg'
+					'cover': 'img/games/vertical/ashorthike.jpg',
+					'logo': 'img/games/logo/ashorthike.png'
 				},
 
 				{
@@ -366,7 +389,8 @@ let game = [
 					'editor': 'Tripwire Interactive',
 					'img': 'img/games/vertical/killingfloor2.jpg',
 					'ingame': 'img/games/horizontal/killingfloor2.jpg',
-					'cover': 'img/games/vertical/killingfloor2.jpg'
+					'cover': 'img/games/vertical/killingfloor2.jpg',
+					'logo': 'img/games/logo/killingfloor2.png'
 				},
 
 				{
@@ -381,7 +405,8 @@ let game = [
 					'editor': 'Devolver Digital',
 					'img': 'img/games/vertical/minit.jpg',
 					'ingame': 'img/games/horizontal/minit.jpg',
-					'cover': 'img/games/vertical/minit.jpg'
+					'cover': 'img/games/vertical/minit.jpg',
+					'logo': 'img/games/logo/minit.png'
 				},
 
 				{
@@ -396,7 +421,8 @@ let game = [
 					'editor': 'Snowman',
 					'img': 'img/games/vertical/alto.jpg',
 					'ingame': 'img/games/horizontal/alto.jpg',
-					'cover': 'img/games/vertical/alto.jpg'
+					'cover': 'img/games/vertical/alto.jpg',
+					'logo': 'img/games/logo/alto.png'
 				},
 
 				{
@@ -411,7 +437,8 @@ let game = [
 					'editor': 'Square Enix',
 					'img': 'img/games/vertical/nierautomata.jpg',
 					'ingame': 'img/games/horizontal/nierautomata.jpg',
-					'cover': 'img/games/vertical/nierautomata.jpg'
+					'cover': 'img/games/vertical/nierautomata.jpg',
+					'logo': 'img/games/logo/nierautomata.png'
 				},
 
 				{
@@ -426,7 +453,8 @@ let game = [
 					'editor': 'Grey Havens, LLC',
 					'img': 'img/games/horizontal/spiralknights.jpg',
 					'ingame': 'img/games/horizontal/spiralknights1.jpg',
-					'cover': 'img/games/vertical/spiralknights.jpg'
+					'cover': 'img/games/vertical/spiralknights.jpg',
+					'logo': 'img/games/logo/spiralknights.png'
 				},
 
 				{
@@ -441,7 +469,8 @@ let game = [
 					'editor': 'Aeria Games',
 					'img': 'img/games/horizontal/aurakingdom.jpg',
 					'ingame': 'img/games/horizontal/aurakingdom1.jpg',
-					'cover': 'img/games/vertical/aurakingdom.jpg'
+					'cover': 'img/games/vertical/aurakingdom.jpg',
+					'logo': 'img/games/logo/aurakingdom.png'
 				},
 
 				{
@@ -456,7 +485,8 @@ let game = [
 					'editor': 'Games Operators',
 					'img': 'img/games/horizontal/paws&soul.jpg',
 					'ingame': 'img/games/horizontal/paws&soul1.jpg',
-					'cover': 'img/games/vertical/paws&soul.jpg'
+					'cover': 'img/games/vertical/paws&soul.jpg',
+					'logo': 'img/games/logo/paws&soul.png'
 				},
 
 				{
@@ -471,6 +501,7 @@ let game = [
 					'editor': 'CAPCOM Co., Ltd.',
 					'img': 'img/games/horizontal/devilmaycry5.jpg',
 					'ingame': 'img/games/horizontal/devilmaycry51.jpg',
-					'cover': 'img/games/vertical/devilmaycry5.jpg'
+					'cover': 'img/games/vertical/devilmaycry5.jpg',
+					'logo': 'img/games/logo/devilmaycry5.png'
 				},
 			];
