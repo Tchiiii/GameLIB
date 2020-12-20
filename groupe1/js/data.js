@@ -19,7 +19,9 @@ let game = [
 					'developper': 'Wargaming Minsk',
 					'classification': 'pegi 7',
 					'editor': 'Wargaming.net',
-					'img': 'img/games/card/wot.jpg'
+					'img': 'img/games/horizontal/wot.jpg',
+					'ingame': 'img/games/horizontal/wot1.jpg',
+					'cover': 'img/games/vertical/wot.jpg'
 				},
 
 				{
@@ -32,7 +34,9 @@ let game = [
 					'developper': 'InnerSloth',
 					'classification': 'pegi 16',
 					'editor': 'InnerSloth',
-					'img': 'img/games/card/amongus.jpg'
+					'img': 'img/games/horizontal/amongus.jpg',
+					'ingame': 'img/games/horizontal/amongus1.jpg',
+					'cover': 'img/games/vertical/amongus.jpg'
 				},
 
 				{
@@ -45,7 +49,9 @@ let game = [
 					'developper': 'Gravity Interactive',
 					'classification': 'pegi 12',
 					'editor': 'Gravity Interactive',
-					'img': 'img/games/card/dragonica.jpg'
+					'img': 'img/games/horizontal/dragonica.jpg',
+					'ingame': 'img/games/horizontal/dragonica1.jpg',
+					'cover': 'img/games/vertical/dragonica.jpg'
 				},
 
 				{
@@ -58,7 +64,9 @@ let game = [
 					'developper': 'Nintendo EPD',
 					'classification': 'pegi 12',
 					'editor': 'Nintendo',
-					'img': 'img/games/card/zbotw.jpg'
+					'img': 'img/games/horizontal/zbotw.jpg',
+					'ingame': 'img/games/horizontal/zbotw1.jpg',
+					'cover': 'img/games/vertical/zbotw.jpg'
 				},
 
 				{
@@ -71,7 +79,9 @@ let game = [
 					'developper': 'Infinity Ward',
 					'classification': 'pegi 18',
 					'editor': 'Activision',
-					'img': 'img/games/card/codmw.jpg'
+					'img': 'img/games/vertical/codmw.jpg',
+					'ingame': 'img/games/horizontal/codmw.jpg',
+					'cover': 'img/games/vertical/codmw.jpg'
 				},
 
 				{
@@ -84,7 +94,9 @@ let game = [
 					'developper': 'Mojang Studios',
 					'classification': 'pegi 7',
 					'editor': 'Mojang Studios',
-					'img': 'img/games/card/minecraft.jpg'
+					'img': 'img/games/vertical/minecraft.jpg',
+					'ingame': 'img/games/horizontal/minecraft.jpg',
+					'cover': 'img/games/vertical/minecraft.jpg'
 				},
 
 				{
@@ -97,7 +109,9 @@ let game = [
 					'developper': 'Team Meat',
 					'classification': 'pegi 12',
 					'editor': 'Team Meat',
-					'img': 'img/games/card/meatboy.jpg'
+					'img': 'img/games/vertical/meatboy.jpg',
+					'ingame': 'img/games/horizontal/meatboy.jpg',
+					'cover': 'img/games/vertical/meatboy.jpg'
 				},
 
 				{
@@ -110,7 +124,9 @@ let game = [
 					'developper': 'Valve Corporation',
 					'classification': 'pegi 16',
 					'editor': 'Valve Corporation',
-					'img': 'img/games/card/fortress2.jpg'
+					'img': 'img/games/vertical/fortress2.jpg',
+					'ingame': 'img/games/horizontal/fortress2.jpg',
+					'cover': 'img/games/vertical/fortress2.jpg'
 				},
 
 				{
@@ -119,11 +135,13 @@ let game = [
 					'price': 59.99,
 					'isInPromo': true,
 					'promo': 17,
-					'info': 'Avez-vous déjà rêvé de tout quitter et de partir vous installer ailleurs ? Avec la formule « Évasion île déserte » du célèbre Tom Nook, partez-vous installer sur une île, collectez des ressources pour créer les objets dont vous avez besoin, prenez le temps de décorer votre intérieur ou baladez-vous tout simplement sur une plage pour y admirer un coucher de soleil… Plus votre île évoluera, plus de nouveaux animaux viendront vous rendre visite pour que vous puissiez, ensemble, y vivre votre vie rêvée. Faites ce que vous voulez, quand vous le voulez, et invitez vos amis à venir découvrir votre île',
+					'info': 'Avez-vous déjà rêvé de tout quitter et de partir vous installer ailleurs ? Avec la formule « Évasion île déserte » du célèbre Tom Nook, partez-vous installer sur une île, collectez des ressources pour créer les objets dont vous avez besoin, prenez le temps de décorer votre intérieur ou baladez-vous tout simplement sur une plage pour y admirer un coucher de soleil… Plus votre île évoluera, plus de nouveaux animaux viendront vous rendre visite pour que vous puissiez, ensemble, y vivre votre vie rêvée. Faites ce que vous voulez, quand vous le voulez, et invitez vos amis à venir découvrir votre île.',
 					'developper': 'Nintendo EPD',
 					'classification': 'pegi 3',
 					'editor': 'Nintendo',
-					'img': 'img/games/card/animalcrossing.jpg'
+					'img': 'img/games/vertical/animalcrossing.jpg',
+					'ingame': 'img/games/horizontal/animalcrossing.jpg',
+					'cover': 'img/games/vertical/animalcrossing.jpg'
 				},
 
 				{
@@ -136,7 +154,9 @@ let game = [
 					'developper': 'Toby Fox',
 					'classification': 'pegi 12',
 					'editor': 'Toby Fox',
-					'img': 'img/games/card/undertale.jpg'
+					'img': 'img/games/horizontal/undertale.jpg',
+					'ingame': 'img/games/horizontal/undertale1.jpg',
+					'cover': 'img/games/vertical/undertale.jpg'
 				},
 
 				{
@@ -149,7 +169,9 @@ let game = [
 					'developper': 'Dontnod Entertainment',
 					'classification': 'pegi 18',
 					'editor': 'Square Enix',
-					'img': 'img/games/card/lifeisstrange.jpg'
+					'img': 'img/games/horizontal/lifeisstrange.jpg',
+					'ingame': 'img/games/horizontal/lifeisstrange1.jpg',
+					'cover': 'img/games/vertical/lifeisstrange.jpg'
 				},
 
 				{
@@ -162,7 +184,9 @@ let game = [
 					'developper': 'Snowbird Games',
 					'classification': 'pegi 12',
 					'editor': 'Snowbird Games',
-					'img': 'img/games/card/caribbean.jpg'
+					'img': 'img/games/horizontal/caribbean.jpg',
+					'ingame': 'img/games/horizontal/caribbean1.jpg',
+					'cover': 'img/games/vertical/caribbean.jpg'
 				},
 
 				{
@@ -175,7 +199,9 @@ let game = [
 					'developper': 'Askiisoft',
 					'classification': 'pegi 16',
 					'editor': 'Devolver Digital',
-					'img': 'img/games/card/katanazero.jpg'
+					'img': 'img/games/horizontal/katanazero.jpg',
+					'ingame': 'img/games/horizontal/katanazero1.jpg',
+					'cover': 'img/games/vertical/katanazero.jpg'
 				},
 
 				{
@@ -188,7 +214,9 @@ let game = [
 					'developper': 'Dominique Grieshofer',
 					'classification': 'pegi 3',
 					'editor': 'Dominique Grieshofer',
-					'img': 'img/games/card/refunct.jpg'
+					'img': 'img/games/vertical/refunct.jpg',
+					'ingame': 'img/games/horizontal/refunct.jpg',
+					'cover': 'img/games/vertical/refunct.jpg'
 				},
 
 				{
@@ -201,7 +229,9 @@ let game = [
 					'developper': 'Kinetic Games',
 					'classification': 'pegi 16',
 					'editor': 'Kinetic Games',
-					'img': 'img/games/card/phasmophobia.jpg'
+					'img': 'img/games/vertical/phasmophobia.jpg',
+					'ingame': 'img/games/horizontal/phasmophobia.jpg',
+					'cover': 'img/games/vertical/phasmophobia.jpg'
 				},
 
 				{
@@ -214,7 +244,9 @@ let game = [
 					'developper': 'Moon Studios',
 					'classification': 'pegi 7',
 					'editor': 'Microsoft Studios',
-					'img': 'img/games/card/oatbf.jpg'
+					'img': 'img/games/vertical/oatbf.jpg',
+					'ingame': 'img/games/horizontal/oatbf.jpg',
+					'cover': 'img/games/vertical/oatbf.jpg'
 				},
 
 				{
@@ -227,7 +259,9 @@ let game = [
 					'developper': 'Nicalis, Inc.',
 					'classification': 'pegi 16',
 					'editor': 'Nicalis, Inc.',
-					'img': 'img/games/card/isaac.jpg'
+					'img': 'img/games/vertical/isaac.jpg',
+					'ingame': 'img/games/horizontal/isaac.jpg',
+					'cover': 'img/games/vertical/isaac.jpg'
 				},
 
 				{
@@ -240,7 +274,9 @@ let game = [
 					'developper': 'Valve',
 					'classification': 'pegi 12',
 					'editor': 'Valve',
-					'img': 'img/games/card/portal2.jpg'
+					'img': 'img/games/vertical/portal2.jpg',
+					'ingame': 'img/games/horizontal/portal2.jpg',
+					'cover': 'img/games/vertical/portal2.jpg'
 				},
 
 				{
@@ -253,7 +289,9 @@ let game = [
 					'developper': 'FJRD Interactive',
 					'classification': 'pegi 3',
 					'editor': 'FJRD Interactive',
-					'img': 'img/games/card/amongtrees.jpg'
+					'img': 'img/games/horizontal/amongtrees.jpg',
+					'ingame': 'img/games/horizontal/amongtrees1.jpg',
+					'cover': 'img/games/vertical/amongtrees.jpg'
 				},
 
 				{
@@ -266,7 +304,9 @@ let game = [
 					'developper': 'Polytron Corporation',
 					'classification': 'pegi 3',
 					'editor': 'Trapdoor',
-					'img': 'img/games/card/fez.jpg'
+					'img': 'img/games/horizontal/fez.jpg',
+					'ingame': 'img/games/horizontal/fez1.jpg',
+					'cover': 'img/games/vertical/fez.jpg'
 				},
 
 				{
@@ -279,7 +319,9 @@ let game = [
 					'developper': 'Matt Makes Games Inc.',
 					'classification': 'pegi 7',
 					'editor': 'Matt Makes Games Inc.',
-					'img': 'img/games/card/celeste.jpg'
+					'img': 'img/games/horizontal/celeste.jpg',
+					'ingame': 'img/games/horizontal/celeste1.jpg',
+					'cover': 'img/games/vertical/celeste.jpg'
 				},
 
 				{
@@ -292,7 +334,9 @@ let game = [
 					'developper': 'CD PROJEKT RED',
 					'classification': 'pegi 18',
 					'editor': 'CD PROJEKT RED',
-					'img': 'img/games/card/thewitcherwh.jpg'
+					'img': 'img/games/horizontal/thewitcherwh.jpg',
+					'ingame': 'img/games/horizontal/thewitcherwh1.jpg',
+					'cover': 'img/games/vertical/thewitcherwh.jpg'
 				},
 
 				{
@@ -305,7 +349,9 @@ let game = [
 					'developper': 'Adamgryu',
 					'classification': 'pegi 3',
 					'editor': 'Adamgryu',
-					'img': 'img/games/card/ashorthike.jpg'
+					'img': 'img/games/vertical/ashorthike.jpg',
+					'ingame': 'img/games/horizontal/ashorthike.jpg',
+					'cover': 'img/games/vertical/ashorthike.jpg'
 				},
 
 				{
@@ -318,7 +364,9 @@ let game = [
 					'developper': 'Tripwire Interactive',
 					'classification': 'pegi 18',
 					'editor': 'Tripwire Interactive',
-					'img': 'img/games/card/killingfloor2.jpg'
+					'img': 'img/games/vertical/killingfloor2.jpg',
+					'ingame': 'img/games/horizontal/killingfloor2.jpg',
+					'cover': 'img/games/vertical/killingfloor2.jpg'
 				},
 
 				{
@@ -331,7 +379,9 @@ let game = [
 					'developper': 'JW',
 					'classification': 'pegi 3',
 					'editor': 'Devolver Digital',
-					'img': 'img/games/card/minit.jpg'
+					'img': 'img/games/vertical/minit.jpg',
+					'ingame': 'img/games/horizontal/minit.jpg',
+					'cover': 'img/games/vertical/minit.jpg'
 				},
 
 				{
@@ -344,7 +394,9 @@ let game = [
 					'developper': 'Team Alto',
 					'classification': 'pegi 3',
 					'editor': 'Snowman',
-					'img': 'img/games/card/alto.jpg'
+					'img': 'img/games/vertical/alto.jpg',
+					'ingame': 'img/games/horizontal/alto.jpg',
+					'cover': 'img/games/vertical/alto.jpg'
 				},
 
 				{
@@ -357,7 +409,9 @@ let game = [
 					'developper': 'Square Enix',
 					'classification': 'pegi 18',
 					'editor': 'Square Enix',
-					'img': 'img/games/card/nierautomata.jpg'
+					'img': 'img/games/vertical/nierautomata.jpg',
+					'ingame': 'img/games/horizontal/nierautomata.jpg',
+					'cover': 'img/games/vertical/nierautomata.jpg'
 				},
 
 				{
@@ -370,7 +424,9 @@ let game = [
 					'developper': 'Grey Havens, LLC',
 					'classification': 'pegi 7',
 					'editor': 'Grey Havens, LLC',
-					'img': 'img/games/card/spiralknights.jpg'
+					'img': 'img/games/horizontal/spiralknights.jpg',
+					'ingame': 'img/games/horizontal/spiralknights1.jpg',
+					'cover': 'img/games/vertical/spiralknights.jpg'
 				},
 
 				{
@@ -383,7 +439,9 @@ let game = [
 					'developper': 'X-Legend',
 					'classification': 'pegi 12',
 					'editor': 'Aeria Games',
-					'img': 'img/games/card/aurakingdom.jpg'
+					'img': 'img/games/horizontal/aurakingdom.jpg',
+					'ingame': 'img/games/horizontal/aurakingdom1.jpg',
+					'cover': 'img/games/vertical/aurakingdom.jpg'
 				},
 
 				{
@@ -396,7 +454,9 @@ let game = [
 					'developper': 'Arkuda Inc.',
 					'classification': 'pegi 7',
 					'editor': 'Games Operators',
-					'img': 'img/games/card/paws&soul.jpg'
+					'img': 'img/games/horizontal/paws&soul.jpg',
+					'ingame': 'img/games/horizontal/paws&soul1.jpg',
+					'cover': 'img/games/vertical/paws&soul.jpg'
 				},
 
 				{
@@ -409,6 +469,8 @@ let game = [
 					'developper': 'CAPCOM Co., Ltd.',
 					'classification': 'pegi 18',
 					'editor': 'CAPCOM Co., Ltd.',
-					'img': 'img/games/card/devilmaycry5.jpg'
+					'img': 'img/games/horizontal/devilmaycry5.jpg',
+					'ingame': 'img/games/horizontal/devilmaycry51.jpg',
+					'cover': 'img/games/vertical/devilmaycry5.jpg'
 				},
 			];
