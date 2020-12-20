@@ -38,9 +38,9 @@ function PageJeu () {
 	document.getElementById("game-title-2").innerHTML = gameElement.name ;
 	document.getElementById("game-description").innerHTML = gameElement.info ;
 	document.getElementById("price").innerHTML = gameElement.price + '€';
-	document.getElementById("picture-cover").style.backgroundImage = "url('../" + gameElement.ingame + "')";
-	document.getElementById("logo-title").style.backgroundImage = "url('../" + gameElement.cover + "')";
-	document.getElementById("logo-picture").style.backgroundImage = "url('../" + gameElement.logo + "')";
+	document.getElementById("picture-ingame").style.backgroundImage = "url('../" + gameElement.ingame + "')";
+	document.getElementById("picture-cover").style.backgroundImage = "url('../" + gameElement.cover + "')";
+	document.getElementById("picture-logo").style.backgroundImage = "url('../" + gameElement.logo + "')";
 }
 
 /**

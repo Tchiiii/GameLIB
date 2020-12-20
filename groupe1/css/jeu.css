@@ -1,6 +1,6 @@
 /*
  * jeu.css
- * @author Vabre Lucas
+ * @author Vabre Lucas, Serieys Lucas
  */
 
 .jeu-container {
@@ -23,7 +23,7 @@
 	height: 500px;
 }
 
-#picture-cover {
+#picture-ingame {
 	background-repeat: no-repeat;
 	width: 70%;
 	height: 500px;
@@ -38,15 +38,15 @@
 	width: 30%;
 }
 
-.background-logo-title {
+.background-picture-cover {
 	background-color: var(--overlay-color);
 	border-radius: 5px;
 	padding: 10px;
 	height: 30%;
 }
 
-#logo-title {
-	float:left;
+#picture-cover {
+	float:left;	/* place la cover à gauche dans la div */
 	background-position: left;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -54,8 +54,8 @@
 	height: 100%;
 }
 
-#logo-picture {
-	margin-left:40%;
+#picture-logo {
+	margin-left: 30%; /* place le logo à 30% de la gauche dans la div */
 	background-position: right;
 	background-size: contain;
 	background-repeat: no-repeat;
