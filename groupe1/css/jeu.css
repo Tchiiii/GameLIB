@@ -33,6 +33,11 @@
 	overflow: hidden;
 }
 
+#picture-ingame iframe {
+	width: 100%;
+	height: 100%;
+}
+
 .side-part {
 	margin-left: 16px;
 	width: 30%;
@@ -45,18 +50,17 @@
 	height: 30%;
 }
 
-#picture-cover {
-	float:left;	/* place la cover à gauche dans la div */
+/*#picture-cover {
+	float:left;
 	background-position: left;
 	background-size: contain;
 	background-repeat: no-repeat;
 	width:60%;
 	height: 100%;
-}
+}*/
 
 #picture-logo {
-	margin-left: 30%; /* place le logo à 30% de la gauche dans la div */
-	background-position: right;
+	background-position: center center;
 	background-size: contain;
 	background-repeat: no-repeat;
 	height: 100%;
@@ -85,11 +89,13 @@
 	font-size: 1.1em;
 }
 
-.pay-button {
+#pay-button {
 	background-color: var(--main-color-blue);
 	border-radius: 5px;
 	padding: 14px;
 	display: inline;
+	font-size: 1.0em;
+	border: 0;
 }
 
 .plus-info {

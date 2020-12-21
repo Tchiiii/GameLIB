@@ -21,11 +21,13 @@
 
 		<!-- Corps de page -->
 		<div class="jeu-part">
-			<div id="picture-ingame"></div>
+			<div id="picture-ingame">
+				<iframe id="video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 			<div class="side-part">
 				<div class="background-picture-cover">
-					<div id="picture-cover"></div> 
 					<div id="picture-logo"></div>
+					<!-- <div id="picture-cover"></div> -->
 				</div>
 
 				<div class="text-part">
@@ -36,14 +38,15 @@
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<div class="price-part">
-						<p>
-							<span id="price">Gratuit</span>
-						</p>
-						<div class="pay-button">
-							<span>Acheter</span>
-						</div>
-					</div>
+				</div>
+				<div class="price-part">
+					<p>
+						<span id="price">Gratuit</span>
+					</p>
+					<input type="button" id="pay-button" name="" onclick="alert('Fonction non disponible pour le moment')" value="Acheter">
+					<!-- <div>
+						<span>Acheter</span>
+					</div> -->
 				</div>
 			</div>
 		</div>
