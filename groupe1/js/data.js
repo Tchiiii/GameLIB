@@ -19,10 +19,11 @@ let game = [
 					'developper': 'Wargaming Minsk',
 					'classification': 'pegi 7',
 					'editor': 'Wargaming.net',
-					'img': 'img/games/horizontal/wot.jpg',
-					'ingame': 'img/games/horizontal/wot1.jpg',
-					'cover': 'img/games/vertical/wot.jpg',
-					'logo': 'img/games/logo/wot.png'
+					'imgHorizontal': 'img/games/horizontal/wot.jpg',
+					'imgVertical': 'img/games/vertical/wot.jpg',
+					'ingame': 'img/games/ingame/wot1.jpg',
+					'logo': 'img/games/logo/wot.png',
+					'video': 'RPGtvPSLlU0',
 				},
 
 				{
@@ -35,10 +36,11 @@ let game = [
 					'developper': 'InnerSloth',
 					'classification': 'pegi 16',
 					'editor': 'InnerSloth',
-					'img': 'img/games/horizontal/amongus.jpg',
-					'ingame': 'img/games/horizontal/amongus1.jpg',
-					'cover': 'img/games/vertical/amongus.jpg',
-					'logo': 'img/games/logo/amongus.png'
+					'imgHorizontal': 'img/games/horizontal/amongus.jpg',
+					'imgVertical': 'img/games/vertical/amongus.jpg',
+					'ingame': 'img/games/ingame/amongus1.jpg',
+					'logo': 'img/games/logo/amongus.png',
+					'video': 'vlVeaz_l5Jg',
 				},
 
 				{
@@ -51,10 +53,11 @@ let game = [
 					'developper': 'Gravity Interactive',
 					'classification': 'pegi 12',
 					'editor': 'Gravity Interactive',
-					'img': 'img/games/horizontal/dragonica.jpg',
-					'ingame': 'img/games/horizontal/dragonica1.jpg',
-					'cover': 'img/games/vertical/dragonica.jpg',
-					'logo': 'img/games/logo/dragonica.png'
+					'imgHorizontal': 'img/games/horizontal/dragonica.jpg',
+					'imgVertical': 'img/games/vertical/dragonica.jpg',
+					'ingame': 'img/games/ingame/dragonica1.jpg',
+					'logo': 'img/games/logo/dragonica.png',
+					'video': 'CAr6_Y5za1o',
 				},
 
 				{
@@ -67,10 +70,11 @@ let game = [
 					'developper': 'Nintendo EPD',
 					'classification': 'pegi 12',
 					'editor': 'Nintendo',
-					'img': 'img/games/horizontal/zbotw.jpg',
-					'ingame': 'img/games/horizontal/zbotw1.jpg',
-					'cover': 'img/games/vertical/zbotw.jpg',
-					'logo': 'img/games/logo/zbotw.png'
+					'imgHorizontal': 'img/games/horizontal/zbotw.jpg',
+					'imgVertical': 'img/games/vertical/zbotw.jpg',
+					'ingame': 'img/games/ingame/zbotw1.jpg',
+					'logo': 'img/games/logo/zbotw.png',
+					'video': 'zw47_q9wbBE',
 				},
 
 				{
@@ -83,10 +87,11 @@ let game = [
 					'developper': 'Infinity Ward',
 					'classification': 'pegi 18',
 					'editor': 'Activision',
-					'img': 'img/games/vertical/codmw.jpg',
-					'ingame': 'img/games/horizontal/codmw.jpg',
-					'cover': 'img/games/vertical/codmw.jpg',
-					'logo': 'img/games/logo/codmw.png'
+					'imgHorizontal': 'img/games/horizontal/codmw.jpg',
+					'imgVertical': 'img/games/vertical/codmw.jpg',
+					'ingame': 'img/games/ingame/codmw.jpg',
+					'logo': 'img/games/logo/codmw.png',
+					'video': 'bH1lHCirCGI',
 				},
 
 				{
@@ -99,10 +104,11 @@ let game = [
 					'developper': 'Mojang Studios',
 					'classification': 'pegi 7',
 					'editor': 'Mojang Studios',
-					'img': 'img/games/vertical/minecraft.jpg',
-					'ingame': 'img/games/horizontal/minecraft.jpg',
-					'cover': 'img/games/vertical/minecraft.jpg',
-					'logo': 'img/games/logo/minecraft.png'
+					'imgHorizontal': 'img/games/horizontal/minecraft.jpg',
+					'imgVertical': 'img/games/vertical/minecraft.jpg',
+					'ingame': 'img/games/ingame/minecraft.jpg',
+					'logo': 'img/games/logo/minecraft.png',
+					'video': 'MmB9b5njVbA',
 				},
 
 				{
@@ -115,10 +121,11 @@ let game = [
 					'developper': 'Team Meat',
 					'classification': 'pegi 12',
 					'editor': 'Team Meat',
-					'img': 'img/games/vertical/meatboy.jpg',
-					'ingame': 'img/games/horizontal/meatboy.jpg',
-					'cover': 'img/games/vertical/meatboy.jpg',
-					'logo': 'img/games/logo/meatboy.png'
+					'imgHorizontal': 'img/games/horizontal/meatboy.jpg',
+					'imgVertical': 'img/games/vertical/meatboy.jpg',
+					'ingame': 'img/games/ingame/meatboy.jpg',
+					'logo': 'img/games/logo/meatboy.png',
+					'video': 'yQiqBY47xt4',
 				},
 
 				{
@@ -131,10 +138,11 @@ let game = [
 					'developper': 'Valve Corporation',
 					'classification': 'pegi 16',
 					'editor': 'Valve Corporation',
-					'img': 'img/games/vertical/fortress2.jpg',
-					'ingame': 'img/games/horizontal/fortress2.jpg',
-					'cover': 'img/games/vertical/fortress2.jpg',
-					'logo': 'img/games/logo/fortress2.png'
+					'imgHorizontal': 'img/games/horizontal/fortress2.jpg',
+					'imgVertical': 'img/games/vertical/fortress2.jpg',
+					'ingame': 'img/games/ingame/fortress2.jpg',
+					'logo': 'img/games/logo/fortress2.png',
+					'video': 'N7ZafWA2jd8',
 				},
 
 				{
@@ -147,10 +155,11 @@ let game = [
 					'developper': 'Nintendo EPD',
 					'classification': 'pegi 3',
 					'editor': 'Nintendo',
-					'img': 'img/games/vertical/animalcrossing.jpg',
-					'ingame': 'img/games/horizontal/animalcrossing.jpg',
-					'cover': 'img/games/vertical/animalcrossing.jpg',
-					'logo': 'img/games/logo/animalcrossing.png'
+					'imgHorizontal': 'img/games/horizontal/animalcrossing.jpg',
+					'imgVertical': 'img/games/vertical/animalcrossing.jpg',
+					'ingame': 'img/games/ingame/animalcrossing.jpg',
+					'logo': 'img/games/logo/animalcrossing.png',
+					'video': 'zeRYCzOZ1DQ',
 				},
 
 				{
@@ -163,10 +172,11 @@ let game = [
 					'developper': 'Toby Fox',
 					'classification': 'pegi 12',
 					'editor': 'Toby Fox',
-					'img': 'img/games/horizontal/undertale.jpg',
-					'ingame': 'img/games/horizontal/undertale1.jpg',
-					'cover': 'img/games/vertical/undertale.jpg',
-					'logo': 'img/games/logo/undertale.png'
+					'imgHorizontal': 'img/games/horizontal/undertale.jpg',
+					'imgVertical': 'img/games/vertical/undertale.jpg',
+					'ingame': 'img/games/ingame/undertale1.jpg',
+					'logo': 'img/games/logo/undertale.png',
+					'video': 'ycsnBIX8wTU',
 				},
 
 				{
@@ -179,10 +189,11 @@ let game = [
 					'developper': 'Dontnod Entertainment',
 					'classification': 'pegi 18',
 					'editor': 'Square Enix',
-					'img': 'img/games/horizontal/lifeisstrange.jpg',
-					'ingame': 'img/games/horizontal/lifeisstrange1.jpg',
-					'cover': 'img/games/vertical/lifeisstrange.jpg',
-					'logo': 'img/games/logo/lifeisstrange.png'
+					'imgHorizontal': 'img/games/horizontal/lifeisstrange.jpg',
+					'imgVertical': 'img/games/vertical/lifeisstrange.jpg',
+					'ingame': 'img/games/ingame/lifeisstrange1.jpg',
+					'logo': 'img/games/logo/lifeisstrange.png',
+					'video': 'AURVxvIZrmU',
 				},
 
 				{
@@ -195,10 +206,11 @@ let game = [
 					'developper': 'Snowbird Games',
 					'classification': 'pegi 12',
 					'editor': 'Snowbird Games',
-					'img': 'img/games/horizontal/caribbean.jpg',
-					'ingame': 'img/games/horizontal/caribbean1.jpg',
-					'cover': 'img/games/vertical/caribbean.jpg',
-					'logo': 'img/games/logo/caribbean.png'
+					'imgHorizontal': 'img/games/horizontal/caribbean.jpg',
+					'imgVertical': 'img/games/vertical/caribbean.jpg',
+					'ingame': 'img/games/ingame/caribbean1.jpg',
+					'logo': 'img/games/logo/caribbean.png',
+					'video': '4dEaG2YzRlQ',
 				},
 
 				{
@@ -211,10 +223,11 @@ let game = [
 					'developper': 'Askiisoft',
 					'classification': 'pegi 16',
 					'editor': 'Devolver Digital',
-					'img': 'img/games/horizontal/katanazero.jpg',
-					'ingame': 'img/games/horizontal/katanazero1.jpg',
-					'cover': 'img/games/vertical/katanazero.jpg',
-					'logo': 'img/games/logo/katanazero.png'
+					'imgHorizontal': 'img/games/horizontal/katanazero.jpg',
+					'imgVertical': 'img/games/vertical/katanazero.jpg',
+					'ingame': 'img/games/ingame/katanazero1.jpg',
+					'logo': 'img/games/logo/katanazero.png',
+					'video': 'uo2FOBnt11o',
 				},
 
 				{
@@ -227,10 +240,11 @@ let game = [
 					'developper': 'Dominique Grieshofer',
 					'classification': 'pegi 3',
 					'editor': 'Dominique Grieshofer',
-					'img': 'img/games/vertical/refunct.jpg',
-					'ingame': 'img/games/horizontal/refunct.jpg',
-					'cover': 'img/games/vertical/refunct.jpg',
-					'logo': 'img/games/logo/refunct.png'
+					'imgHorizontal': 'img/games/horizontal/refunct.jpg',
+					'imgVertical': 'img/games/vertical/refunct.jpg',
+					'ingame': 'img/games/ingame/refunct.jpg',
+					'logo': 'img/games/logo/refunct.png',
+					'video': 'uQ_6FyVoNSI',
 				},
 
 				{
@@ -243,10 +257,11 @@ let game = [
 					'developper': 'Kinetic Games',
 					'classification': 'pegi 16',
 					'editor': 'Kinetic Games',
-					'img': 'img/games/vertical/phasmophobia.jpg',
-					'ingame': 'img/games/horizontal/phasmophobia.jpg',
-					'cover': 'img/games/vertical/phasmophobia.jpg',
-					'logo': 'img/games/logo/phasmophobia.png'
+					'imgHorizontal': 'img/games/horizontal/phasmophobia.jpg',
+					'imgVertical': 'img/games/vertical/phasmophobia.jpg',
+					'ingame': 'img/games/ingame/phasmophobia.jpg',
+					'logo': 'img/games/logo/phasmophobia.png',
+					'video': 'sRa9oeo5KiY',
 				},
 
 				{
@@ -259,10 +274,11 @@ let game = [
 					'developper': 'Moon Studios',
 					'classification': 'pegi 7',
 					'editor': 'Microsoft Studios',
-					'img': 'img/games/vertical/oatbf.jpg',
-					'ingame': 'img/games/horizontal/oatbf.jpg',
-					'cover': 'img/games/vertical/oatbf.jpg',
-					'logo': 'img/games/logo/oatbf.png'
+					'imgHorizontal': 'img/games/horizontal/oatbf.jpg',
+					'imgVertical': 'img/games/vertical/oatbf.jpg',
+					'ingame': 'img/games/ingame/oatbf.jpg',
+					'logo': 'img/games/logo/oatbf.png',
+					'video': 'VrbGwU5Zx4M',
 				},
 
 				{
@@ -275,10 +291,11 @@ let game = [
 					'developper': 'Nicalis, Inc.',
 					'classification': 'pegi 16',
 					'editor': 'Nicalis, Inc.',
-					'img': 'img/games/vertical/isaac.jpg',
-					'ingame': 'img/games/horizontal/isaac.jpg',
-					'cover': 'img/games/vertical/isaac.jpg',
-					'logo': 'img/games/logo/isaac.png'
+					'imgHorizontal': 'img/games/horizontal/isaac.jpg',
+					'imgVertical': 'img/games/vertical/isaac.jpg',
+					'ingame': 'img/games/ingame/isaac.jpg',
+					'logo': 'img/games/logo/isaac.png',
+					'video': '27Le3kOOFQk',
 				},
 
 				{
@@ -291,10 +308,11 @@ let game = [
 					'developper': 'Valve',
 					'classification': 'pegi 12',
 					'editor': 'Valve',
-					'img': 'img/games/vertical/portal2.jpg',
-					'ingame': 'img/games/horizontal/portal2.jpg',
-					'cover': 'img/games/vertical/portal2.jpg',
-					'logo': 'img/games/logo/portal2.png'
+					'imgHorizontal': 'img/games/horizontal/portal2.jpg',
+					'imgVertical': 'img/games/vertical/portal2.jpg',
+					'ingame': 'img/games/ingame/portal2.jpg',
+					'logo': 'img/games/logo/portal2.png',
+					'video': 'tax4e4hBBZc',
 				},
 
 				{
@@ -307,10 +325,11 @@ let game = [
 					'developper': 'FJRD Interactive',
 					'classification': 'pegi 3',
 					'editor': 'FJRD Interactive',
-					'img': 'img/games/horizontal/amongtrees.jpg',
-					'ingame': 'img/games/horizontal/amongtrees1.jpg',
-					'cover': 'img/games/vertical/amongtrees.jpg',
-					'logo': 'img/games/logo/amongtrees.png'
+					'imgHorizontal': 'img/games/horizontal/amongtrees.jpg',
+					'imgVertical': 'img/games/vertical/amongtrees.jpg',
+					'ingame': 'img/games/ingame/amongtrees1.jpg',
+					'logo': 'img/games/logo/amongtrees.png',
+					'video': 'fe9DytkcSlc',
 				},
 
 				{
@@ -323,10 +342,11 @@ let game = [
 					'developper': 'Polytron Corporation',
 					'classification': 'pegi 3',
 					'editor': 'Trapdoor',
-					'img': 'img/games/horizontal/fez.jpg',
-					'ingame': 'img/games/horizontal/fez1.jpg',
-					'cover': 'img/games/vertical/fez.jpg',
-					'logo': 'img/games/logo/fez.png'
+					'imgHorizontal': 'img/games/horizontal/fez.jpg',
+					'imgVertical': 'img/games/vertical/fez.jpg',
+					'ingame': 'img/games/ingame/fez1.jpg',
+					'logo': 'img/games/logo/fez.png',
+					'video': 'tfpKTclOnfI',
 				},
 
 				{
@@ -339,10 +359,11 @@ let game = [
 					'developper': 'Matt Makes Games Inc.',
 					'classification': 'pegi 7',
 					'editor': 'Matt Makes Games Inc.',
-					'img': 'img/games/horizontal/celeste.jpg',
-					'ingame': 'img/games/horizontal/celeste1.jpg',
-					'cover': 'img/games/vertical/celeste.jpg',
-					'logo': 'img/games/logo/celeste.png'
+					'imgHorizontal': 'img/games/horizontal/celeste.jpg',
+					'imgVertical': 'img/games/vertical/celeste.jpg',
+					'ingame': 'img/games/ingame/celeste1.jpg',
+					'logo': 'img/games/logo/celeste.png',
+					'video': 'jd97xHT1hTQ',
 				},
 
 				{
@@ -355,10 +376,11 @@ let game = [
 					'developper': 'CD PROJEKT RED',
 					'classification': 'pegi 18',
 					'editor': 'CD PROJEKT RED',
-					'img': 'img/games/horizontal/thewitcherwh.jpg',
-					'ingame': 'img/games/horizontal/thewitcherwh1.jpg',
-					'cover': 'img/games/vertical/thewitcherwh.jpg',
-					'logo': 'img/games/logo/thewitcherwh.png'
+					'imgHorizontal': 'img/games/horizontal/thewitcherwh.jpg',
+					'imgVertical': 'img/games/vertical/thewitcherwh.jpg',
+					'ingame': 'img/games/ingame/thewitcherwh1.jpg',
+					'logo': 'img/games/logo/thewitcherwh.png',
+					'video': 'UZP1W6D6aZA',
 				},
 
 				{
@@ -371,10 +393,11 @@ let game = [
 					'developper': 'Adamgryu',
 					'classification': 'pegi 3',
 					'editor': 'Adamgryu',
-					'img': 'img/games/vertical/ashorthike.jpg',
-					'ingame': 'img/games/horizontal/ashorthike.jpg',
-					'cover': 'img/games/vertical/ashorthike.jpg',
-					'logo': 'img/games/logo/ashorthike.png'
+					'imgHorizontal': 'img/games/horizontal/ashorthike.jpg',
+					'imgVertical': 'img/games/vertical/ashorthike.jpg',
+					'ingame': 'img/games/ingame/ashorthike.jpg',
+					'logo': 'img/games/logo/ashorthike.png',
+					'video': 'l4bWwobx_LQ',
 				},
 
 				{
@@ -387,10 +410,11 @@ let game = [
 					'developper': 'Tripwire Interactive',
 					'classification': 'pegi 18',
 					'editor': 'Tripwire Interactive',
-					'img': 'img/games/vertical/killingfloor2.jpg',
-					'ingame': 'img/games/horizontal/killingfloor2.jpg',
-					'cover': 'img/games/vertical/killingfloor2.jpg',
-					'logo': 'img/games/logo/killingfloor2.png'
+					'imgHorizontal': 'img/games/horizontal/killingfloor2.jpg',
+					'imgVertical': 'img/games/vertical/killingfloor2.jpg',
+					'ingame': 'img/games/ingame/killingfloor2.jpg',
+					'logo': 'img/games/logo/killingfloor2.png',
+					'video': 'PpH8oghfsT8',
 				},
 
 				{
@@ -403,10 +427,11 @@ let game = [
 					'developper': 'JW',
 					'classification': 'pegi 3',
 					'editor': 'Devolver Digital',
-					'img': 'img/games/vertical/minit.jpg',
-					'ingame': 'img/games/horizontal/minit.jpg',
-					'cover': 'img/games/vertical/minit.jpg',
-					'logo': 'img/games/logo/minit.png'
+					'imgHorizontal': 'img/games/horizontal/minit.jpg',
+					'imgVertical': 'img/games/vertical/minit.jpg',
+					'ingame': 'img/games/ingame/minit.jpg',
+					'logo': 'img/games/logo/minit.png',
+					'video': 'a9plTKlhWjg',
 				},
 
 				{
@@ -419,10 +444,11 @@ let game = [
 					'developper': 'Team Alto',
 					'classification': 'pegi 3',
 					'editor': 'Snowman',
-					'img': 'img/games/vertical/alto.jpg',
-					'ingame': 'img/games/horizontal/alto.jpg',
-					'cover': 'img/games/vertical/alto.jpg',
-					'logo': 'img/games/logo/alto.png'
+					'imgHorizontal': 'img/games/horizontal/alto.jpg',
+					'imgVertical': 'img/games/vertical/alto.jpg',
+					'ingame': 'img/games/ingame/alto.jpg',
+					'logo': 'img/games/logo/alto.png',
+					'video': 'p2os31F7FXs',
 				},
 
 				{
@@ -435,10 +461,11 @@ let game = [
 					'developper': 'Square Enix',
 					'classification': 'pegi 18',
 					'editor': 'Square Enix',
-					'img': 'img/games/vertical/nierautomata.jpg',
-					'ingame': 'img/games/horizontal/nierautomata.jpg',
-					'cover': 'img/games/vertical/nierautomata.jpg',
-					'logo': 'img/games/logo/nierautomata.png'
+					'imgHorizontal': 'img/games/horizontal/nierautomata.jpg',
+					'imgVertical': 'img/games/vertical/nierautomata.jpg',
+					'ingame': 'img/games/ingame/nierautomata.jpg',
+					'logo': 'img/games/logo/nierautomata.png',
+					'video': 'wJxNhJ8fjFk',
 				},
 
 				{
@@ -451,10 +478,11 @@ let game = [
 					'developper': 'Grey Havens, LLC',
 					'classification': 'pegi 7',
 					'editor': 'Grey Havens, LLC',
-					'img': 'img/games/horizontal/spiralknights.jpg',
-					'ingame': 'img/games/horizontal/spiralknights1.jpg',
-					'cover': 'img/games/vertical/spiralknights.jpg',
-					'logo': 'img/games/logo/spiralknights.png'
+					'imgHorizontal': 'img/games/horizontal/spiralknights.jpg',
+					'imgVertical': 'img/games/vertical/spiralknights.jpg',
+					'ingame': 'img/games/ingame/spiralknights1.jpg',
+					'logo': 'img/games/logo/spiralknights.png',
+					'video': 'P7OQRA2kDyE',
 				},
 
 				{
@@ -467,10 +495,11 @@ let game = [
 					'developper': 'X-Legend',
 					'classification': 'pegi 12',
 					'editor': 'Aeria Games',
-					'img': 'img/games/horizontal/aurakingdom.jpg',
-					'ingame': 'img/games/horizontal/aurakingdom1.jpg',
-					'cover': 'img/games/vertical/aurakingdom.jpg',
-					'logo': 'img/games/logo/aurakingdom.png'
+					'imgHorizontal': 'img/games/horizontal/aurakingdom.jpg',
+					'imgVertical': 'img/games/vertical/aurakingdom.jpg',
+					'ingame': 'img/games/ingame/aurakingdom1.jpg',
+					'logo': 'img/games/logo/aurakingdom.png',
+					'video': 'VRObWXctpNY',
 				},
 
 				{
@@ -483,10 +512,11 @@ let game = [
 					'developper': 'Arkuda Inc.',
 					'classification': 'pegi 7',
 					'editor': 'Games Operators',
-					'img': 'img/games/horizontal/paws&soul.jpg',
-					'ingame': 'img/games/horizontal/paws&soul1.jpg',
-					'cover': 'img/games/vertical/paws&soul.jpg',
-					'logo': 'img/games/logo/paws&soul.png'
+					'imgHorizontal': 'img/games/horizontal/paws&soul.jpg',
+					'imgVertical': 'img/games/vertical/paws&soul.jpg',
+					'ingame': 'img/games/ingame/paws&soul1.jpg',
+					'logo': 'img/games/logo/paws&soul.png',
+					'video': 'NPlye_eY0aE',
 				},
 
 				{
@@ -499,9 +529,10 @@ let game = [
 					'developper': 'CAPCOM Co., Ltd.',
 					'classification': 'pegi 18',
 					'editor': 'CAPCOM Co., Ltd.',
-					'img': 'img/games/horizontal/devilmaycry5.jpg',
-					'ingame': 'img/games/horizontal/devilmaycry51.jpg',
-					'cover': 'img/games/vertical/devilmaycry5.jpg',
-					'logo': 'img/games/logo/devilmaycry5.png'
+					'imgHorizontal': 'img/games/horizontal/devilmaycry5.jpg',
+					'imgVertical': 'img/games/vertical/devilmaycry5.jpg',
+					'ingame': 'img/games/ingame/devilmaycry51.jpg',
+					'logo': 'img/games/logo/devilmaycry5.png',
+					'video': 'g_2VZvi0fQ0',
 				},
 			];
