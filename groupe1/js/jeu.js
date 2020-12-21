@@ -30,27 +30,17 @@ if(document.location.toString().indexOf('?') != -1) {
  * element de la page
  */
 function PageJeu () {
+	/* test */
 	let gameElement = game[parseInt($_GET["id"])];
 
 	document.getElementById("game-title-0").innerHTML += gameElement.name ;
 	document.getElementById("game-title-1").innerHTML = gameElement.name ;
 	document.getElementById("game-title-2").innerHTML = gameElement.name ;
 	document.getElementById("game-description").innerHTML = gameElement.info ;
-	document.getElementById("picture-ingame").style.backgroundImage = "url('../" + gameElement.ingame + "')";	// Image sous la vidéo
+	document.getElementById("price").innerHTML = gameElement.price + '€';
+	document.getElementById("picture-ingame").style.backgroundImage = "url('../" + gameElement.ingame + "')";
+	document.getElementById("picture-cover").style.backgroundImage = "url('../" + gameElement.cover + "')";
 	document.getElementById("picture-logo").style.backgroundImage = "url('../" + gameElement.logo + "')";
-	document.getElementById("video").src = "https://www.youtube.com/embed/" + gameElement.video + "?mute=1&autoplay=1";	// Lien de la video
-	
-	if (gameElement.price == 0) {
-		document.getElementById("price").innerHTML = '';
-		document.getElementById("pay-button").value = 'Jouer';
-	} else {
-		if (gameElement.isInPromo) {
-			document.getElementById("price").innerHTML = ((1 - gameElement.promo / 100) * gameElement.price ).toFixed(2) + " €";
-		} else {
-			document.getElementById("price").innerHTML = gameElement.price + " €";
-		}
-		document.getElementById("pay-button").value = 'Acheter'
-	}
 }
 
 /**
@@ -120,9 +110,6 @@ function CreateCard(card, disposition, id, isIndex) {
 	let link;
 	let gamePricePromo;
 	let priceShow;
-	let image;
-
-	image = (disposition == "vertical") ? game[id].imgVertical : game[id].imgHorizontal;
 
 	if (isIndex) {
 		indexConvertor[0] = "html\\";
@@ -134,9 +121,9 @@ function CreateCard(card, disposition, id, isIndex) {
 	link = indexConvertor[0] + "jeu.html?id=" + id;
 
 	/* Calcul de l'éventuelle promotion */
-	gamePricePromo = 0.0;
+	gamePricePromo = 0.00;
 	if(game[id].isInPromo) {
-		gamePricePromo = ((1 - game[id].promo / 100) * game[id].price ).toFixed(2); // arrondir à 2 chiffres après la virgule
+		gamePricePromo = ((((1 - game[id].promo / 100) * game[id].price ) * 100) / 100).toFixed(2); // arrondir à 2 chiffres après la virgule
 	}
 
 	/* Stockage de la partie "prix" */
@@ -152,7 +139,7 @@ function CreateCard(card, disposition, id, isIndex) {
 
 	/* Remplissage de la carte */
 	card.innerHTML += '<a href="' + link + '" class="card-picture ' + disposition + '">'
-					  + '<img draggable="false" src="' + indexConvertor[1] + image + '">'
+					  + '<img draggable="false" src="' + indexConvertor[1] + game[id].img + '">'
 					  + '</a>'
 					  + '<div class="card-info">'
 					  + '<a href="' + link + '"><h3 class="card-title">' + game[id].name + '</h3></a>'
