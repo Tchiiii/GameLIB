@@ -10,6 +10,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/card.css">
+	<link rel="stylesheet" type="text/css" href="../css/contact.css">
 </head>
 <body onload="LightModeOnLoad(false);" class="" id="body">
 
@@ -29,16 +30,12 @@
 		</ul>
 	</nav>
 
-	<script>
-	function msg () 
-    { 
-    alert ("Vore demande a bien été enregistré"); 
-    }
-	</script>
-	
-	<h1>DEMANDE D'INFORMATION</h1>
+	<script src="../js/contact.js"></script>
 
-	<form action="/action_page.php">
+	<form>
+		<h1>DEMANDE D'INFORMATION</h1>
+		Homme <input type="radio" name="genre" value="Homme" checked>
+		Femme <input type="radio" name="genre" value="Femme"><br><br>
   		<label for="fname">Prénom :</label>
   		<input type="text" id="fname" name="fname"><br><br>
   		<label for="lname">Nom :</label>
@@ -49,9 +46,11 @@
   		<input type="email" id="email" name="email"><br><br>
   		<label for="telephone">Téléphone :</label>
   		<input type="tel" id="telephone" name="telephone"><br><br>
-  		<input type="checkbox" name="conditions"> J'accepte les conditions d'utilisations<br><br> 
+  		<input type="checkbox" name="conditions"> J'accepte les conditions d'utilisation<br><br> 
   		<input type="submit" value="ENVOYER LA DEMANDE" onclick="msg ()">
   	</form>
+  	<img src="../img/logo/logo_jour.png">
+  	<img src="../img/logo/logo_nuit.png">
 
 </body>
 	<script type="text/javascript" src="../js/lightmode.js"></script>

@@ -1,0 +1,11 @@
+/*
+ * contact.css
+ * @author Lilian Strub
+ */
+
+form {
+	border: 2px solid red;
+	border-radius: 8px;
+	font-family: "Helvetica";
+	text-align: center;
+}

@@ -1,4 +1,4 @@
 function msg () 
     { 
-    alert ( "Vore demande a bien été enregistré"); 
-    } 
+    alert( "Votre demande a bien été enregistré."); 
+    } 	
