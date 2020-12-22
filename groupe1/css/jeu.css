@@ -1,0 +1,111 @@
+/*
+ * jeu.css
+ * @author Vabre Lucas, Serieys Lucas
+ */
+
+.jeu-container {
+	margin-left: 5%;
+	margin-right:5%;
+}
+
+.jeu-nav {
+	background-color: var(--overlay-color);
+	border-radius: 5px;
+}
+
+.jeu-nav p {
+	padding: 20px;
+}
+
+.jeu-part {
+	display: inline-flex;
+	width: 100%;
+	height: 500px;
+}
+
+#picture-ingame {
+	background-repeat: no-repeat;
+	width: 70%;
+	height: 500px;
+	border-radius: 5px;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+}
+
+#picture-ingame iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.side-part {
+	margin-left: 16px;
+	width: 30%;
+}
+
+.background-picture-cover {
+	background-color: var(--overlay-color);
+	border-radius: 5px;
+	padding: 10px;
+	height: 30%;
+}
+
+/*#picture-cover {
+	float:left;
+	background-position: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:60%;
+	height: 100%;
+}*/
+
+#picture-logo {
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+.text-part {
+	background-color: var(--overlay-color);
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 16px;
+}
+
+.text-part h2 {
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.price-part {
+	text-align: right;
+	margin: 0 10px 10px 0;
+	display: block;
+}
+
+#price {
+	margin-bottom: 16px;
+	font-size: 1.1em;
+}
+
+#pay-button {
+	background-color: var(--main-color-blue);
+	border-radius: 5px;
+	padding: 14px;
+	display: inline;
+	font-size: 1.0em;
+	border: 0;
+}
+
+.plus-info {
+	margin-top: 16px;
+	background-color: var(--overlay-color);
+	border-radius: 5px;
+	padding: 15px
+}
+
+.plus-info table {
+	text-align: center;
+	width: 100%;
+}

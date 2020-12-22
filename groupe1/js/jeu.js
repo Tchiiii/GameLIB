@@ -1,11 +1,27 @@
 /* 
- * script.js
+ * jeu.js
  *
  * Script qui manipule les données des jeux
  * contenues dans data.js
  *  
- * @author Vabre Lucas
+ * @author Vabre Lucas, Serieys Lucas
  */
+
+
+/* Fonction qui récupère les variables/valeurs dans l'URL */
+let $_GET = {};
+if(document.location.toString().indexOf('?') != -1) {
+	var query = document.location
+						.toString()
+						.replace(/^.*?\?/, '')
+						.replace(/#.*$/, '')
+						.split('&');
+
+	for(var i=0, l=query.length; i<l; i++) {
+		var aux = decodeURIComponent(query[i]).split('=');
+		$_GET[aux[0]] = aux[1];
+	}
+}
 
 /**
  * Fonction qui permet le bon affichage de jeu.html
@@ -14,23 +30,27 @@
  * element de la page
  */
 function PageJeu () {
-	/* Fonction qui récupère les variables/valeurs dans l'URL */
-	var $_GET = {};
-	if(document.location.toString().indexOf('?') !== -1) {
-		var query = document.location
-							.toString()
-							.replace(/^.*?\?/, '')
-							.replace(/#.*$/, '')
-							.split('&');
+	let gameElement = game[parseInt($_GET["id"])];
 
-		for(var i=0, l=query.length; i<l; i++) {
-			var aux = decodeURIComponent(query[i]).split('=');
-			$_GET[aux[0]] = aux[1];
+	document.getElementById("game-title-0").innerHTML += gameElement.name ;
+	document.getElementById("game-title-1").innerHTML = gameElement.name ;
+	document.getElementById("game-title-2").innerHTML = gameElement.name ;
+	document.getElementById("game-description").innerHTML = gameElement.info ;
+	document.getElementById("picture-ingame").style.backgroundImage = "url('../" + gameElement.ingame + "')";	// Image sous la vidéo
+	document.getElementById("picture-logo").style.backgroundImage = "url('../" + gameElement.logo + "')";
+	document.getElementById("video").src = "https://www.youtube.com/embed/" + gameElement.video + "?mute=1&autoplay=1";	// Lien de la video
+	
+	if (gameElement.price == 0) {
+		document.getElementById("price").innerHTML = '';
+		document.getElementById("pay-button").value = 'Jouer';
+	} else {
+		if (gameElement.isInPromo) {
+			document.getElementById("price").innerHTML = ((1 - gameElement.promo / 100) * gameElement.price ).toFixed(2) + " €";
+		} else {
+			document.getElementById("price").innerHTML = gameElement.price + " €";
 		}
+		document.getElementById("pay-button").value = 'Acheter'
 	}
-
-	/* test */
-	let dataElement = game[parseInt($_GET["id"])];
 }
 
 /**
@@ -88,7 +108,7 @@ function ShowGameAll() {
  * Fonction qui permet d'automatiser la création de "cartes"
  * sur la page index.html.
  * 
- * @param element : l'élement cible qui a la classe "card"
+ * @param card : l'élement cible qui a la classe "card"
  * @param disposition : deux valeurs possibles "vertical" ou "horizontal"
  *                      permet de produire une carte verticale ou horizontale
  * @param id : Valeur de l'id du jeu (voir dans data.js)
@@ -100,6 +120,9 @@ function CreateCard(card, disposition, id, isIndex) {
 	let link;
 	let gamePricePromo;
 	let priceShow;
+	let image;
+
+	image = (disposition == "vertical") ? game[id].imgVertical : game[id].imgHorizontal;
 
 	if (isIndex) {
 		indexConvertor[0] = "html\\";
@@ -111,9 +134,9 @@ function CreateCard(card, disposition, id, isIndex) {
 	link = indexConvertor[0] + "jeu.html?id=" + id;
 
 	/* Calcul de l'éventuelle promotion */
-	gamePricePromo = 0;
+	gamePricePromo = 0.0;
 	if(game[id].isInPromo) {
-		gamePricePromo = Math.round(((1 - game[id].promo / 100) * game[id].price ) * 100) /100;
+		gamePricePromo = ((1 - game[id].promo / 100) * game[id].price ).toFixed(2); // arrondir à 2 chiffres après la virgule
 	}
 
 	/* Stockage de la partie "prix" */
@@ -129,7 +152,7 @@ function CreateCard(card, disposition, id, isIndex) {
 
 	/* Remplissage de la carte */
 	card.innerHTML += '<a href="' + link + '" class="card-picture ' + disposition + '">'
-					  + '<img draggable="false" src="' + indexConvertor[1] + game[id].img + '">'
+					  + '<img draggable="false" src="' + indexConvertor[1] + image + '">'
 					  + '</a>'
 					  + '<div class="card-info">'
 					  + '<a href="' + link + '"><h3 class="card-title">' + game[id].name + '</h3></a>'

@@ -1,47 +1,85 @@
 <!--
    > index.html
-   > @author Vabre Lucas
+   > @author Vabre Lucas, Serieys Lucas
    -->
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jeu | Game Title</title>
+	<title id="game-title-0">Jeu | </title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/jeu.css">
 </head>
-<body onload="LightModeOnLoad(false); PageJeu()" id="body">
+<body class="" id="body">
 
-	<div style="margin-left: 5%; margin-right:5%;">
-		<div style="background-color: var(--overlay-color); border-radius: 5px;">
+	<div class="jeu-container">
+		<div class="jeu-nav">
 		<!-- Navigation -->
-			<p style="padding: 20px"><a href="../index.html">< Accueil</a> | <span>Game Title</span></p>
+			<p><a href="../index.html">< Accueil</a> | <span id="game-title-1">Game Title</span></p>
 		</div>
 
-		<!-- Images -->
-		<div style="display: inline-flex;">
-			<img src="../img/games/card/zbotw.jpg" width="70%" style="border-radius: 5px;">
-
-			<div style="margin-left: 10px; padding-left: 5px;">
-				<div style="background-color: var(--overlay-color); border-radius: 5px;">
-					<img name="The Legend of Zelda: Breath of the Wild" src="https://cdn.steamgriddb.com/logo/7cf64379eb6f29a4d25c4b6a2df713e4.png" style="width: 70%; display: block; margin: 0 auto 0 auto; text-align: center; padding: 5px;">
+		<!-- Corps de page -->
+		<div class="jeu-part">
+			<div id="picture-ingame">
+				<iframe id="video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="side-part">
+				<div class="background-picture-cover">
+					<div id="picture-logo"></div>
+					<!-- <div id="picture-cover"></div> -->
 				</div>
-				<p style="font-size: 1.2em"><b>Description</b></p>
-				<p style="margin-bottom: 60px; text-align: justify;">Legend of Zelda. Breath of the Wild propose d'incarner Link, amnésique, réveillé après un long sommeil d'une centaine d'années par une mystérieuse voix qui le guide afin d'éliminer Ganon, « Le Fléau », et restaurer la paix dans le royaume d'Hyrule</p>
 
-				<div style="text-align: right;">
-					<span style="padding: 20px; background-color: var(--main-color-blue); border-radius: 5px">Acheter</span>
+				<div class="text-part">
+					<h2 id="game-title-2">Game Title</h2>
+					<p id="game-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="price-part">
+					<p>
+						<span id="price">Gratuit</span>
+					</p>
+					<input type="button" id="pay-button" name="" onclick="alert('Fonction non disponible pour le moment')" value="Acheter">
+					<!-- <div>
+						<span>Acheter</span>
+					</div> -->
 				</div>
 			</div>
 		</div>
 		
-		<!-- Infos complémentaires -->
-		<div>
+		<!-- Plus d'infos -->
+		<div class="plus-info">
+			<h3>Plus d'informations</h3>
+			<table>
+				<tr>
+					<th>Développeurs</th>
+					<th>Editeurs</th>
+					<th>Classification</th>
+				</tr>
+				<tr>
+					<td>Nom developpeur</td>
+					<td>Nom editeur</td>
+					<td>Pegi 12</td>
+				</tr>
+			</table>
 		</div>
+		
 	</div>
 
 	<script type="text/javascript" src="../js/data.js"></script>
 	<script type="text/javascript" src="../js/jeu.js"></script>
 	<script type="text/javascript" src="../js/lightmode.js"></script>
+
+	<!-- Fonctions exécutés au chargement de la page -->
+	<script type="text/javascript">
+		window.onload = function() {
+			PageJeu();
+			LightModeOnLoad(false);
+		}	
+	</script>
 </body>
 </html>
