@@ -89,3 +89,7 @@ nav li {
 th {
 	border-collapse: collapse;
 }
+
+.active {
+	color: var(--main-color-blue);
+}
