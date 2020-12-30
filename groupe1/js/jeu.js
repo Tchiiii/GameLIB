@@ -32,14 +32,21 @@ if(document.location.toString().indexOf('?') != -1) {
 function PageJeu () {
 	let gameElement = game[parseInt($_GET["id"])];
 
+	/* Elements textes */
 	document.getElementById("game-title-0").innerHTML += gameElement.name ;
 	document.getElementById("game-title-1").innerHTML = gameElement.name ;
 	document.getElementById("game-title-2").innerHTML = gameElement.name ;
 	document.getElementById("game-description").innerHTML = gameElement.info ;
+	document.getElementById("dev").innerHTML = gameElement.developper;
+	document.getElementById("editor").innerHTML = gameElement.editor;
+	document.getElementById("pegi").innerHTML = gameElement.classification;
+
+	/* Images */
 	document.getElementById("picture-ingame").style.backgroundImage = "url('../" + gameElement.ingame + "')";	// Image sous la vidéo
 	document.getElementById("picture-logo").style.backgroundImage = "url('../" + gameElement.logo + "')";
 	document.getElementById("video").src = "https://www.youtube.com/embed/" + gameElement.video + "?mute=1&autoplay=1";	// Lien de la video
 	
+	/* Prix */
 	if (gameElement.price == 0) {
 		document.getElementById("price").innerHTML = '';
 		document.getElementById("pay-button").value = 'Jouer';
@@ -94,11 +101,11 @@ function ShowGameAll() {
 														  + '</td><td>'
 														  + game[i].classification
 														  + '</td><td>'
-														  + game[i].img1
+														  + game[i].imgHorizontal
 														  + '</td><td>'
-														  + game[i].img2
+														  + game[i].imgVertical
 														  + '</td><td>'
-														  + game[i].img3
+														  + game[i].ingame
 														  + '</td> </tr>';
 	}
 }
@@ -122,7 +129,8 @@ function CreateCard(card, disposition, id, isIndex) {
 	let priceShow;
 	let image;
 
-	image = (disposition == "vertical") ? game[id].imgVertical : game[id].imgHorizontal;
+	image = (disposition == "vertical") ? game[id].imgVertical
+										: game[id].imgHorizontal;
 
 	if (isIndex) {
 		indexConvertor[0] = "html\\";
