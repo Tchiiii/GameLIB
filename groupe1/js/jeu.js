@@ -112,6 +112,36 @@ function ShowGameAll() {
 
 
 /**
+ * Affiche tout les jeux
+ * Utilisé dans listeJeux.html
+ */
+function ShowGameList() {
+	var element = document.getElementById('test');
+	let price;
+	let link;
+	let image;
+
+	for (let i = 0; i < game.length; i++) {
+		link = "jeu.html?id=" + game[i].id;
+		image = "../" + game[i].imgHorizontal;
+		if (game[i].isInPromo) {
+			price = ((1 - game[i].promo / 100) * game[i].price ).toFixed(2);
+		} else {
+			price = game[i].price
+		}
+
+		element.innerHTML += '<tr><th>' + game[i].id + '</th>'
+							 +'<td style="padding-top:10px;"><a href="'
+							 + link + '"><img style="width:300px; border-radius:5px;" draggable="false" src="'
+							 + image + '"/></a></td>'
+				   			 + '<td><h3 style="text-align: center"><a href="' + link + '">' + game[i].name + '</a></h3></td>'
+							 + '<td><p style="text-align: center">' + game[i].developper + '</p></td>'
+							 + '<td><p style="text-align: right;">' + price + '€</p></td></tr>'
+							 + '<tr><td colspan="5"><hr></td></tr>'
+	}
+}
+
+/**
  * Fonction qui permet d'automatiser la création de "cartes"
  * sur la page index.html.
  * 
