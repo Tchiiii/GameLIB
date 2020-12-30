@@ -1,6 +1,6 @@
 /*
  * cookieConsent.js
- * @author Villeneuve Noé
+ * @author Villeneuve Noé, Vabre Lucas
  */
 #cookieConsent {
     background-color: rgba(20,20,20,0.90);
@@ -9,7 +9,6 @@
     color: #ccc;
     line-height: 26px;
     padding: 10px 0px 10px 30px;
-    font-family: "Trebuchet MS",Helvetica,sans-serif;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -20,9 +19,7 @@
 
 .textCookieConsent {
     float: left;
-    font-size: 20px;
-    height: 50px;
-    width: 500px;
+    font-size: 0.9em;
     margin: 0px 0px 0px 0px;
     padding: 10px 0px 0px 0px;
 }
@@ -41,8 +38,8 @@
     color: #FFF;
 }
 #cookieConsentOK {
-    background-color: #F1D600;
-    color: #000;
+    background-color: var(--main-color-blue);
+    color: var(--text-color);
     /*display: block;*/
     border-radius: 5px;
     padding: 5px 10px;

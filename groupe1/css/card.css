@@ -13,6 +13,16 @@
 	text-align: center;
 }
 
+.categorie {
+	background-color: var(--overlay-color);
+	border-radius: 5px;
+}
+
+.categorie > h2 {
+	text-align: center;
+	padding-top: 20px;
+}
+
 /* ### Card ### */
 .card {
 	margin: 15px;

@@ -33,7 +33,8 @@
 
 	<!-- Corps de page -->
 	<div class="container">
-		<div class="card-collection">	<!-- images horizontales en ligne -->
+		<div class="card-collection categorie">	<!-- images horizontales en ligne -->
+			<h2>Les mieux Notés</h2>
 			<div class="card" id="card-0"></div>
 			<div class="card" id="card-1"></div>
 			<div class="card" id="card-2"></div>
@@ -48,7 +49,8 @@
 			<div class="card" id="card-8"></div>
 		</div>
 
-		<div class="card-collection">	<!-- images horizontales en ligne -->
+		<div class="card-collection categorie">	<!-- images horizontales en ligne -->
+			<h2>En promotion</h2>
 			<div class="card" id="card-9"></div>
 			<div class="card" id="card-10"></div>
 			<div class="card" id="card-11"></div>
@@ -63,7 +65,8 @@
 			<div class="card" id="card-17"></div>
 		</div>
 
-		<div class="card-collection">	<!-- images horizontales en ligne -->
+		<div class="card-collection categorie">	<!-- images horizontales en ligne -->
+			<h2>Les jeux Gratuits</h2>
 			<div class="card" id="card-18"></div>
 			<div class="card" id="card-19"></div>
 			<div class="card" id="card-20"></div>
@@ -78,7 +81,8 @@
 			<div class="card" id="card-26"></div>
 		</div>
 
-		<div class="card-collection">	<!-- images horizontales en ligne -->
+		<div class="card-collection categorie">	<!-- images horizontales en ligne -->
+			<h2>Les jeux Indépendants</h2>
 			<div class="card" id="card-27"></div>
 			<div class="card" id="card-28"></div>
 			<div class="card" id="card-29"></div>
@@ -105,43 +109,48 @@
 	<script type="text/javascript">
 		window.onload = function() {
 			LightModeOnLoad(true);
-			CreateCard(document.getElementById('card-0'), "horizontal", 0, true);
-			CreateCard(document.getElementById('card-1'), "horizontal", 1, true);
-			CreateCard(document.getElementById('card-2'), "horizontal", 2, true);
-			CreateCard(document.getElementById('card-3'), "horizontal", 3, true);
 
-			CreateCard(document.getElementById('card-4'), "vertical", 4, true);
-			CreateCard(document.getElementById('card-5'), "vertical", 5, true);
-			CreateCard(document.getElementById('card-6'), "vertical", 6, true);
-			CreateCard(document.getElementById('card-7'), "vertical", 7, true);
-			CreateCard(document.getElementById('card-8'), "vertical", 8, true);
+			/* Mieux Notés */
+			CreateCard(document.getElementById('card-0'), "horizontal", 3, true);	// Zelda
+			CreateCard(document.getElementById('card-1'), "horizontal", 21, true);	// The Witcher
+			CreateCard(document.getElementById('card-2'), "horizontal", 26, true);	// Nier Automata
+			CreateCard(document.getElementById('card-3'), "horizontal", 30, true);	// Devil May Cry 5
 
-			CreateCard(document.getElementById('card-9'), "horizontal", 9, true);
-			CreateCard(document.getElementById('card-10'), "horizontal", 10, true);
-			CreateCard(document.getElementById('card-11'), "horizontal", 11, true);
-			CreateCard(document.getElementById('card-12'), "horizontal", 12, true);
+			CreateCard(document.getElementById('card-4'), "vertical", 1, true);		// Among Us
+			CreateCard(document.getElementById('card-5'), "vertical", 4, true);		// Call of Duty
+			CreateCard(document.getElementById('card-6'), "vertical", 6, true);		// Super Meat Boy
+			CreateCard(document.getElementById('card-7'), "vertical", 9, true);		// Undertale
+			CreateCard(document.getElementById('card-8'), "vertical", 11, true);	// Blood and Gold
 
-			CreateCard(document.getElementById('card-13'), "vertical", 13, true);
-			CreateCard(document.getElementById('card-14'), "vertical", 14, true);
-			CreateCard(document.getElementById('card-15'), "vertical", 15, true);
-			CreateCard(document.getElementById('card-16'), "vertical", 16, true);
-			CreateCard(document.getElementById('card-17'), "vertical", 17, true);
+			/* En Promo */
+			CreateCard(document.getElementById('card-9'), "horizontal", 5, true);	// Minecraft
+			CreateCard(document.getElementById('card-10'), "horizontal", 8, true);	// Animal Crossing
+			CreateCard(document.getElementById('card-11'), "horizontal", 10, true);	// Life is Strange
+			CreateCard(document.getElementById('card-12'), "horizontal", 16, true);	// Isaac
 
-			CreateCard(document.getElementById('card-18'), "horizontal", 18, true);
-			CreateCard(document.getElementById('card-19'), "horizontal", 19, true);
-			CreateCard(document.getElementById('card-20'), "horizontal", 20, true);
-			CreateCard(document.getElementById('card-21'), "horizontal", 21, true);
+			CreateCard(document.getElementById('card-13'), "vertical", 13, true);	// Refunct
+			CreateCard(document.getElementById('card-14'), "vertical", 14, true);	// Phasmophobia
+			CreateCard(document.getElementById('card-15'), "vertical", 15, true);	// Ori
+			CreateCard(document.getElementById('card-16'), "vertical", 17, true);	// Portal 2
+			CreateCard(document.getElementById('card-17'), "vertical", 18, true);	// Among Trees
 
-			CreateCard(document.getElementById('card-22'), "vertical", 22, true);
-			CreateCard(document.getElementById('card-23'), "vertical", 23, true);
-			CreateCard(document.getElementById('card-24'), "vertical", 24, true);
-			CreateCard(document.getElementById('card-25'), "vertical", 25, true);
-			CreateCard(document.getElementById('card-26'), "vertical", 26, true);
+			/* Gratuit */
+			CreateCard(document.getElementById('card-18'), "horizontal", 0, true);	// World of Tanks
+			CreateCard(document.getElementById('card-19'), "horizontal", 2, true);	// Dragonica
+			CreateCard(document.getElementById('card-20'), "horizontal", 7, true);	// Team Fortress
+			CreateCard(document.getElementById('card-21'), "horizontal", 27, true);	// Spiral Knight
 
-			CreateCard(document.getElementById('card-27'), "horizontal", 27, true);
-			CreateCard(document.getElementById('card-28'), "horizontal", 28, true);
-			CreateCard(document.getElementById('card-29'), "horizontal", 29, true);
-			CreateCard(document.getElementById('card-30'), "horizontal", 30, true);
+			CreateCard(document.getElementById('card-22'), "vertical", 19, true);	// FEZ
+			CreateCard(document.getElementById('card-23'), "vertical", 23, true);	// Killing Floor 2
+			CreateCard(document.getElementById('card-24'), "vertical", 24, true);	// Minit
+			CreateCard(document.getElementById('card-25'), "vertical", 28, true);	// Aura Kingdom
+			CreateCard(document.getElementById('card-26'), "vertical", 29, true);	// Paw and Soul
+
+			/* Indés */
+			CreateCard(document.getElementById('card-27'), "horizontal", 22, true);	// A Short Hike
+			CreateCard(document.getElementById('card-28'), "horizontal", 12, true);	// Katana Zero
+			CreateCard(document.getElementById('card-29'), "horizontal", 25, true);	// Alto
+			CreateCard(document.getElementById('card-30'), "horizontal", 20, true);	// Celeste
 		}	
 	</script>
 	

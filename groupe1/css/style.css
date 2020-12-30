@@ -82,6 +82,6 @@ nav li {
 
 /* ### Contenu de la page ### */
 .container {
-	margin: auto; /* Centre le bloc */
-	padding: 20px 0px 0px 0px; /* Marcges internes de 20px vers le haut */
+	margin-left: 10%;
+	margin-right:10%;
 }
