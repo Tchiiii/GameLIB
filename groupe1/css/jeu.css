@@ -3,11 +3,6 @@
  * @author Vabre Lucas, Serieys Lucas
  */
 
-.jeu-container {
-	margin-left: 5%;
-	margin-right:5%;
-}
-
 .jeu-nav {
 	background-color: var(--overlay-color);
 	border-radius: 5px;

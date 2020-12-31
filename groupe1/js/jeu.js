@@ -32,14 +32,21 @@ if(document.location.toString().indexOf('?') != -1) {
 function PageJeu () {
 	let gameElement = game[parseInt($_GET["id"])];
 
+	/* Elements textes */
 	document.getElementById("game-title-0").innerHTML += gameElement.name ;
 	document.getElementById("game-title-1").innerHTML = gameElement.name ;
 	document.getElementById("game-title-2").innerHTML = gameElement.name ;
 	document.getElementById("game-description").innerHTML = gameElement.info ;
+	document.getElementById("dev").innerHTML = gameElement.developper;
+	document.getElementById("editor").innerHTML = gameElement.editor;
+	document.getElementById("pegi").innerHTML = gameElement.classification;
+
+	/* Images */
 	document.getElementById("picture-ingame").style.backgroundImage = "url('../" + gameElement.ingame + "')";	// Image sous la vidéo
 	document.getElementById("picture-logo").style.backgroundImage = "url('../" + gameElement.logo + "')";
 	document.getElementById("video").src = "https://www.youtube.com/embed/" + gameElement.video + "?mute=1&autoplay=1";	// Lien de la video
 	
+	/* Prix */
 	if (gameElement.price == 0) {
 		document.getElementById("price").innerHTML = '';
 		document.getElementById("pay-button").value = 'Jouer';
@@ -94,15 +101,45 @@ function ShowGameAll() {
 														  + '</td><td>'
 														  + game[i].classification
 														  + '</td><td>'
-														  + game[i].img1
+														  + game[i].imgHorizontal
 														  + '</td><td>'
-														  + game[i].img2
+														  + game[i].imgVertical
 														  + '</td><td>'
-														  + game[i].img3
+														  + game[i].ingame
 														  + '</td> </tr>';
 	}
 }
 
+
+/**
+ * Affiche tout les jeux
+ * Utilisé dans listeJeux.html
+ */
+function ShowGameList() {
+	var element = document.getElementById('test');
+	let price;
+	let link;
+	let image;
+
+	for (let i = 0; i < game.length; i++) {
+		link = "jeu.html?id=" + game[i].id;
+		image = "../" + game[i].imgHorizontal;
+		if (game[i].isInPromo) {
+			price = ((1 - game[i].promo / 100) * game[i].price ).toFixed(2);
+		} else {
+			price = game[i].price
+		}
+
+		element.innerHTML += '<tr><th>' + game[i].id + '</th>'
+							 +'<td style="padding-top:10px;"><a href="'
+							 + link + '"><img style="width:300px; border-radius:5px;" draggable="false" src="'
+							 + image + '"/></a></td>'
+				   			 + '<td><h3 style="text-align: center"><a href="' + link + '">' + game[i].name + '</a></h3></td>'
+							 + '<td><p style="text-align: center">' + game[i].developper + '</p></td>'
+							 + '<td><p style="text-align: right;">' + price + '€</p></td></tr>'
+							 + '<tr><td colspan="5"><hr></td></tr>'
+	}
+}
 
 /**
  * Fonction qui permet d'automatiser la création de "cartes"
@@ -122,7 +159,8 @@ function CreateCard(card, disposition, id, isIndex) {
 	let priceShow;
 	let image;
 
-	image = (disposition == "vertical") ? game[id].imgVertical : game[id].imgHorizontal;
+	image = (disposition == "vertical") ? game[id].imgVertical
+										: game[id].imgHorizontal;
 
 	if (isIndex) {
 		indexConvertor[0] = "html\\";

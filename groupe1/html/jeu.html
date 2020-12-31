@@ -6,14 +6,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title id="game-title-0">Jeu | </title>
+	<title id="game-title-0">Game Lib | </title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/jeu.css">
 </head>
 <body class="" id="body">
 
-	<div class="jeu-container">
+	<div class="container">
 		<div class="jeu-nav">
 		<!-- Navigation -->
 			<p><a href="../index.html">< Accueil</a> | <span id="game-title-1">Game Title</span></p>
@@ -61,13 +61,12 @@
 					<th>Classification</th>
 				</tr>
 				<tr>
-					<td>Nom developpeur</td>
-					<td>Nom editeur</td>
-					<td>Pegi 12</td>
+					<td id="dev">Nom developpeur</td>
+					<td id="editor">Nom editeur</td>
+					<td id="pegi">Pegi 12</td>
 				</tr>
 			</table>
 		</div>
-		
 	</div>
 
 	<script type="text/javascript" src="../js/data.js"></script>
@@ -76,9 +75,11 @@
 
 	<!-- Fonctions exécutés au chargement de la page -->
 	<script type="text/javascript">
+
+		/* Au démarrage de la page */
 		window.onload = function() {
-			PageJeu();
-			LightModeOnLoad(false);
+			PageJeu();				// Affiche les données de la page a partir du data.js
+			LightModeOnLoad(false);	// Met a jour le mode sombre
 		}	
 	</script>
 </body>
