@@ -3,11 +3,11 @@
  * @author Vabre Lucas
  */
 
-#cookie {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+#cookie {	/* Image du cookie */
+	position: absolute;					/* Objet qui se fie uniquement a la taille de la fenêtre */
+	top: 50%;							/* Centre verticalement */
+	left: 50%;							/* Centre horizontalement */
+	transform: translate(-50%, -50%);	/* De 50% de lui même pour ce centrer parfaitement */
 }
 
 #clicker {

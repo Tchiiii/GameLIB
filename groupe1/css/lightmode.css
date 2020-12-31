@@ -1,0 +1,26 @@
+/*
+ * lightmode.css
+ *
+ * Gestion de l'affichage du module sombre / clair
+ * Non implémenté, pour le moment tout se fait dans le style.css
+ * 
+ * @author Vabre Lucas
+ */
+
+/* ### Définition de Variables ### */
+
+/* Mode Clair */
+.light-theme { /* Variables utilisés pour le mode Jour */
+	--background-color:#ecf0f1;
+	--overlay-color:#bdc3c7;
+	--text-color:#2c3e50;
+	transition-duration: 0.5s;
+}
+
+/* Mode sombre */
+.dark-theme { /* Variables utilisés pour le mode Nuit */
+	--background-color:#2c3e50;
+	--overlay-color:#34495e;
+	--text-color:#ecf0f1;
+	transition-duration: 0.5s;
+}

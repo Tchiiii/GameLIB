@@ -4,12 +4,12 @@
  */
 
 form {
-	border: 5px solid;
 	font-family: "Helvetica";
 	margin: 50px auto;
 	width: 500px;
-	padding: 0px 15px 15px 15px;
-	background-color: gray;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: var(--overlay-color);
 }
 
 h1 {

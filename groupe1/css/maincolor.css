@@ -1,0 +1,41 @@
+/*
+ * maincolor.css
+ * Non utilisé pour le moment
+ *
+ * 
+ * @author Vabre Lucas
+ */
+
+/* ### Selection de couleur principale ### */
+
+/* Temporaire */
+:root { /* Variables générales */
+	--main-color-blue: #3498db;
+}
+
+/* Non implémenté pour le moment
+
+	Liste des couleurs selectionnables:
+		bleu   : #3498db
+		vert   : #2ecc71
+		violet : #9b59b6
+		rouge  : #e74c3c
+*/
+
+.main-blue {--main-color: #3498db}
+.main-green {--main-color: #2ecc71}
+.main-purple {--main-color: #9b59b6}
+.main-red {--main-color: #e74c3c}
+
+/* Affichage de cette couleur  */
+
+.active {/* Element de navigation sélectionné */
+	color: var(--main-color-blue);
+}
+
+.tag {/* réduction */
+	background-color: var(--main-color-blue); /* Couleur définie dans style.css */
+	border-radius: var(--border-card-radius);
+	padding: 5px;
+	font-size: 16px;
+}

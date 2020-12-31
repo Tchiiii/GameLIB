@@ -54,8 +54,7 @@ function SetNightMode(isIndex) {
 /**
  * Fonction qui verifie la valeur stockée localement
  * et met la page en mode sombre ou claire suivant la valeur
- * @param isIndex : boolean si cette fonction
- *					est executé dans index.html => true
+ * @param {boolean} isIndex : index.html => true
  */
 function LightModeOnLoad(isIndex) {
 	if (localStorage.getItem('nightMode') == 'true') {
@@ -69,8 +68,7 @@ function LightModeOnLoad(isIndex) {
 /**
  * Fonction executé lors que le boutton
  * jour/nuit (soleil/lune) est pressé
- * @param isIndex : boolean si cette fonction
- *                  est executé dans index.html => true
+ * @param {boolean} isIndex : index.html => true
  */
 function LightModeButton(isIndex) {
 	if (document.body.className == 'dark-theme') {
