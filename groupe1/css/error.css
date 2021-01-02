@@ -2,10 +2,12 @@
  * error.css
  * @author Nogaret Tristan
  */
-a {
+a {  /* Annule l'effet fait par la page de style principale */
 	text-decoration: underline;
 	color: blue;
 }
+
+/* Ajustement du texte sur la page */
 
 .titre {
 	text-align: center;
