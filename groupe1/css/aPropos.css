@@ -1,0 +1,79 @@
+/*
+ * aPropos.css
+ *
+ * @author Vabre Lucas
+ */
+
+:root { /* Pour scroll fluidement jusqu'a l'encrage */
+	scroll-behavior: smooth;
+}
+
+.mini-menu {
+	border-radius: 5px;
+	padding: 20px;
+	margin: 10px;
+	background-color: var(--overlay-color);
+	display: inline-block;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+
+.mini-menu > ul {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+.mini-menu > li {
+	text-decoration: none;
+}
+
+.mini-menu > p {
+	margin: 0;
+	text-align: left;
+}
+
+.profil {
+	border-radius: 50%;
+	width: 120px;
+	filter: grayscale(1);
+	display: inline-block;
+}
+
+.name-block {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.name {
+	margin-bottom: 0;
+}
+
+.name-ph {
+	margin-top: 0;
+}
+
+
+article {
+	background-color: var(--overlay-color);
+	border-radius: 5px;
+	padding: 25px;
+	margin-top: 15px
+}
+
+.section-right {
+	margin-top: 50px;
+}
+
+.section-right > div {
+	margin-left: 50%;
+}
+
+.section-right > article {
+	margin-left: 50%;
+}
+
+.section-left {
+	margin-right: 50%;
+}

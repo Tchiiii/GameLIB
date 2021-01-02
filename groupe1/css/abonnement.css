@@ -46,7 +46,7 @@ button { /* Modifie les caractéristiques du bouton */
 	border-width: 0px;
 	box-shadow: 0 0 10px #e74c3c; 
 
-	background: #c0392b;
+	background-color: #c0392b;
 	color: var(--text-color);
 	font-size: 1.3em;
 
