@@ -1,6 +1,6 @@
 <!--
    > abonnement.html
-   > @author Lilian Strub
+   > @author Nogaret Tristan
    -->
 
 <!DOCTYPE html>
@@ -9,12 +9,12 @@
 	<title>GameLib | Abonnement</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/card.css">
+	<link rel="stylesheet" type="text/css" href="../css/abonnement.css">
 </head>
-<body onload="LightModeOnLoad(false);" class="" id="body">
+<body class="" id="body">
 
 	<header>
-		<img src="img/icons/logo-night.svg" width="300px" id="logo">
+		<img src="../img/icons/logo-night.svg" width="300px" id="logo">
 	</header>
 
 	<!-- Menu de Navigation entre les pages -->
@@ -29,6 +29,37 @@
 		</ul>
 	</nav>
 
+	<!-- Infos abonnement -->
+
+	<div class="div_a">
+		<table class="offre">
+			<td class="titre"><h1>Offre spéciale</h1><br/>
+				<h3>Cet abonnement vous propose plusieurs avantages, lié au site et au discord de notre site.</h3><h3>Regardez-les ci-dessous.</h3></td>
+		</table>
+
+		<table class="avantages">
+			<caption><h1>Les avantages :</h1></caption>
+			<td class="td1"><h2>1 jeu gratuit <u>chaque semaine</u></h2></td>
+			<td class="td2"><h2>Précommande de jeu <u>prioritaire</u></h2></td>
+			<td class="td3"><h2><u>Rôle spécial</u> sur le Discord du site</h2></td>
+		</table>
+	</div>
+
+	<!-- Prix et achat -->
+
+		<table class="cout">
+			<td class="prix"><h2>Prix :</h2><h2>4.99€/Mois</h2></td>
+		</table>
+
+	<button onclick="alert('Demande d\'abonnement reçu');">S'abonner</button>
+
+	<!-- Java script commun à toutes les pages (correspond au mode jour nuit) -->
+
 	<script type="text/javascript" src="../js/lightmode.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			LightModeOnLoad(false);
+		}
+	</script>
 </body>
 </html>

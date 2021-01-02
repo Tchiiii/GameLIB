@@ -1,0 +1,78 @@
+/*
+ * abonnement.css
+ * @author Nogaret Tristan
+ */
+.div_a { /* Modifie les caractéristiques de la premières div*/
+	margin-top: 50px;
+}
+
+.offre { /* Modifie les caractéristiques du cadre princpal, celui du haut */
+	margin: auto;
+	vertical-align: middle;
+	text-align: center;
+	width: 70%;
+}
+
+.avantages { /* Modifie les caractéristiques des 3 cadres du bas */
+	margin: auto;
+	vertical-align: middle;
+	text-align: center;
+	border-collapse: separate;
+	border-spacing: 25px;
+	width: 73%;
+}
+
+.cout { /* Modifie les caractéristiques du cadre princpal, celui du haut */
+	margin: auto;
+	vertical-align: middle;
+	text-align: center;
+	width: 40%;
+	margin-bottom: 25px;
+}
+
+caption { /* Modifie les caractéristiques de "Les avantages :" */
+	margin: 25px 0px -20px 25px;
+	text-align: left;
+}
+
+button { /* Modifie les caractéristiques du bouton */
+	display: block;
+	margin-left: calc(85% - 120px);
+	padding: 20px 30px 20px 30px;
+	border-radius: 5px;
+	border-style: none;
+	border-width: 0px;
+	background-color: #e74c3c;
+	color: var(--text-color);
+	margin-bottom: 50px;
+}
+
+td { /* Modifie les caractéristiques de toutes les cases de tout les tableaux */
+	transition: all 0.2s;
+	border-radius: 5px;
+}
+
+td:hover { /* Rends les cases un peu opaques lorsqu'on passe la souris dessus */
+	opacity: 90%;
+}
+
+.titre { /* Modifie les caractéristiques du cadre du haut */
+	background-color: #9b59b6;
+	height: 400px;
+}
+
+.td1 { /* Modifie les caractéristiques du cadre de droite */
+	background-color: #e74c3c;
+}
+
+.td2 { /* Modifie les caractéristiques du cadre du milieu */
+	background-color: #2ecc71;
+}
+
+.td3 { /* Modifie les caractéristiques du cadre de gauche */
+	background-color: #3498db;
+}
+
+.prix {
+	background-color: #9b59b6;
+}
