@@ -38,41 +38,52 @@ caption { /* Modifie les caractéristiques de "Les avantages :" */
 button { /* Modifie les caractéristiques du bouton */
 	display: block;
 	margin-left: calc(85% - 120px);
+	margin-bottom: 50px;
 	padding: 20px 30px 20px 30px;
+
 	border-radius: 5px;
 	border-style: none;
 	border-width: 0px;
-	background-color: #e74c3c;
+	box-shadow: 0 0 10px #e74c3c; 
+
+	background: #c0392b;
 	color: var(--text-color);
-	margin-bottom: 50px;
+	font-size: 1.3em;
+
+
+	transition: all 0.2s;
+}
+
+button:hover { /* Rends les cases un peu opaques lorsqu'on passe la souris dessus */
+	box-shadow: 0 0;
+	background: linear-gradient(45deg, #e74c3c, #c0392b); 
+	transition: all 0.2s;
+
+	cursor: pointer;
 }
 
 td { /* Modifie les caractéristiques de toutes les cases de tout les tableaux */
-	transition: all 0.2s;
 	border-radius: 5px;
 }
 
-td:hover { /* Rends les cases un peu opaques lorsqu'on passe la souris dessus */
-	opacity: 90%;
-}
 
 .titre { /* Modifie les caractéristiques du cadre du haut */
-	background-color: #9b59b6;
+	background: linear-gradient(#9b59b6, #8e44ad);
 	height: 400px;
 }
 
 .td1 { /* Modifie les caractéristiques du cadre de droite */
-	background-color: #e74c3c;
+	background: linear-gradient(45deg, #e74c3c, #c0392b);
 }
 
 .td2 { /* Modifie les caractéristiques du cadre du milieu */
-	background-color: #2ecc71;
+	background: linear-gradient(45deg, #2ecc71, #27ae60);
 }
 
 .td3 { /* Modifie les caractéristiques du cadre de gauche */
-	background-color: #3498db;
+	background: linear-gradient(45deg, #3498db, #2980b9);
 }
 
 .prix {
-	background-color: #9b59b6;
+	background: linear-gradient(#9b59b6 , #8e44ad);
 }
