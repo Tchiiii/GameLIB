@@ -86,7 +86,7 @@ nav li {
 	vertical-align: middle;
 }
 
-.active {
+.active {	/* Page sélectionnée */
 	color: var(--main-color-blue);
 }
 
@@ -99,7 +99,6 @@ nav li {
 	margin: 0;
 }
 
-
 .li-night-mode img {
 	width: 40px;
 	height: 40px;
@@ -111,6 +110,39 @@ nav li {
 	margin-right:10%;
 }
 
-th {
+th, tr, td{
 	border-collapse: collapse;
+}
+
+footer {
+	margin-top: 50px;
+	width: 100%;
+	background-color: var(--overlay-color);
+	bottom: 0;
+}
+
+footer > div {
+	display: inline-block;
+	vertical-align: center;
+}
+
+footer div > img {
+	margin: 20px;
+}
+
+footer > p {
+	text-align: right;
+}
+
+abbr {
+	text-decoration: none;
+}
+
+#konamicode {
+	color: var(--main-color-blue);
+}
+
+#konamicode:hover {
+	cursor: pointer;
+	text-decoration: underline;
 }
