@@ -1,0 +1,21 @@
+/*
+ * error.css
+ * @author Nogaret Tristan
+ */
+a {
+	text-decoration: underline;
+	color: blue;
+}
+
+.titre {
+	text-align: center;
+	font-size: 5em;
+}
+
+.sous-titre {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
