@@ -11,6 +11,8 @@
 let lightModeImg = document.getElementById('light-mode');	// boutton 'Night mode'
 let mainColorImg = document.getElementById('maincolor-mode');
 let logoImg = document.getElementById('logo');				// balise img du logo
+let discordImg = document.getElementById("discord");
+let footerLogoImg = document.getElementById("footer-logo");
 
 var sun = "img/icons/sun.svg";					// iconne de soleil
 var moon = "img/icons/moon.svg";				// iconne de lune
@@ -18,6 +20,8 @@ var logoLight = "img/icons/logo-light.svg";		// logo en mode jour
 var logoNight = "img/icons/logo-night.svg";		// logo en mode nuit
 var engrenageLight = "img/icons/engrenage-light.svg";
 var engrenageNight = "img/icons/engrenage-night.svg";
+var discordLight = "img/icons/discord-light.svg";
+var discordNight = "img/icons/discord-night.svg";
 
 /**
  * Fonction qui permet de mettre la page
@@ -31,10 +35,14 @@ function SetLightMode(isIndex) {
 		lightModeImg.setAttribute("src", sun);
 		mainColorImg.setAttribute("src", engrenageLight);
 		logoImg.setAttribute("src", logoLight);
+		footerLogoImg.setAttribute("src", logoLight);
+		discordImg.setAttribute("src", discordLight);
 	} else {
 		lightModeImg.setAttribute("src", "../" + sun);
 		mainColorImg.setAttribute("src", "../" + engrenageLight);
 		logoImg.setAttribute("src", "../" + logoLight);
+		footerLogoImg.setAttribute("src", "../" + logoLight);
+		discordImg.setAttribute("src", "../" + discordLight);
 	}
 }
 
@@ -50,10 +58,14 @@ function SetNightMode(isIndex) {
 			lightModeImg.setAttribute("src", moon);
 			mainColorImg.setAttribute("src", engrenageNight);
 			logoImg.setAttribute("src", logoNight);
+			footerLogoImg.setAttribute("src", logoNight);
+			discordImg.setAttribute("src", discordNight);
 		} else {
 			lightModeImg.setAttribute("src", "../" + moon);
 			mainColorImg.setAttribute("src", "../" + engrenageNight);
 			logoImg.setAttribute("src", "../" + logoNight);
+			footerLogoImg.setAttribute("src", "../" + logoNight);
+			discordImg.setAttribute("src", "../" + discordNight);
 		}
 		
 }
