@@ -9,17 +9,18 @@
 
 
 /* Fonction qui récupère les variables/valeurs dans l'URL */
-let $_GET = {};
-if(document.location.toString().indexOf('?') != -1) {
-	var query = document.location
+let $_GET = {};	// Creer l'objet GET
+if(document.location.toString().indexOf('?') != -1) {	// Verifie si il y a un ? dans l'url
+	var query = document.location	// Modifie quelques caractères qui pourrais être mal interprété
 						.toString()
 						.replace(/^.*?\?/, '')
 						.replace(/#.*$/, '')
 						.split('&');
 
+	/* Tout ce qu'il se trouve apres le ? va etre traité */
 	for(var i=0, l=query.length; i<l; i++) {
-		var aux = decodeURIComponent(query[i]).split('=');
-		$_GET[aux[0]] = aux[1];
+		var aux = decodeURIComponent(query[i]).split('=');	// Ce qu'il y a gauche de l'égal est le nom de la variable
+		$_GET[aux[0]] = aux[1];								// et ce qu'il a a droite est la valeur de celle-ci
 	}
 }
 
