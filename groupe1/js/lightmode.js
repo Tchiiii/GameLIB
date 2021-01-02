@@ -9,12 +9,15 @@
 
 /* Initialisation des variables */
 let lightModeImg = document.getElementById('light-mode');	// boutton 'Night mode'
+let mainColorImg = document.getElementById('maincolor-mode');
 let logoImg = document.getElementById('logo');				// balise img du logo
 
-let sun = "img/icons/sun.svg";					// iconne de soleil
-let moon = "img/icons/moon.svg";				// iconne de lune
-let logoLight = "img/icons/logo-light.svg";		// logo en mode jour
-let logoNight = "img/icons/logo-night.svg";		// logo en mode nuit
+var sun = "img/icons/sun.svg";					// iconne de soleil
+var moon = "img/icons/moon.svg";				// iconne de lune
+var logoLight = "img/icons/logo-light.svg";		// logo en mode jour
+var logoNight = "img/icons/logo-night.svg";		// logo en mode nuit
+var engrenageLight = "img/icons/engrenage-light.svg";
+var engrenageNight = "img/icons/engrenage-night.svg";
 
 /**
  * Fonction qui permet de mettre la page
@@ -26,9 +29,11 @@ function SetLightMode(isIndex) {
 	document.body.className = 'light-theme';
 	if (isIndex) {
 		lightModeImg.setAttribute("src", sun);
+		mainColorImg.setAttribute("src", engrenageLight);
 		logoImg.setAttribute("src", logoLight);
 	} else {
 		lightModeImg.setAttribute("src", "../" + sun);
+		mainColorImg.setAttribute("src", "../" + engrenageLight);
 		logoImg.setAttribute("src", "../" + logoLight);
 	}
 }
@@ -43,9 +48,11 @@ function SetNightMode(isIndex) {
 		document.body.className = 'dark-theme';
 		if (isIndex) {
 			lightModeImg.setAttribute("src", moon);
+			mainColorImg.setAttribute("src", engrenageNight);
 			logoImg.setAttribute("src", logoNight);
 		} else {
 			lightModeImg.setAttribute("src", "../" + moon);
+			mainColorImg.setAttribute("src", "../" + engrenageNight);
 			logoImg.setAttribute("src", "../" + logoNight);
 		}
 		

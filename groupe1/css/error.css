@@ -4,7 +4,7 @@
  */
 a {  /* Annule l'effet fait par la page de style principale */
 	text-decoration: underline;
-	color: blue;
+	color: var(--main-color);
 }
 
 /* Ajustement du texte sur la page */

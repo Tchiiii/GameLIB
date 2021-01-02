@@ -10,8 +10,11 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/aPropos.css">
+	<link rel="stylesheet" type="text/css" href="../css/maincolor.css">
+	<link rel="stylesheet" type="text/css" href="../css/lightmode.css">
 </head>
-<body onload="LightModeOnLoad(false);" class="" id="body">
+<body class="" id="body">
+<div class="" id="color-set">
 
 	<header>
 		<img src="" alt="Logo du site : GameLib" width="300px" id="logo">
@@ -26,6 +29,16 @@
 			<li><a href="contact.html">Contact</a></li>
 			<li><a class="active deroulant" href="aPropos.html">A propos</a></li>
 			<li class="li-night-mode"><img onclick="LightModeButton(false)" id="light-mode" ></li>
+			<li class="li-maincolor">
+				<img id="maincolor-mode">
+				<ul class="color-picker">
+					<p>Selectionnez une couleur</p>
+					<li><div id="color-blue" alt="couleur bleu" onclick="SetMainColor('blue');"></div></li>
+					<li><div id="color-green" alt="couleur verte" onclick="SetMainColor('green');"></div></li>
+					<li><div id="color-purple" alt="couleur violette" onclick="SetMainColor('purple');"></div></li>
+					<li><div id="color-red" alt="couleur rouge" onclick="SetMainColor('red');"></div></li>
+				</ul>
+			</li>
 		</ul>
 	</nav>
 
@@ -217,5 +230,13 @@
 	</footer>
 
 	<script type="text/javascript" src="../js/lightmode.js"></script>
+	<script type="text/javascript" src="../js/maincolor.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			LightModeOnLoad(false);
+			MainColorOnLoad();
+		}
+	</script>
+</div>
 </body>
 </html>

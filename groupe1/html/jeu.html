@@ -10,13 +10,32 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/jeu.css">
+	<link rel="stylesheet" type="text/css" href="../css/maincolor.css">
+	<link rel="stylesheet" type="text/css" href="../css/lightmode.css">
 </head>
 <body class="" id="body">
+<div class="" id="color-set">
+	
+	<img id="logo" style="display: none;">
 
 	<div class="container">
 		<div class="jeu-nav">
 		<!-- Navigation -->
-			<p><a href="../index.html">< Accueil</a> | <span id="game-title-1">Game Title</span></p>
+			<ul>
+				<li><a href="../index.html">Accueil | </a></li>
+				<li id="game-title-1"></li>
+				<li class="li-night-mode"><img onclick="LightModeButton(true)" id="light-mode" ></li>
+				<li class="li-maincolor">
+					<img id="maincolor-mode">
+					<ul class="color-picker">
+						<p>Selectionnez une couleur</p>
+						<li><div id="color-blue" alt="couleur bleu" onclick="SetMainColor('blue');"></div></li>
+						<li><div id="color-green" alt="couleur verte" onclick="SetMainColor('green');"></div></li>
+						<li><div id="color-purple" alt="couleur violette" onclick="SetMainColor('purple');"></div></li>
+						<li><div id="color-red" alt="couleur rouge" onclick="SetMainColor('red');"></div></li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 
 		<!-- Corps de page -->
@@ -91,15 +110,18 @@
 	<script type="text/javascript" src="../js/data.js"></script>
 	<script type="text/javascript" src="../js/jeu.js"></script>
 	<script type="text/javascript" src="../js/lightmode.js"></script>
+	<script type="text/javascript" src="../js/maincolor.js"></script>
 
 	<!-- Fonctions exécutés au chargement de la page -->
 	<script type="text/javascript">
 
 		/* Au démarrage de la page */
 		window.onload = function() {
+			MainColorOnLoad();
 			PageJeu();				// Affiche les données de la page a partir du data.js
 			LightModeOnLoad(false);	// Met a jour le mode sombre
 		}	
 	</script>
+</div>
 </body>
 </html>

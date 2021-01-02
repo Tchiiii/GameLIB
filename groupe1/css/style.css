@@ -3,46 +3,6 @@
  * @author Vabre Lucas, Strub Lilian
  */
 
-/* ### Définition de Variables ### */
-
-/* Mode Clair */
-.light-theme { /* Variables utilisés pour le mode Jour */
-	--background-color:#ecf0f1;
-	--overlay-color:#bdc3c7;
-	--text-color:#2c3e50;
-	transition-duration: 0.5s;
-}
-
-/* Mode sombre */
-.dark-theme { /* Variables utilisés pour le mode Nuit */
-	--background-color:#2c3e50;
-	--overlay-color:#34495e;
-	--text-color:#ecf0f1;
-	transition-duration: 0.5s;
-}
-
-/* ### Selection de couleur principale ### */
-
-/* Temporaire */
-:root { /* Variables générales */
-	--main-color-blue: #3498db;
-}
-
-/* Non implémenté pour le moment
-
-	Liste des couleurs selectionnables:
-		bleu   : #3498db
-		vert   : #2ecc71
-		violet : #9b59b6
-		rouge  : #e74c3c
-*/
-
-.main-blue {--main-color: #3498db}
-.main-green {--main-color: #2ecc71}
-.main-purple {--main-color: #9b59b6}
-.main-red {--main-color: #e74c3c}
-
-
 /* ### Style Général ### */
 
 header {
@@ -87,7 +47,7 @@ nav li {
 }
 
 .active {	/* Page sélectionnée */
-	color: var(--main-color-blue);
+	color: var(--main-color);
 }
 
 #light-mode { /* Boutton jour-nuit */
@@ -102,6 +62,11 @@ nav li {
 .li-night-mode img {
 	width: 40px;
 	height: 40px;
+}
+
+.li-maincolor img {
+	width: 30px;
+	height: 30px;
 }
 
 /* ### Contenu de la page ### */
@@ -139,10 +104,14 @@ abbr {
 }
 
 #konamicode {
-	color: var(--main-color-blue);
+	color: var(--main-color);
 }
 
 #konamicode:hover {
 	cursor: pointer;
 	text-decoration: underline;
+}
+
+h3 a {
+	color : var(--main-color);
 }

@@ -85,7 +85,7 @@
 }
 
 .tag {/* réduction */
-	background-color: var(--main-color-blue);	/* Couleur définie dans style.css */
+	background-color: var(--main-color);		/* Couleur définie dans style.css */
 	border-radius: var(--border-card-radius);	/* Même bordure que les cartes */
 	padding: 5px;								/* Marge interne de px de tout les cotés */
 	font-size: 16px;							/* Taille du texte de 16px */
