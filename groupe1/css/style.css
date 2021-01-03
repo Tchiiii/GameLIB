@@ -18,9 +18,13 @@ header img { /* image de l'entête (logo) */
 }
 
 /* ### Corps de la page ### */
-body { /* Corps */
-	font-family: Cabin, url("../font/Cabin-Regular.ttf"), Arial, Consolas;	/* Définis les polices d'écritures à utiliser dans le site */
-	color: var(--text-color); 												/* Défini la couleur générale du texte */
+@font-face { /* Police d'écriture */
+	font-family: "Cabin", Arial, Consolas;		/* Définis les polices d'écritures à utiliser dans le site */
+	src: url('../font/Cabin-Regular.ttf');
+}
+
+body { /* Corps */	
+	color: var(--text-color);												/* Défini la couleur générale du texte */
 	background-color: var(--background-color);								/* Défini la couleur d'arrière plan du site */
 
 	padding: 0;		/* Enlève les marges intenes */

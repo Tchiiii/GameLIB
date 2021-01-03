@@ -8,6 +8,7 @@
 <head>
 	<title>Game Lib | Liste des Jeux</title>
 	<meta charset="utf-8">
+	<!-- lien vers les différentes pages css créée (les 3 communes à chaque page principale et celle unique à la page) -->
 	<link rel="stylesheet" type="text/css" href="../css/lightmode.css">
 	<link rel="stylesheet" type="text/css" href="../css/maincolor.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -16,10 +17,12 @@
 <body class="" id="body">
 <div class="" id="color-set">	<!-- Pour l'affichage des couleurs -->
 
+	<!-- Logo en haut de la page, centré -->
 	<header>
 		<img src="" alt="Logo du site : GameLib" width="300px" id="logo">
 	</header>
 
+	<!-- Menu de Navigation entre les pages commun à toute les pages -->
 	<div class="container">
 		<nav>
 			<ul>
@@ -28,6 +31,8 @@
 				<li><a href="abonnement.html">Abonnement</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				<li><a href="aPropos.html">A propos</a></li>
+				
+				<!-- Portion pour modifier le style de la page (mode jour ou nuit et changement de couleur) -->
 				<li class="li-night-mode"><img onclick="LightModeButton(false)" id="light-mode" ></li>
 				<li class="li-maincolor">
 				<img id="maincolor-mode">
@@ -42,6 +47,7 @@
 			</ul>
 		</nav>
 
+		<!-- Affichage des différents jeux sur la page -->
 		<table style="margin: 20px auto 0px auto; width: 100%">
 			<caption style="font-size: 1.5em; text-align: left; margin-bottom: 10px;">Liste des jeux</caption>
 
@@ -91,7 +97,7 @@
 		</div>
 	</footer>
 
-
+	<!-- Lien vers les pages java script -->
 	<script type="text/javascript" src="../js/lightmode.js"></script>
 	<script type="text/javascript" src="../js/data.js"></script>
 	<script type="text/javascript" src="../js/jeu.js"></script>
