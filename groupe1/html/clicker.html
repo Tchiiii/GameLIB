@@ -10,11 +10,12 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/clicker.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/maincolor.css">
 	<link rel="stylesheet" type="text/css" href="../css/lightmode.css">
+	<link rel="stylesheet" type="text/css" href="../css/maincolor.css">
 	<link rel="icon" type="image/png" href="../img/icons/cookie.webp"/>
 </head>
-<body onload="LightModeOnLoad(false); Initialisation()" class="" id="body">
+<body class="" id="body">
+<div class="" id="color-set">
 	<img id="discord" style="display: none;">
 	<img id="footer-logo" style="display: none;">
 
@@ -68,5 +69,14 @@
 
 	<script type="text/javascript" src="../js/clicker.js"></script>
 	<script type="text/javascript" src="../js/lightmode.js"></script>
+	<script type="text/javascript" src="../js/maincolor.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			LightModeOnLoad(false);
+			Initialisation();
+			MainColorOnLoad();
+		}
+	</script>
+</div>
 </body>
 </html>

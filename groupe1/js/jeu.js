@@ -8,24 +8,18 @@
  */
 
 
-/**
- * Fonction qui récupère
- * les variables/valeurs dans l'URL
- */
-function GetUrl() {	
-	let $_GET = {};	// Creer l'objet GET
-	if(document.location.toString().indexOf('?') != -1) {	// Verifie si il y a un ? dans l'url
-		var query = document.location	// Modifie quelques caractères qui pourrais être mal interprété
-							.toString()
-							.replace(/^.*?\?/, '')
-							.replace(/#.*$/, '')
-							.split('&');
+let $_GET = {};	// Creer l'objet GET
+if(document.location.toString().indexOf('?') != -1) {	// Verifie si il y a un ? dans l'url
+	var query = document.location	// Modifie quelques caractères qui pourrais être mal interprété
+						.toString()
+						.replace(/^.*?\?/, '')
+						.replace(/#.*$/, '')
+						.split('&');
 
-		/* Tout ce qu'il se trouve apres le ? va etre traité */
-		for(var i=0, l=query.length; i<l; i++) {
-			var aux = decodeURIComponent(query[i]).split('=');	// Ce qu'il y a gauche de l'égal est le nom de la variable
-			$_GET[aux[0]] = aux[1];								// et ce qu'il a a droite est la valeur de celle-ci
-		}
+	/* Tout ce qu'il se trouve apres le ? va etre traité */
+	for(var i=0, l=query.length; i<l; i++) {
+		var aux = decodeURIComponent(query[i]).split('=');	// Ce qu'il y a gauche de l'égal est le nom de la variable
+		$_GET[aux[0]] = aux[1];								// et ce qu'il a a droite est la valeur de celle-ci
 	}
 }
 
@@ -40,19 +34,46 @@ function CalcPromo(promoValue, price) {
 
 /**
  * Créer plus facilement et lisiblement une balise <tr></tr>
- * @param {String} argument : Contenu du tr
- * @param {String} style    : Style utilisé
+ * @param {String} content  : Contenu du tr
+ * @param {String} argument : Argument
  */
-function MakeTr(argument, style) {
-	return ('<tr style="' + style + '"">' + argument + '</tr>');
+function MakeTr(content, argument) {
+	return ('<tr ' + argument + '>' + content + '</tr>');
 }
 
 /**
  * Créer plus facilement et lisiblement une balise <td></td>
- * @param {String} argument : Contenu du td
+ * @param {String} content  : Contenu du td
+ * @param {String} argument : Argument
  */
-function MakeTd(argument) {
-	return ('<td>' + argument + '</td>');
+function MakeTd(content, argument) {
+	return ('<td ' + argument + '>' + content + '</td>');
+}
+
+/**
+ * Créer plus facilement et lisiblement une balise <th></th>
+ * @param {String} content  : Contenu du th
+ * @param {String} argument : Argument
+ */
+function MakeTh(content, argument) {
+	return ('<th ' + argument + '>' + content + '</th>');
+}
+
+/**
+ * Créer plus facilement et lisiblement une balise <a></a>
+ * @param {String} content  : Contenu du a
+ * @param {String} argument : Argument
+ */
+function MakeA(content, argument) {
+	return ('<a ' + argument + '>' + content + '</a>');
+}
+
+/**
+ * Créer plus facilement et lisiblement une balise <img/>
+ * @param {String} argument : Argument
+ */
+function MakeImg(argument) {
+	return ('<img ' + argument + '/>');
 }
 
 /**
@@ -64,45 +85,55 @@ function MakeTd(argument) {
 function PageJeu () {
 
 	/* Initialisation des variables */
-	GetUrl();
-	let gameElement = game[parseInt($_GET["id"])];
+	let id = parseInt($_GET["id"]);
+	let gameElement = game[id];
 
-	/* Elements textes */
-	let title1 = document.getElementById("game-title-0").innerHTML;
-	let title2 = document.getElementById("game-title-1").innerHTML;
-	let title3 = document.getElementById("game-title-2").innerHTML;
-	let description = document.getElementById("game-description").innerHTML;
-	let developper = document.getElementById("dev").innerHTML;
-	let editor = document.getElementById("editor").innerHTML;
-	let pegi = document.getElementById("pegi").innerHTML;
-	let price = document.getElementById("price").innerHTML;
-	let payButton = document.getElementById("pay-button").value;
+	let title1 = document.getElementById("game-title-0");
+	let title2 = document.getElementById("game-title-1");
+	let title3 = document.getElementById("game-title-2");
+	let description = document.getElementById("game-description");
+	let developper = document.getElementById("dev");
+	let editor = document.getElementById("editor");
+	let pegi = document.getElementById("pegi");
+	let price = document.getElementById("price");
+	let payButton = document.getElementById("pay-button");
+	let ingame = document.getElementById("picture-ingame");	// Image sous la vidéo
+	let gameLogo = document.getElementById("picture-logo");
+	let video = document.getElementById("video");	// Lien de la video
 
-	/* Images */
-	let ingame = document.getElementById("picture-ingame").style.backgroundImage = "url('../" + gameElement.ingame + "')";	// Image sous la vidéo
-	let gameLogo = document.getElementById("picture-logo").style.backgroundImage = "url('../" + gameElement.logo + "')";
-	let video = document.getElementById("video").src = "https://www.youtube.com/embed/" + gameElement.video + "?mute=1&autoplay=1";	// Lien de la video
-	
-	/* Affectation des elements */
-	title1 += gameElement.name;
-	title2 = gameElement.name;
-	title3 = gameElement.name;
-	description = gameElement.info;
-	developper = gameElement.developper;
-	editor = gameElement.editor;
-	pegi = gameElement.classification;
+	if (-1 < id && id < (game.length - 1)) {
+		/* Affectation des elements */
+		title1.innerHTML += gameElement.name;
+		title2.innerHTML = gameElement.name;
+		title3.innerHTML = gameElement.name;
+		description.innerHTML = gameElement.info;
+		developper.innerHTML = gameElement.developper;
+		editor.innerHTML = gameElement.editor;
+		pegi.innerHTML = gameElement.classification;
 
-	/* Prix */
-	if (gameElement.price == 0) {
-		price = '';
-		payButton = 'Jouer';
-	} else {
-		if (gameElement.isInPromo) {
-			price = CalcPromo(gameElement.promo,gameElement.price) + " €";
-		} else {
-			price = gameElement.price + " €";
+		/* Affichage des immages */
+		ingame.style.backgroundImage = "url('../" + gameElement.ingame + "')";
+		ingame.alt = "Image de preview du jeu : " + gameElement.name;
+
+		gameLogo.style.backgroundImage = "url('../" + gameElement.logo + "')";
+		gameLogo.alt = "Logo du jeu : " + gameElement.name;
+
+		video.src = "https://www.youtube.com/embed/" + gameElement.video + "?mute=1&autoplay=1";
+		video.alt = "Video de présentation du jeu : " + gameElement.name;
+
+		/* Prix */
+		if (gameElement.price == 0) { // Jeu Gratuit
+			price.innerHTML = '';
+			payButton.value = 'Jouer';
+		} else { // Jeu payant
+			/* Calcul de la promotion si il y en à une */
+			price.innerHTML = gameElement.isInPromo ? CalcPromo(gameElement.promo, gameElement.price)
+										  : gameElement.price ;
+			price.innerHTML += " €";
+			payButton.value = 'Acheter'
 		}
-		payButton = 'Acheter'
+	} else {
+		window.open("error.html");
 	}
 }
 
@@ -113,36 +144,35 @@ function PageJeu () {
 * c'est pourquoi elle figure uniquement dans dev.html
 */
 function ShowGameAll() {
-	document.getElementById('game-list').innerHTML = MakeTr(MakeTd('id')
-															+ MakeTd('name') 
-															+ MakeTd('price') 
-															+ MakeTd('isInPromo') 
-															+ MakeTd('promo') 
-															+ MakeTd('info') 
-															+ MakeTd('developper') 
-															+ MakeTd('editor') 
-															+ MakeTd('classification') 
-															+ MakeTd('imgHorizontal') 
-															+ MakeTd('imgVertical') 
-															+ MakeTd('ingame') 
-															+ MakeTd('video'),
-															'background-color: var(--overlay-color)'
-															);
+	let gameList = document.getElementById('game-list').innerHTML; 
+	gameList = MakeTr(MakeTd('id')
+					  + MakeTd('name') 
+					  + MakeTd('price') 
+					  + MakeTd('isInPromo') 
+					  + MakeTd('promo') 
+					  + MakeTd('info') 
+					  + MakeTd('developper') 
+					  + MakeTd('editor') 
+					  + MakeTd('classification') 
+					  + MakeTd('imgHorizontal') 
+					  + MakeTd('imgVertical') 
+					  + MakeTd('ingame') 
+					  + MakeTd('video'),
+					  'style="background-color: var(--overlay-color)"');
 	for (let i = 0; i < game.length; i++) { // Affiche autant de lignes que d'elements dans la liste game
-		document.getElementById('game-list').innerHTML += MakeTr(MakeTd(game[i].id)
-														  		 + MakeTd(game[i].name)
-														  		 + MakeTd(game[i].price)
-														  		 + MakeTd(game[i].isInPromo)
-														  		 + MakeTd(game[i].promo)
-														  		 + MakeTd(game[i].info)
-														  		 + MakeTd(game[i].developper)
-														  		 + MakeTd(game[i].editor)
-														  		 + MakeTd(game[i].classification)
-														  		 + MakeTd(game[i].imgHorizontal)
-														  		 + MakeTd(game[i].imgVertical)
-														  		 + MakeTd(game[i].ingame)
-														  		 + MakeTd(game[i].video));
-
+		gameList += MakeTr(MakeTd(game[i].id)
+						   + MakeTd(game[i].name)
+						   + MakeTd(game[i].price)
+						   + MakeTd(game[i].isInPromo)
+						   + MakeTd(game[i].promo)
+						   + MakeTd(game[i].info)
+						   + MakeTd(game[i].developper)
+						   + MakeTd(game[i].editor)
+						   + MakeTd(game[i].classification)
+						   + MakeTd(game[i].imgHorizontal)
+						   + MakeTd(game[i].imgVertical)
+						   + MakeTd(game[i].ingame)
+						   + MakeTd(game[i].video));
 	}
 }
 
@@ -160,20 +190,21 @@ function ShowGameList() {
 	for (let i = 0; i < game.length; i++) {
 		link = "jeu.html?id=" + game[i].id;
 		image = "../" + game[i].imgHorizontal;
-		if (game[i].isInPromo) {
-			price = ((1 - game[i].promo / 100) * game[i].price ).toFixed(2);
+		if (game[i].price == 0) {
+			price = "Gratuit";
 		} else {
-			price = game[i].price
+			price = game[i].isInPromo ? CalcPromo(game[i].promo, game[i].price)
+									  : game[i].price;
+			price += " €";
 		}
 
-		element.innerHTML += '<tr><th>' + game[i].id + '</th>'
-							 +'<td style="padding-top:10px;"><a href="'
-							 + link + '"><img style="width:300px; border-radius:5px;" draggable="false" src="'
-							 + image + '"/></a></td>'
-				   			 + '<td><h3 style="text-align: center"><a href="' + link + '">' + game[i].name + '</a></h3></td>'
-							 + '<td><p style="text-align: center">' + game[i].developper + '</p></td>'
-							 + '<td><p style="text-align: right;">' + price + '€</p></td></tr>'
-							 + '<tr><td colspan="5"><hr></td></tr>'
+		element.innerHTML += MakeTr(MakeTh(game[i].id)
+									+ MakeTd(MakeA(MakeImg('draggable="false" src="' + image + '" alt="Image de : ' + game[i].name + '"'),
+												   'href="' + link + '"'))
+									+ MakeTd('<h3>' + MakeA(game[i].name, 'href="' + link + '"') + '</h3>')
+									+ MakeTd('<p>' + game[i].developper + '</p>')
+									+ MakeTd('<p class="price">' + price + '</p>'))
+							 + MakeTr(MakeTd('<hr>','colspan="5"'));
 	}
 }
 
@@ -208,29 +239,26 @@ function CreateCard(card, disposition, id, isIndex) {
 	link = indexConvertor[0] + "jeu.html?id=" + id;
 
 	/* Calcul de l'éventuelle promotion */
-	gamePricePromo = 0.0;
-	if(game[id].isInPromo) {
-		gamePricePromo = ((1 - game[id].promo / 100) * game[id].price ).toFixed(2); // arrondir à 2 chiffres après la virgule
-	}
+	gamePricePromo = game[id].isInPromo ? CalcPromo(game[id].promo, game[id].price)
+										: 0.0;
 
 	/* Stockage de la partie "prix" */
 	if (game[id].isInPromo) {/* Gestion de la promotion */
 		priceShow = '<span class="tag">-' + game[id].promo + '%</span>'
 					+ '<strike> ' + game[id].price +'€</strike> '
-					+ gamePricePromo + '€</p></div></div>'
+					+ gamePricePromo + '€'
 	} else if(game[id].price == 0) { /* Si le jeu est gratuit */
-		priceShow = 'Gratuit</p></div></div>';
+		priceShow = 'Gratuit';
 	} else {
-		priceShow = game[id].price + '€</p></div></div>';
+		priceShow = game[id].price + '€';
 	}
 
 	/* Remplissage de la carte */
-	card.innerHTML += '<a href="' + link + '" class="card-picture ' + disposition + '">'
-					  + '<img draggable="false" src="' + indexConvertor[1] + image + '">'
-					  + '</a>'
+	card.innerHTML += MakeA(MakeImg('draggable="false" alt="Image de : ' + game[id].name + '" src="' + indexConvertor[1] + image + '"'),
+					  	    'href="' + link + '" class="card-picture ' + disposition + '"')
 					  + '<div class="card-info">'
-					  + '<a href="' + link + '"><h3 class="card-title">' + game[id].name + '</h3></a>'
-					  + '<h4 class="card-editor">' + game[id].editor + '</h4>'
-					  + '<p class="card-price">'
-					  + priceShow;
+					  + 	MakeA('<h3 class="card-title">' + game[id].name + '</h3>', 'href="' + link + '"')
+					  + 	'<h4 class="card-editor">' + game[id].editor + '</h4>'
+					  + 	'<p class="card-price">' + priceShow + '</p>'
+					  + '</div>';
 }
