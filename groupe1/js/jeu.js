@@ -102,7 +102,7 @@ function PageJeu () {
 	let gameLogo = document.getElementById("picture-logo");
 	let video = document.getElementById("video");	// Lien de la video
 
-	if (-1 < id && id < (game.length - 1)) {
+	if (-1 < id && id <= (game.length - 1)) {
 		/* Affectation des elements */
 		title1.innerHTML += gameElement.name;
 		title2.innerHTML = gameElement.name;
