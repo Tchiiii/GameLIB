@@ -3,9 +3,9 @@
  * @author Vabre Lucas, Strub Lilian
  */
 
-:root {
-	--border-radius-5 : 5px;
-	--border-radius-15 : 15px;
+:root {	/* Variables Principales utilisé dans plupart des pages */
+	--border-radius-5 : 5px;	/* Bordures arrondis de 5px */
+	--border-radius-15 : 15px;	/* Bordures arrondis de 15px */
 }
 
 /* ### Entête de la page ### */
@@ -19,13 +19,13 @@ header img { /* image de l'entête (logo) */
 
 /* ### Corps de la page ### */
 body { /* Corps */
-	font-family: Cabin, Arial, Consolas;		/* Définis les polices d'écritures à utiliser dans le site */
-	color: var(--text-color); 					/* Défini la couleur générale du texte */
-	background-color: var(--background-color);	/* Défini la couleur d'arrière plan du site */
+	font-family: Cabin, url("../font/Cabin-Regular.ttf"), Arial, Consolas;	/* Définis les polices d'écritures à utiliser dans le site */
+	color: var(--text-color); 												/* Défini la couleur générale du texte */
+	background-color: var(--background-color);								/* Défini la couleur d'arrière plan du site */
 
-	padding: 0;									/* Enlève les marges intenes */
-	margin: 0;									/* Enlève les marges */
-	width: 100%;								/* Fait prendre la taille du site, l'intégralité de l'écran */
+	padding: 0;		/* Enlève les marges intenes */
+	margin: 0;		/* Enlève les marges */
+	width: 100%;	/* Fait prendre la taille du site, l'intégralité de l'écran */
 }
 
 .container { /* Container de la page (centrage) */

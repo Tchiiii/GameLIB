@@ -3,6 +3,7 @@
  *
  * Feuille de style qui est utilisé pour le module
  * de l'affichage sombre / clair
+ * Utilisé avec lightmode.js
  * 
  * @author Vabre Lucas
  */
@@ -28,17 +29,17 @@
 	cursor: pointer; /* Au survol déchange le curseur pour montrer que c'est un boutton clicable */
 }
 
-.li-night-mode { 
-	padding: 0;
-	margin: 0;
+.li-night-mode {/* Element contenant le boutton jour/nuit */ 
+	padding: 0;		/* Enlève les marges internes */
+	margin: 0;		/* Enlève les marges */
 }
 
 .li-night-mode img { /* Iconne de la lune / soleil */
-	width: 40px;
-	height: 40px;
+	width: 40px;		/* Défini la taille de l'iconne */
+	height: 40px;		/* Defini la hauteur de l'iconne */
 }
 
 .li-maincolor img { /* Element li qui contient l'Iconne de l'engrenage */
-	width: 30px;
-	height: 30px;
+	width: 30px;		/* Défini la taille de l'iconne */
+	height: 30px;		/* Defini la hauteur de l'iconne */
 }
