@@ -4,12 +4,12 @@
  */
 
 /* ### Variables principales utilisés ### */
-:root {
-	--border-card-radius: 5px;
+:root {   /* caractéristiques de la page */
+	--border-card-radius: 5px;   /* Arrondi les coins */
 }
 
 /* ### Collection de Cartes (en ligne) ### */
-.card-collection {
+.card-collection {  /* carctéristiques des cartes de collections */
 	text-align: center;	/* Centre le texte, et les blocs surtout */
 }
 
@@ -24,13 +24,13 @@
 }
 
 /* ### Cartes ### */
-.card {
+.card {      /* Caractéristiques de la carte */
 	margin: 15px;				/* Marge de 15px de tout les cotés */
 	border-collapse: collapse;	/* Enlève les séparation */
 	display: inline-block;		/* Affiche les cartes en lignes */
 }
 
-.card-picture img {
+.card-picture img {  /* caractéristique de l'image de survol */
 	border-radius: var(--border-card-radius);	/* Arrondi des bordures de la carte */
 	overflow: hidden;							/* Cache le surplus de l'élément */
 	box-shadow: 0 0 5px black;					/* Crée une légère ombre derrière la carte (effet 3D) */
@@ -39,7 +39,7 @@
 
 .card-picture img:hover { /* Modification de l'image au survol */
 	transform: scale(1.04);		/* augmente la taille de l'image */
-	box-shadow: 0 0 10px var(--overlay-color);
+	box-shadow: 0 0 10px var(--overlay-color);  /* Donne un effet d'ombre coloré à l'image */
     opacity: 75%;	/* change l'opacité de l'image */
     transition: 0.25s;	/* pour faire transition fluide */
 }
@@ -56,10 +56,10 @@
 }
 
 /* ### Cellule "Texte" du tableau ### */
-.card-info {
-	background-color: var(--overlay-color);
-	border-radius: 15px;
-	padding:10px;
+.card-info {  /* cractéristiques des cartes d'infos */
+	background-color: var(--overlay-color);  /* Attribut la 2e couleur de fond */
+	border-radius: 15px; /* Arrondi les coins */
+	padding:10px;        /* Définie les bordures extérieures */
 }
 
 .card-info a {/* lien sur le nom du jeu */
