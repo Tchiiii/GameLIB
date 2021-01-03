@@ -4,20 +4,13 @@
  */
 a {  /* Annule l'effet fait par la page de style principale */
 	text-decoration: underline;
-	color: var(--main-color);
 }
 
 /* Ajustement du texte sur la page */
+.titre, .sous-titre, p {
+	text-align: center;
+}
 
 .titre {
-	text-align: center;
 	font-size: 5em;
-}
-
-.sous-titre {
-	text-align: center;
-}
-
-p {
-	text-align: center;
 }
