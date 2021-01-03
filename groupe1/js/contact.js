@@ -1,14 +1,11 @@
 /*
  * contact.js
+ *
+ * Programme d'envois du formulaire
+ * Utilisé dans contact.html
+ * 
  * @author Lilian Strub, Vabre Lucas, Nogaret Tristan
  */
-
-// first_input.focus();
-// soumis = false;
-// function myFunction () { 
-//     soumis = true;
-//     document.forms[0].submit(); 
-// }
 
 /**
  * Envois du formulaire de contact
@@ -33,7 +30,7 @@ function SendContactMessage(prenom, nom, age, email, tel, message) {
 	var params = {
 		username:`${nom} ${prenom}`,
 		avatar_url:"",  // Obligatoire, sinon envoi impossible
-		content: `${message}\n\nage:${age}\nemail:${email}\ntel:${tel}`
+		content: `${message}\nage:${age}\nemail:${email}\ntel:${tel}`
 	}
 	request.send(JSON.stringify(params));	// Envoi de la requète
 
