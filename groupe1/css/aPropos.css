@@ -70,6 +70,10 @@ article { /* Caractéristiques de la section */
 	margin-left: 50%;		/* Modifie la marge extérieure gauche */
 }
 
+.section-right div div {
+	margin-left: 0;
+}
+
 .section-right article { /* Caractéristqiue de la sous branche article des sections à droite */
 	margin-left: 50%;		/* Modifie la marge extérieure gauche */
 }
