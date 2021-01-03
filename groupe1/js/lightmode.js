@@ -14,20 +14,19 @@ let logoImg = document.getElementById('logo');				// balise img du logo
 let discordImg = document.getElementById("discord");
 let footerLogoImg = document.getElementById("footer-logo");
 
-var sun = "img/icons/sun.svg";					// iconne de soleil
-var moon = "img/icons/moon.svg";				// iconne de lune
-var logoLight = "img/icons/logo-light.svg";		// logo en mode jour
-var logoNight = "img/icons/logo-night.svg";		// logo en mode nuit
-var engrenageLight = "img/icons/engrenage-light.svg";
-var engrenageNight = "img/icons/engrenage-night.svg";
-var discordLight = "img/icons/discord-light.svg";
-var discordNight = "img/icons/discord-night.svg";
+var sun = "img/icons/sun.svg";							// iconne de soleil
+var moon = "img/icons/moon.svg";						// iconne de lune
+var logoLight = "img/icons/logo-light.svg";				// logo en mode jour
+var logoNight = "img/icons/logo-night.svg";				// logo en mode nuit
+var engrenageLight = "img/icons/engrenage-light.svg";	// engrenage en mode jour
+var engrenageNight = "img/icons/engrenage-night.svg";	// engrenage en mode nuit
+var discordLight = "img/icons/discord-light.svg";		// Logo Discord en mode jour
+var discordNight = "img/icons/discord-night.svg";		// Logo Discord en mode nuit
 
 /**
  * Fonction qui permet de mettre la page
  * en mode clair.
- * @param isIndex : boolean si cette fonction
- *					est executé dans index.html => true
+ * @param {boolean} isIndex : index.html => true
  */
 function SetLightMode(isIndex) {
 	document.body.className = 'light-theme';

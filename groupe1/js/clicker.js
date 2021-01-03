@@ -14,17 +14,31 @@ let upgrades = [
 				]
 var interval;
 
+/**
+ * Initialisation du clicker
+ */
 function Initialisation() {
 	document.getElementById("price-1").innerHTML = upgrades[0].price;
 	document.getElementById("level-1").innerHTML = upgrades[0].level;
 	document.getElementById("persecond").innerHTML = (upgrades[0].number) + '/sec';
 }
 
+/**
+ * Fonction qui ajoute un certain nombre de cookies au compteur
+ * @param {int} number : Nombre de cookie a ajouter au compteur
+ */
 function OneCookie(number) {
 	score += number;
 	document.getElementById('score').innerText = score;
 }
 
+/**
+ * Fonction d'achat
+ * contre un certain nombre de cookie
+ * vous pouvez acheter un autoclick
+ * qui cliquer à votre place
+ * @param {int} price : prix a payer
+ */
 function Buy(price) {
 	if (score >= price) {
 		score -= price;
@@ -49,6 +63,11 @@ function Buy(price) {
 	}
 }
 
+/**
+ * Fonction qui ajoute au compteur un certain nombre
+ * toutes les secondes
+ * @param {int} count : nombre d'elements a ajouter par secondes
+ */
 function Autoclick(count) {
 	clearInterval(interval);
 	interval = setInterval("OneCookie(" + count + ")", 1000 );

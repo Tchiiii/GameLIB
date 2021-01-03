@@ -8,6 +8,7 @@
  */
 
 
+/* Algorithme qui récupère la valeur de la variable contenue dans l'URL */
 let $_GET = {};	// Creer l'objet GET
 if(document.location.toString().indexOf('?') != -1) {	// Verifie si il y a un ? dans l'url
 	var query = document.location	// Modifie quelques caractères qui pourrais être mal interprété
@@ -132,7 +133,7 @@ function PageJeu () {
 			price.innerHTML += " €";
 			payButton.value = 'Acheter'
 		}
-	} else {
+	} else { // Page non trouvée
 		window.open("error.html");
 	}
 }
@@ -144,7 +145,8 @@ function PageJeu () {
 * c'est pourquoi elle figure uniquement dans dev.html
 */
 function ShowGameAll() {
-	let gameList = document.getElementById('game-list').innerHTML; 
+	let gameList = document.getElementById('game-list').innerHTML;
+	/* Affichage de l'entête du tableau */
 	gameList = MakeTr(MakeTd('id')
 					  + MakeTd('name') 
 					  + MakeTd('price') 
@@ -159,6 +161,7 @@ function ShowGameAll() {
 					  + MakeTd('ingame') 
 					  + MakeTd('video'),
 					  'style="background-color: var(--overlay-color)"');
+
 	for (let i = 0; i < game.length; i++) { // Affiche autant de lignes que d'elements dans la liste game
 		gameList += MakeTr(MakeTd(game[i].id)
 						   + MakeTd(game[i].name)
@@ -179,6 +182,7 @@ function ShowGameAll() {
 
 /**
  * Affiche tout les jeux
+ * (image + Nom + developpeur et prix)
  * Utilisé dans listeJeux.html
  */
 function ShowGameList() {
@@ -199,7 +203,9 @@ function ShowGameList() {
 		}
 
 		element.innerHTML += MakeTr(MakeTh(game[i].id)
-									+ MakeTd(MakeA(MakeImg('draggable="false" src="' + image + '" alt="Image de : ' + game[i].name + '"'),
+									+ MakeTd(MakeA(MakeImg('draggable="false" src="'
+														   + image + '" alt="Image de : '
+														   + game[i].name + '"'),
 												   'href="' + link + '"'))
 									+ MakeTd('<h3>' + MakeA(game[i].name, 'href="' + link + '"') + '</h3>')
 									+ MakeTd('<p>' + game[i].developper + '</p>')
