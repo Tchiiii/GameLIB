@@ -19,12 +19,12 @@ header img { /* image de l'entête (logo) */
 
 /* ### Corps de la page ### */
 @font-face { /* Police d'écriture */
-	font-family: "Cabin-Regular", Arial, Consolas;		/* Définis les polices d'écritures à utiliser dans le site */
+	font-family: "Cabin-Regular";		/* Définis les polices d'écritures à utiliser dans le site */
 	src: url('../font/Cabin-Regular.ttf');
 }
 
 body { /* Corps */	
-	font-family: "Cabin-Regular", Cabin-Regular;
+	font-family: Cabin-Regular, Arial, consolas;
 	color: var(--text-color);												/* Défini la couleur générale du texte */
 	background-color: var(--background-color);								/* Défini la couleur d'arrière plan du site */
 
