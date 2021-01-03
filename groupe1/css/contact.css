@@ -3,7 +3,7 @@
  * @author Lilian Strub
  */
 
-form {
+form {  /* Caractéristiques du formulaire de la page */
 	font-family: "Helvetica";
 	margin: 50px auto;
 	width: 500px;
@@ -16,7 +16,7 @@ h1 {
 	text-align: center;	
 }
 
-input, textarea {
+input, textarea {  /* Caractéristiques des zones ou l'on peut écrire et des messages affichés avant d'écrire */
 	font-size: 16px;
 	margin-top: 5px;
 	margin-bottom: 10px; 
@@ -35,7 +35,7 @@ textarea {
 	resize: none;
 }
 
-#submit {
+#submit {  /* Caractéristiques du bouton */
 	background-color: var(--main-color);
 	color: var(--text-color);
 	padding: 15px;

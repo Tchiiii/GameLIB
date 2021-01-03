@@ -43,13 +43,19 @@
 	</nav>
 
 	<!-- Formulaire de Contact -->
+
 	<form method="post">
+
+		<!-- Demande du genre de l'utilisateur avec un case à cocher -->
+
 		<h1>Formulaire de contact</h1>
 		<label for="male">Homme</label>
 		<input type="radio" id ="male" name="gender" value="male" checked>
 
 		<label for="female">Femme</label>
 		<input type="radio" id ="female" name="gender" value="female"><br><br>
+
+		<!-- demande des infos personnelles et du contact de l'utilisateur -->
 
   		<label for="fname">Prénom :</label><br>
   		<input type="text" id="fname" name="fname" required="" placeholder="Jean" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"><br>
@@ -65,6 +71,8 @@
 
   		<label for="telephone">Téléphone :</label ><br>
   		<input type="tel" id="telephone" name="telephone" placeholder="01 23 45 67 89" required="" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"><br>
+
+  		<!-- Message de l'utilisateur -->
 
   		<label for="msg">Commentaire :</label><br>
         <textarea id="msg" name="user_message" rows="4" cols="48" required=""></textarea><br><br>
