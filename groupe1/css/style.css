@@ -46,6 +46,11 @@ th, tr, td {	/* Enlève les espacements des tableaux */
 	border-collapse: collapse;	/* Bordures collées */
 }
 
+hr {
+	border-color: none;
+	color: var(--overlay-color);
+}
+
 abbr { /* Les unicodes */
 	text-decoration: none;	/* Pour enlever le soulignement des elements unicodes */
 }
