@@ -24,7 +24,7 @@ header img { /* image de l'entête (logo) */
 }
 
 body { /* Corps */	
-	font-family: Cabin-Regular;
+	font-family: "Cabin-Regular", Cabin-Regular;
 	color: var(--text-color);												/* Défini la couleur générale du texte */
 	background-color: var(--background-color);								/* Défini la couleur d'arrière plan du site */
 
