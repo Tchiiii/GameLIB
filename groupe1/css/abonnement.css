@@ -3,7 +3,7 @@
  * @author Nogaret Tristan, Vabre Lucas
  */
 .div_a { /* Modifie les caractéristiques de la premières div*/
-	margin-top: 50px;
+	margin-top: 50px;	/* Crée un marge de 50px vers le haut */
 }
 
 .offre { /* Modifie les caractéristiques du cadre princpal, celui du haut */

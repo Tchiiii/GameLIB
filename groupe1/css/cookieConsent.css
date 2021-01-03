@@ -51,3 +51,12 @@
 .cookieConsentOK:hover {
     background-color: #E0C91F;
 }
+
+#konamicode { /* Boutton "plus d'infos" */
+    color: var(--main-color);
+}
+
+#konamicode:hover { /* Boutton "plus d'infos" au passage de la souris */
+    cursor: pointer;            /* souris montre un lien clicable */
+    text-decoration: underline; /* Souligne le texte */
+}

@@ -7,7 +7,6 @@
  */
 
 /*
-
 	Liste des couleurs selectionnables:
 		bleu   : #3498db
 		vert   : #2ecc71
@@ -17,30 +16,21 @@
 
 .main-blue {
 	--main-color: #3498db;
-	transition: 0.2s;
 }
 
 .main-green {
 	--main-color: #2ecc71;
-	transition: 0.2s;
 }
 
 .main-purple {
 	--main-color: #9b59b6;
-	transition: 0.2s;
 }
 
 .main-red {
 	--main-color: #e74c3c;
-	transition: 0.2s;
 }
 
-/* Affichage de cette couleur  */
-
-.active {/* Element de navigation sélectionné */
-	color: var(--main-color);
-}
-
+/* Affichage de cette couleur */
 .color-picker {
 	display: none;
 	position: absolute;
@@ -57,17 +47,18 @@
 	display: block;
 }
 
-.color-picker li > div {
-	width: 50px;
-	height: 30px;
-	border-radius: 5px;
-}
 
 .color-picker li div:hover {
 	cursor: pointer;
 }
 
 /* Bouttons de couleurs */
+.color-picker li > div { /* Rectagles de couleurs sélectionnable */
+	width: 50px;							/* Largeur de 50px */
+	height: 30px;							/* Hauteur de 30px */
+	border-radius: var(--border-radius-5);	/* Bordure arrondis de 5px */
+}
+
 #color-blue {background-color: #3498db;}
 #color-green {background-color: #2ecc71;}
 #color-purple {background-color: #9b59b6;}

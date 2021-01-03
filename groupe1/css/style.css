@@ -3,38 +3,60 @@
  * @author Vabre Lucas, Strub Lilian
  */
 
-/* ### Style Général ### */
+:root {
+	--border-radius-5 : 5px;
+	--border-radius-15 : 15px;
+}
 
+/* ### Entête de la page ### */
 header {
-	text-align: center;
+	text-align: center;	/* Centre le texte (le logo) */
 }
 
-header img {
-	margin: 25px 0 25px 0;
+header img { /* image de l'entête (logo) */
+	margin: 25px 0 25px 0;	/* met une marge en haut et en bas de 25px */
 }
 
-body {
-	font-family: Cabin, Arial, Consolas; /* Définis les polices d'écritures à utiliser dans le site */
-	color: var(--text-color); /* Défini la couleur générale du texte */
-	background-color: var(--background-color); /* Défini la couleur d'arrière plan du site */
+/* ### Corps de la page ### */
+body { /* Corps */
+	font-family: Cabin, Arial, Consolas;		/* Définis les polices d'écritures à utiliser dans le site */
+	color: var(--text-color); 					/* Défini la couleur générale du texte */
+	background-color: var(--background-color);	/* Défini la couleur d'arrière plan du site */
 
 	padding: 0;
 	margin: 0;
-	width: 100%; /* Fait prendre la taille du site, l'intégralité de l'écran */
+	width: 100%;	/* Fait prendre la taille du site, l'intégralité de l'écran */
 }
 
-a {
-	text-decoration: none; /* Enlève le souligné des liens clicables */
-	color: var(--text-color); /* Met en couleur le texte du menu */
+.container { /* Container de la page (centrage) */
+	margin-left: 10%;
+	margin-right:10%;
+}
+
+h3 a { /* Met les titres(3) et les lien */
+	color : var(--main-color);	/* Couleur du texte en la couleur sélectionnées */
+}
+
+a {	/* Tout les liens du site */
+	text-decoration: none; 		/* Enlève le souligné des liens clicables */
+}
+
+
+th, tr, td {	/* Enlève les espacements des tableaux */
+	border-collapse: collapse;	/* Bordures collées */
+}
+
+abbr { /* Les unicodes */
+	text-decoration: none;	/* Pour enlever le soulignement */
 }
 
 /* ### Menu ### */
 nav ul {
-	text-align: center;
-	background-color: var(--overlay-color);
-	border-radius: 15px;
-	margin: auto 25% auto 25%;
-	padding: 0; 
+	text-align: center;						/* Centre le texte */
+	background-color: var(--overlay-color);	/* Met en couleur de font la couleur secondaire */
+	margin: auto 25% auto 25%;				/* Centre l'élément de 25% de chaque cotés */
+	padding: 0; 							/* Enlève la marge interne par défaut du "ul" */
+	border-radius: var(--border-radius-15);	/* Bordure arrondis de 15px */
 }
 
 nav li {
@@ -46,39 +68,15 @@ nav li {
 	vertical-align: middle;
 }
 
+nav a {
+	color: var(--text-color);
+}
+
 .active {	/* Page sélectionnée */
-	color: var(--main-color);
+	color: var(--main-color);	/* Couleur sélectionnée */
 }
 
-#light-mode { /* Boutton jour-nuit */
-	cursor: pointer; /* Au survol déchange le curseur pour montrer que c'est un boutton clicable */
-}
-
-.li-night-mode {
-	padding: 0;
-	margin: 0;
-}
-
-.li-night-mode img {
-	width: 40px;
-	height: 40px;
-}
-
-.li-maincolor img {
-	width: 30px;
-	height: 30px;
-}
-
-/* ### Contenu de la page ### */
-.container {
-	margin-left: 10%;
-	margin-right:10%;
-}
-
-th, tr, td{
-	border-collapse: collapse;
-}
-
+/* ### Pied de page ### */
 footer {
 	margin-top: 50px;
 	width: 100%;
@@ -86,32 +84,15 @@ footer {
 	bottom: 0;
 }
 
-footer > div {
+footer > div {/* Les quatres catégories du pied de page */
 	display: inline-block;
 	vertical-align: center;
 }
 
-footer div > img {
+footer div > img {/* Les images du pied de page => Logo + Discord */
 	margin: 20px;
 }
 
-footer > p {
+footer > p {/* "tout droits réservés" */
 	text-align: right;
-}
-
-abbr {
-	text-decoration: none;
-}
-
-#konamicode {
-	color: var(--main-color);
-}
-
-#konamicode:hover {
-	cursor: pointer;
-	text-decoration: underline;
-}
-
-h3 a {
-	color : var(--main-color);
 }
