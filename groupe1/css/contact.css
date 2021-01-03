@@ -34,17 +34,9 @@ label {
 textarea {
 	resize: none;
 }
-<<<<<<< Updated upstream
 
-#submit {  /* Caractéristiques du bouton */
-	background-color: var(--main-color);
-	color: var(--text-color);
-	padding: 15px;
-}
-=======
 em {
   font-weight: bold;
   font-style: normal;
-  color: #B22;
+  color: var(--main-color);
 }
->>>>>>> Stashed changes

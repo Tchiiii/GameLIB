@@ -33,7 +33,7 @@ body { /* Corps */
 	margin-right:10%;
 }
 
-h3 a { /* Met les titres(3) et les lien */
+h3, a { /* Met les titres(3) et les lien */
 	color : var(--main-color);	/* Couleur du texte en la couleur sélectionnées */
 }
 
@@ -48,6 +48,25 @@ th, tr, td {	/* Enlève les espacements des tableaux */
 
 abbr { /* Les unicodes */
 	text-decoration: none;	/* Pour enlever le soulignement */
+}
+
+.boutton {
+	background-color: var(--main-color);
+	color: var(--text-color);
+	font-size: 1.0em;
+
+	border-radius: var(--border-radius-5);
+	padding: 14px;
+	border-style: none;
+	border-width: 0px;
+	
+	box-shadow: 0 0 15px var(--main-color);
+	transition: 0.2s;
+}
+
+.boutton:hover {
+	cursor: pointer;
+	box-shadow: 0 0 0;
 }
 
 /* ### Menu ### */

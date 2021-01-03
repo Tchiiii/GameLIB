@@ -45,56 +45,42 @@
 	<!-- Formulaire de Contact -->
 
 	<form method="post">
-<<<<<<< Updated upstream
 
 		<!-- Demande du genre de l'utilisateur avec un case à cocher -->
 
 		<h1>Formulaire de contact</h1>
-=======
-		<h1>DEMANDE D'INFORMATION</h1>
 		<p><i>Complétez le formulaire. Les champs marqué par <em>*</em> sont <em>obligatoires</em>.</i></p>
->>>>>>> Stashed changes
 		<label for="male">Homme</label>
 		<input type="radio" id ="male" name="gender" value="male" checked>
 
 		<label for="female">Femme</label>
 		<input type="radio" id ="female" name="gender" value="female"><br><br>
-<<<<<<< Updated upstream
 
 		<!-- demande des infos personnelles et du contact de l'utilisateur -->
 
-  		<label for="fname">Prénom :</label><br>
-  		<input type="text" id="fname" name="fname" required="" placeholder="Jean" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"><br>
-
-  		<label for="lname">Nom :</label><br>
-=======
   		<label for="fname">Prénom : <em>*</em></label><br>
   		<input type="text" id="fname" name="fname" required="" placeholder="Jean" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"><br>
+  		
   		<label for="lname">Nom : <em>*</em></label><br>
->>>>>>> Stashed changes
   		<input type="text" id="lname" name="lname" required="" placeholder="du Besson" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"><br>
 
   		<label for="age">Age :</label><br>
-<<<<<<< Updated upstream
   		<input type="number" id="age" name="age" min="18" max="80" required="" pattern="[0-9]{2}" placeholder="18"><br>
 
-  		<label for="email">Email :</label><br>
-=======
-  		<input type="number" id="age" name="age" min="18" max="80" pattern="[0-9]{2}" placeholder="18"><br>
   		<label for="email">Email : <em>*</em></label><br>
->>>>>>> Stashed changes
   		<input type="email" id="email" name="email" placeholder="exemple@domaine.fr" required="" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"><br>
 
   		<label for="telephone">Téléphone :</label ><br>
-<<<<<<< Updated upstream
   		<input type="tel" id="telephone" name="telephone" placeholder="01 23 45 67 89" required="" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"><br>
 
   		<!-- Message de l'utilisateur -->
-
-  		<label for="msg">Commentaire :</label><br>
-        <textarea id="msg" name="user_message" rows="4" cols="48" required=""></textarea><br><br>
-  		<input type="checkbox" name="conditions" required=""> J'accepte les conditions d'utilisations<br><br>
-  		<input id="submit" type="button" value="Envoyer" onclick="Submit()"><br>
+  		<label for="msg">Commentaire :</label>
+  		<br>
+        <textarea id="msg" name="user_message" rows="4" cols="48" required=""></textarea>
+        <br><br>
+  		<input type="checkbox" name="conditions" required=""> J'accepte les conditions d'utilisations
+  		<br><br>
+  		<input id="submit" class="boutton" type="button" value="Envoyer" onclick="Submit()"><br>
   	</form>
 
   	<!-- pied de page -->
@@ -120,15 +106,6 @@
 			<p>GameLib <abbr title="U+00A9">©</abbr> tout droits réservés</p>
 		</div>
 	</footer>
-
-=======
-  		<input type="tel" id="telephone" name="telephone" placeholder="01 23 45 67 89" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"><br>
-  		<label for="msg">Commentaire : <em>*</em></label><br>
-        <textarea id="msg" name="user_message" rows="4" cols="48" required=""></textarea><br><br>
-  		<input type="checkbox" name="conditions" required=""> J'accepte les conditions d'utilisations <em>*</em><br><br>
-  		<input type="button" value="ENVOYER LA DEMANDE" onclick="myFunction()"><br>
-  	</form>
->>>>>>> Stashed changes
 </body>
 
 	<!-- Import des Scripts -->

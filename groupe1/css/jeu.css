@@ -86,23 +86,6 @@
 	font-size: 1.1em;
 }
 
-#pay-button {
-	background-color: var(--main-color);
-	border-radius: 5px;
-	padding: 14px;
-	display: inline;
-	font-size: 1.0em;
-	border: 0;
-	color: var(--text-color);
-	box-shadow: 0 0 15px var(--main-color);
-	transition: 0.2s;
-}
-
-#pay-button:hover {
-	cursor: pointer;
-	box-shadow: 0 0 0;
-}
-
 .plus-info {
 	margin-top: 100px;
 	background-color: var(--overlay-color);
