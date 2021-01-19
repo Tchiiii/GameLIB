@@ -1,5 +1,7 @@
 # GameLIB : Introduction
 
+[Lien du site](https://tchiiii.github.io/GameLIB/index.html)
+
 Simulation d'une __plateforme de vente de jeux vidéos dématérialisé__.  
 (Comme *Epic Games* et *Steam*)  
 Il s'agit d'une **simulation** car aucun achat ne peut aboutir.  
