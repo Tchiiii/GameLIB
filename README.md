@@ -84,4 +84,4 @@ suivre l'investissement du projet. (seul le lien du server Discord sera fonction
 
 ## Petits modules (pour le confort visuel/navigation) :
 + Mode **Jour/Nuit** par stockage local
-+ Mode Selection de couleur Principale (N'est pas encore implémenté)
++ Mode Selection de couleur Principale
